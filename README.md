@@ -1,6 +1,4 @@
-
 # EXAMPLE STORE CLIENT
-
 
 This is a example of a STORE CLIENT develped by [Yellow Space Stone](https://github.com/yellowspacestone).
 

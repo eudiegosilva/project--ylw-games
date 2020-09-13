@@ -5,35 +5,35 @@ import 'jest-styled-components';
 import Logo from '.';
 
 describe('<Logo />', () => {
-  it('should render a BLACK LABEL COLOR by default', () => {
+  it('should render a black label by default', () => {
     renderWithTheme(<Logo />);
     expect(screen.getByLabelText(/YLW games/i).parentElement).toHaveStyle({
       color: '#000000'
     });
   });
 
-  it('should render a WHITE LABEL COLOR by default', () => {
-    renderWithTheme(<Logo textColor="white" />);
+  it('should render a white label by default', () => {
+    renderWithTheme(<Logo color="white" />);
     expect(screen.getByLabelText(/YLW games/i).parentElement).toHaveStyle({
       color: '#FFFFFF'
     });
   });
 
-  it('should render a NORMAL SIZE logo by defaul', () => {
+  it('should render a normal size logo by defaul', () => {
     renderWithTheme(<Logo />);
     expect(screen.getByLabelText(/YLW games/i).parentElement).toHaveStyle({
       width: '11rem'
     });
   });
 
-  it('should render a BIGGER SIZE logo', () => {
+  it('should render a bigger size logo', () => {
     renderWithTheme(<Logo size="large" />);
     expect(screen.getByLabelText(/YLW games/i).parentElement).toHaveStyle({
       width: '20rem'
     });
   });
 
-  it('should render a LOGO WITHOUT TEXT on MOBILE if hideOnMobile attribute', () => {
+  it('should render a logo without text on mobile if hideOnMobile attribute', () => {
     renderWithTheme(<Logo hideTextOnMobile />);
     expect(screen.getByLabelText(/YLW games/i).parentElement).toHaveStyleRule(
       'width',

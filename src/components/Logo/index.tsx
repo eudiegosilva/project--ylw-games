@@ -1,21 +1,17 @@
 import * as s from './styles';
 
 export type LogoProps = {
-  textColor?: 'black' | 'white';
+  color?: 'black' | 'white';
   size?: 'normal' | 'large';
   hideTextOnMobile?: true | false;
 };
 
 const Logo = ({
-  textColor = 'black',
+  color = 'black',
   size = 'normal',
   hideTextOnMobile = false
 }: LogoProps) => (
-  <s.Container
-    textColor={textColor}
-    size={size}
-    hideTextOnMobile={hideTextOnMobile}
-  >
+  <s.Container color={color} size={size} hideTextOnMobile={hideTextOnMobile}>
     <svg
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

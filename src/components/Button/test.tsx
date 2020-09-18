@@ -1,6 +1,6 @@
 import { screen } from '@testing-library/react';
 import { renderWithTheme } from 'utils/tests/helpers';
-import { ShoppingCart } from '@styled-icons/feather/ShoppingCart';
+import { ShoppingCart as ShoppingCartIcon } from '@styled-icons/feather/ShoppingCart';
 
 import Button from '.';
 
@@ -46,7 +46,7 @@ describe('<Button />', () => {
 
   it('should render button with icon based in prop', () => {
     renderWithTheme(
-      <Button icon={<ShoppingCart data-testid="icon" />}>Button</Button>
+      <Button icon={<ShoppingCartIcon data-testid="icon" />}>Button</Button>
     );
 
     expect(screen.getByText(/Button/i)).toBeInTheDocument();

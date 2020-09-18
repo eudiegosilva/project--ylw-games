@@ -1,5 +1,5 @@
 import { Story, Meta } from '@storybook/react/types-6-0';
-import { ShoppingCart } from '@styled-icons/feather/ShoppingCart';
+import { ShoppingCart as ShoppingCartIcon } from '@styled-icons/feather/ShoppingCart';
 import Button from '.';
 
 export default {
@@ -25,6 +25,6 @@ export const ButtonWithIcon: Story = args => <Button {...args} />;
 
 ButtonWithIcon.args = {
   children: 'Button',
-  icon: <ShoppingCart />,
+  icon: <ShoppingCartIcon />,
   size: 'medium'
 };

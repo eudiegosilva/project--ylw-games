@@ -28,4 +28,22 @@ describe('<Menu />', () => {
     expect(fullMenuElement.getAttribute('aria-hidden')).toBe('true');
     expect(fullMenuElement).toHaveStyle({ opacity: 0 });
   });
+
+  it('should show login and create account buttons when logged out', () => {
+    renderWithTheme(<Menu />);
+
+    expect(screen.getByText(/login now/i)).toBeInTheDocument();
+    expect(screen.getByText(/create account/i)).toBeInTheDocument();
+    expect(screen.queryByText(/my account/i)).not.toBeInTheDocument();
+    expect(screen.queryByText(/wishlist/i)).not.toBeInTheDocument();
+  });
+
+  it('should show "my account" and "wishlist" buttons when logged in', () => {
+    renderWithTheme(<Menu username="some_user" />);
+
+    expect(screen.getByText(/my account/i)).toBeInTheDocument();
+    expect(screen.getByText(/wishlist/i)).toBeInTheDocument();
+    expect(screen.queryByText(/login now/i)).not.toBeInTheDocument();
+    expect(screen.queryByText(/create account/i)).not.toBeInTheDocument();
+  });
 });

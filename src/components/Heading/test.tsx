@@ -4,19 +4,19 @@ import { renderWithTheme } from 'utils/tests/helpers';
 import Heading from '.';
 
 describe('<Heading />', () => {
-  it('should render a black heading by default', () => {
+  it('should render a white heading by default', () => {
     renderWithTheme(<Heading>YLW games</Heading>);
 
     expect(screen.getByRole('heading', { name: /YLW games/i })).toHaveStyle({
-      color: '#000000'
+      color: '#FFFFFF'
     });
   });
 
   it('should render a white heading when color prop is passed', () => {
-    renderWithTheme(<Heading color="white">YLW games</Heading>);
+    renderWithTheme(<Heading color="secondary">YLW games</Heading>);
 
     expect(screen.getByRole('heading', { name: /YLW games/i })).toHaveStyle({
-      color: '#FFFFFF'
+      color: '#171717'
     });
   });
 

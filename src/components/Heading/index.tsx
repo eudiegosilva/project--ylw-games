@@ -2,7 +2,7 @@ import * as s from './styles';
 
 export type HeadingProps = {
   children: React.ReactNode;
-  color?: 'black' | 'white';
+  color?: 'white' | 'secondary';
   lineLeft?: true | false;
   lineBottom?: true | false;
   size?: 'small' | 'medium';
@@ -13,7 +13,7 @@ export type LineColorProps = 'primary' | 'secondary';
 
 const Heading = ({
   children,
-  color = 'black',
+  color = 'white',
   lineLeft = false,
   lineBottom = false,
   size = 'medium',

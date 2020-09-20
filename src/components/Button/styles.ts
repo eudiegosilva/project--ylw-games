@@ -39,10 +39,10 @@ const buttonModifiers = {
 
 export const Container = styled.button<ButtonStyleProps>`
   ${({ theme, size, fullWidth, hasIcon }) => css`
-    background: ${theme.colors.yellow};
+    background: ${theme.colors.primary};
     border-radius: ${theme.border.radius};
     border: none;
-    color: ${theme.colors.blackEerie};
+    color: ${theme.colors.secondary};
     cursor: pointer;
     padding: ${theme.spacings.xxsmall};
 

@@ -81,7 +81,7 @@ export const MenuFullScreen = styled.nav<MenuFullScreenProps>`
     }
 
     ${MenuFullScreenLink} {
-      color: ${theme.colors.blackEerie};
+      color: ${theme.colors.secondary};
       font-size: ${theme.font.sizes.xlarge};
       font-weight: ${theme.font.bold};
       margin-bottom: ${theme.spacings.small};
@@ -119,7 +119,7 @@ export const MenuFullScreenLink = styled.a`
         position: absolute;
         display: block;
         height: 0.3rem;
-        background-color: ${theme.colors.yellow};
+        background-color: ${theme.colors.primary};
         animation: hoverAnimation 0.2s forwards;
       }
 
@@ -157,8 +157,8 @@ export const TextWrapper = styled.span``;
 export const CreateAccountWrapper = styled.a`
   ${({ theme }) => css`
     text-decoration: none;
-    color: ${theme.colors.yellow};
-    border-bottom: 0.2rem solid ${theme.colors.yellow};
+    color: ${theme.colors.primary};
+    border-bottom: 0.2rem solid ${theme.colors.primary};
   `}
 `;
 

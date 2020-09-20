@@ -23,10 +23,10 @@ export default {
   },
   colors: {
     black: '#000000',
-    blackEerie: '#171717',
+    secondary: '#171717',
     grayWeb: '#808080',
     white: '#FFFFFF',
-    yellow: '#FFCB00'
+    primary: '#FFCB00'
   },
   spacings: {
     xxsmall: '0.8rem',

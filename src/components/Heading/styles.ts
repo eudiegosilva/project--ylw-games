@@ -5,8 +5,7 @@ import { HeadingProps, LineColorProps } from '.';
 
 const headingModifiers = {
   lineLeft: (theme: DefaultTheme, lineColor: LineColorProps) => css`
-    border-left: 0.7rem solid
-      ${lineColor === 'primary' ? theme.colors.yellow : theme.colors.blackEerie};
+    border-left: 0.7rem solid ${theme.colors[lineColor]};
     padding-left: ${theme.spacings.xxsmall};
   `,
   lineBottom: (theme: DefaultTheme, lineColor: LineColorProps) => css`
@@ -15,10 +14,7 @@ const headingModifiers = {
     &::after {
       position: absolute;
       content: '';
-      border-bottom: 0.5rem solid
-        ${lineColor === 'primary'
-          ? theme.colors.yellow
-          : theme.colors.blackEerie};
+      border-bottom: 0.5rem solid ${theme.colors[lineColor]};
       bottom: -1rem;
       left: 0;
       width: 5rem;

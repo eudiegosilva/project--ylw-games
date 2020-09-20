@@ -15,5 +15,29 @@ export const Default: Story<HeadingProps> = args => <Heading {...args} />;
 
 Default.args = {
   children: 'Heading',
-  color: 'secondary'
+  color: 'secondary',
+  lineLeft: false,
+  lineBottom: false
+};
+
+export const HeadingWithLeftLine: Story<HeadingProps> = args => (
+  <Heading {...args} />
+);
+
+HeadingWithLeftLine.args = {
+  children: 'Heading',
+  color: 'secondary',
+  lineLeft: true,
+  lineColor: 'primary'
+};
+
+export const HeadingWithBottomLine: Story<HeadingProps> = args => (
+  <Heading {...args} />
+);
+
+HeadingWithBottomLine.args = {
+  children: 'Heading',
+  color: 'secondary',
+  lineBottom: true,
+  lineColor: 'primary'
 };

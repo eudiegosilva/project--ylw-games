@@ -11,3 +11,17 @@ export const Default: Story<LogoProps> = args => <Logo {...args} />;
 Default.args = {
   color: 'secondary'
 };
+
+export const LogoWithoutText: Story<LogoProps> = args => <Logo {...args} />;
+
+LogoWithoutText.args = {
+  color: 'secondary',
+  hideTextOnMobile: true
+};
+
+LogoWithoutText.parameters = {
+  viewport: {
+    defaultViewport: 'mobile1'
+  }
+  // layout: 'fullscreen'
+};

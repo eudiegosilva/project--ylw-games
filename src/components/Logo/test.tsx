@@ -11,7 +11,7 @@ describe('<Logo />', () => {
     });
   });
 
-  it('should render a black label based on prop', () => {
+  it('should render a secondary label color based on prop', () => {
     renderWithTheme(<Logo color="secondary" />);
     expect(screen.getByLabelText(/YLW games/i).parentElement).toHaveStyle({
       color: '#171717'

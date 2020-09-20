@@ -1,39 +1,49 @@
 import styled, { css, DefaultTheme } from 'styled-components';
 import media from 'styled-media-query';
 
-import { HeadingProps } from '.';
+import { HeadingProps, LineColorProps } from '.';
 
-const containerModifiers = {
-  lineLeft: (theme: DefaultTheme) => css`
-    border-left: 0.7rem solid ${theme.colors.yellow};
+const headingModifiers = {
+  lineLeft: (theme: DefaultTheme, lineColor: LineColorProps) => css`
+    border-left: 0.7rem solid
+      ${lineColor === 'primary' ? theme.colors.yellow : theme.colors.blackEerie};
     padding-left: ${theme.spacings.xxsmall};
   `,
-
-  lineBottom: (theme: DefaultTheme) => css`
+  lineBottom: (theme: DefaultTheme, lineColor: LineColorProps) => css`
     margin-bottom: ${theme.spacings.medium};
     position: relative;
-
     &::after {
       position: absolute;
       content: '';
-      border-bottom: 0.5rem solid ${theme.colors.yellow};
+      border-bottom: 0.5rem solid
+        ${lineColor === 'primary'
+          ? theme.colors.yellow
+          : theme.colors.blackEerie};
       bottom: -1rem;
       left: 0;
       width: 5rem;
     }
+  `,
+  small: (theme: DefaultTheme) => css`
+    font-size: ${theme.font.sizes.medium};
+    &::after {
+      width: 3rem;
+    }
+  `,
+  medium: (theme: DefaultTheme) => css`
+    ${media.greaterThan('medium')`
+      font-size: ${theme.font.sizes.xxlarge};
+    `}
+    font-size: ${theme.font.sizes.xlarge};
   `
 };
 
 export const Container = styled.h2<HeadingProps>`
-  ${({ theme, color, lineLeft, lineBottom }) => css`
-    ${media.greaterThan('medium')`
-      font-size: ${theme.font.sizes.xxlarge};
-    `}
-
+  ${({ theme, color, lineLeft, lineBottom, size, lineColor }) => css`
     color: ${theme.colors[color!]};
-    font-size: ${theme.font.sizes.xlarge};
 
-    ${lineLeft && containerModifiers.lineLeft(theme)}
-    ${lineBottom && containerModifiers.lineBottom(theme)}
+    ${lineLeft && headingModifiers.lineLeft(theme, lineColor)};
+    ${lineBottom && headingModifiers.lineBottom(theme, lineColor)};
+    ${size && headingModifiers[size](theme)};
   `}
 `;

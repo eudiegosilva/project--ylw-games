@@ -45,6 +45,11 @@ export const Container = styled.button<ButtonStyleProps>`
     color: ${theme.colors.secondary};
     cursor: pointer;
     padding: ${theme.spacings.xxsmall};
+    transition: background 0.3s;
+
+    &:hover {
+      background: ${theme.colors.primaryHover};
+    }
 
     ${!!size && buttonModifiers[size](theme)};
     ${!!fullWidth && buttonModifiers.fullWidth};

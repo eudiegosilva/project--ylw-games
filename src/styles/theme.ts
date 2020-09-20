@@ -26,7 +26,8 @@ export default {
     secondary: '#171717',
     grayWeb: '#808080',
     white: '#FFFFFF',
-    primary: '#FFCB00'
+    primary: '#FFCB00',
+    primaryHover: '#FFBA00'
   },
   spacings: {
     xxsmall: '0.8rem',

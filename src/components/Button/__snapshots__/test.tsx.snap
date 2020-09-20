@@ -8,9 +8,15 @@ exports[`<Button /> should render the medium size button by default 1`] = `
   color: #171717;
   cursor: pointer;
   padding: 0.8rem;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
   font-size: 1.4rem;
   height: 4rem;
   padding: 0.8rem 3.2rem;
+}
+
+.c0:hover {
+  background: #FFBA00;
 }
 
 <button

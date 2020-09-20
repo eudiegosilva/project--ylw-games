@@ -162,4 +162,7 @@ export const CreateAccountWrapper = styled.a`
   `}
 `;
 
-export const LoggedContentWrapper = styled.div``;
+export const LoggedContentWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+`;

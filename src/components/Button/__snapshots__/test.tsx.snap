@@ -2,6 +2,18 @@
 
 exports[`<Button /> should render the medium size button by default 1`] = `
 .c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background: #FFCB00;
   border-radius: 0.4rem;
   border: none;
@@ -10,6 +22,8 @@ exports[`<Button /> should render the medium size button by default 1`] = `
   padding: 0.8rem;
   -webkit-transition: background 0.3s;
   transition: background 0.3s;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   font-size: 1.4rem;
   height: 4rem;
   padding: 0.8rem 3.2rem;

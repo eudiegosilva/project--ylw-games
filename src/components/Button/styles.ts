@@ -25,9 +25,6 @@ const buttonModifiers = {
     width: 100%;
   `,
   withIcon: (theme: DefaultTheme) => css`
-    align-items: center;
-    display: inline-flex;
-    justify-content: center;
     svg {
       width: 1.5rem;
       & + span {
@@ -39,6 +36,9 @@ const buttonModifiers = {
 
 export const Container = styled.button<ButtonStyleProps>`
   ${({ theme, size, fullWidth, hasIcon }) => css`
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
     background: ${theme.colors.primary};
     border-radius: ${theme.border.radius};
     border: none;
@@ -46,6 +46,7 @@ export const Container = styled.button<ButtonStyleProps>`
     cursor: pointer;
     padding: ${theme.spacings.xxsmall};
     transition: background 0.3s;
+    text-decoration: none;
 
     &:hover {
       background: ${theme.colors.primaryHover};

@@ -32,6 +32,7 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
+    font-family: ${props => props.theme.font.family};
   }
 
   ${({ theme }) => css`

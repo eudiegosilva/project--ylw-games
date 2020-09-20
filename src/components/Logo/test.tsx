@@ -4,17 +4,17 @@ import { renderWithTheme } from 'utils/tests/helpers';
 import Logo from '.';
 
 describe('<Logo />', () => {
-  it('should render a black label by default', () => {
+  it('should render a white label by default', () => {
     renderWithTheme(<Logo />);
     expect(screen.getByLabelText(/YLW games/i).parentElement).toHaveStyle({
-      color: '#000000'
+      color: '#FFFFFF'
     });
   });
 
-  it('should render a white label by default', () => {
-    renderWithTheme(<Logo color="white" />);
+  it('should render a black label based on prop', () => {
+    renderWithTheme(<Logo color="secondary" />);
     expect(screen.getByLabelText(/YLW games/i).parentElement).toHaveStyle({
-      color: '#FFFFFF'
+      color: '#171717'
     });
   });
 

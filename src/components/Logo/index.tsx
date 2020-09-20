@@ -1,13 +1,13 @@
 import * as s from './styles';
 
 export type LogoProps = {
-  color?: 'black' | 'white';
+  color?: 'white' | 'secondary';
   size?: 'normal' | 'large';
   hideTextOnMobile?: true | false;
 };
 
 const Logo = ({
-  color = 'black',
+  color = 'white',
   size = 'normal',
   hideTextOnMobile = false
 }: LogoProps) => (
@@ -30,7 +30,7 @@ const Logo = ({
       />
       <path
         d="M30.163 27.057l-6.033-4.292a.5.5 0 00-.782.494l1.293 7.298 5.523-3.5z"
-        fill="#000000"
+        fill="#171717"
         fillOpacity=".15"
       />
       <path
@@ -42,7 +42,7 @@ const Logo = ({
       />
       <path
         d="M13.053 15v6M10.04 18h6.025"
-        stroke="#000000"
+        stroke="#171717"
         strokeWidth="2"
         strokeLinecap="round"
       />
@@ -50,25 +50,25 @@ const Logo = ({
         rx="1.506"
         ry="1.5"
         transform="matrix(1 0 0 1 44.723 13.557)"
-        fill="#000000"
+        fill="#171717"
       />
       <ellipse
         rx="1.506"
         ry="1.5"
         transform="matrix(1 0 0 1 49.743 17.5)"
-        fill="#000000"
+        fill="#171717"
       />
       <ellipse
         rx="1.506"
         ry="1.5"
         transform="matrix(1 0 0 1 44.723 21.5)"
-        fill="#000000"
+        fill="#171717"
       />
       <ellipse
         rx="1.506"
         ry="1.5"
         transform="matrix(1 0 0 1 39.703 17.5)"
-        fill="#000000"
+        fill="#171717"
       />
       <defs>
         <linearGradient

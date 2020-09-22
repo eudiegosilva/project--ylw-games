@@ -24,9 +24,9 @@ exports[`<Banner /> should succefully render 1`] = `
   transition: background 0.3s;
   -webkit-text-decoration: none;
   text-decoration: none;
-  font-size: 1.6rem;
-  height: 5rem;
-  padding: 0.8rem 4.8rem;
+  font-size: 1.4rem;
+  height: 4rem;
+  padding: 0.8rem 3.2rem;
 }
 
 .c5:hover {
@@ -68,6 +68,16 @@ exports[`<Banner /> should succefully render 1`] = `
 .c4 strong {
   color: #FFCB00;
   font-weight: 600;
+}
+
+@media (max-width:768px) {
+  .c0 .sc-AxiKw {
+    right: 0;
+  }
+
+  .c0 .sc-AxiKw::before {
+    display: none;
+  }
 }
 
 @media (min-width:768px) {

@@ -16,4 +16,37 @@ export default {
   }
 } as Meta;
 
-export const Default: Story<BannerProps> = args => <Banner {...args} />;
+export const Default: Story<BannerProps> = args => (
+  <div
+    style={{
+      maxWidth: '104rem',
+      margin: '0 auto'
+    }}
+  >
+    <Banner {...args} />
+  </div>
+);
+
+Default.argTypes = {
+  ribbon: {
+    type: ''
+  },
+  ribbonSize: {
+    type: ''
+  },
+  ribbonColor: {
+    type: ''
+  }
+};
+
+export const BannerWithRibbon: Story<BannerProps> = args => (
+  <div style={{ maxWidth: '104rem', margin: '0 auto' }}>
+    <Banner {...args} />
+  </div>
+);
+
+BannerWithRibbon.args = {
+  ribbon: 'ribbon',
+  ribbonSize: 'medium',
+  ribbonColor: 'primary'
+};

@@ -2,7 +2,7 @@ import { Story, Meta } from '@storybook/react/types-6-0';
 import Footer from '.';
 
 export default {
-  title: 'Design Stystem/Footer',
+  title: 'Design System/Footer',
   component: Footer
 } as Meta;
 

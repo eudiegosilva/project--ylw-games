@@ -2,7 +2,7 @@ import { Story, Meta } from '@storybook/react/types-6-0';
 import Banner, { BannerProps } from '.';
 
 export default {
-  title: 'Design Stystem/Banner',
+  title: 'Design System/Banner',
   component: Banner,
   args: {
     image: 'https://source.unsplash.com/user/ryz0n/2048x1024',

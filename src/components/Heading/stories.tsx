@@ -2,7 +2,7 @@ import { Story, Meta } from '@storybook/react/types-6-0';
 import Heading, { HeadingProps } from '.';
 
 export default {
-  title: 'Design Stystem/Heading',
+  title: 'Design System/Heading',
   component: Heading,
   argTypes: {
     children: {

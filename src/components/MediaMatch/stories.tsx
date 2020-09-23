@@ -3,7 +3,7 @@ import Heading from 'components/Heading';
 import MediaMatch from '.';
 
 export default {
-  title: 'MediaMatch',
+  title: 'Design Stystem/MediaMatch',
   component: MediaMatch
 } as Meta;
 

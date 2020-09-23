@@ -3,7 +3,7 @@ import { ShoppingCart as ShoppingCartIcon } from '@styled-icons/feather/Shopping
 import Button from '.';
 
 export default {
-  title: 'Button',
+  title: 'Design Stystem/Button',
   component: Button,
   argTypes: {
     children: {
@@ -18,7 +18,9 @@ export default {
 export const Default: Story = args => <Button {...args} />;
 
 Default.args = {
-  children: 'Button'
+  children: 'Button',
+  size: 'medium',
+  fullWidth: false
 };
 
 export const ButtonWithIcon: Story = args => <Button {...args} />;

@@ -2,7 +2,7 @@ import { Story, Meta } from '@storybook/react/types-6-0';
 import Ribbon, { RibbonProps } from '.';
 
 export default {
-  title: 'Ribbon',
+  title: 'Design Stystem/Ribbon',
   component: Ribbon,
   args: {
     children: 'ribbon'

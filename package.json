@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "@styled-icons/evil": "^10.18.0",
+    "@styled-icons/fa-solid": "^10.18.0",
     "@styled-icons/feather": "^10.18.0",
     "@styled-icons/remix-line": "^10.18.0",
     "next": "9.5.2",

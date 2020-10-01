@@ -2,7 +2,7 @@ import { screen } from '@testing-library/react';
 import { renderWithTheme } from 'utils/tests/helpers';
 import Banner from '.';
 
-const bannerArgs = {
+const bannerProps = {
   image: 'https://source.unsplash.com/user/willianjusten/1042x580',
   title: 'Defy death',
   subtitle: '<p>Play the new <strong>CrashLands</strong> season</p>',
@@ -12,7 +12,7 @@ const bannerArgs = {
 
 describe('<Banner />', () => {
   it('should succefully render', () => {
-    const { container } = renderWithTheme(<Banner {...bannerArgs} />);
+    const { container } = renderWithTheme(<Banner {...bannerProps} />);
 
     expect(
       screen.getByRole('heading', { name: /defy death/i })
@@ -34,7 +34,7 @@ describe('<Banner />', () => {
   it('should render a ribbon', () => {
     renderWithTheme(
       <Banner
-        {...bannerArgs}
+        {...bannerProps}
         ribbon="example ribbon"
         ribbonSize="small"
         ribbonColor="secondary"

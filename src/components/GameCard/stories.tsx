@@ -12,23 +12,50 @@ export default {
   },
   argTypes: {
     onFavorite: {
-      action: 'favorited'
+      action: 'clicked'
+    },
+    ribbon: {
+      type: 'string'
     }
   }
 } as Meta;
 
 export const Default: Story<GameCardProps> = args => (
-  <div style={{ maxWidth: '30rem' }}>
+  <div style={{ maxWidth: '30rem', margin: '0 auto' }}>
     <GameCard {...args} />
   </div>
 );
 
-export const WithPromotionalPrice: Story<GameCardProps> = args => (
-  <div style={{ maxWidth: '30rem' }}>
+Default.argTypes = {
+  ribbon: {
+    type: ''
+  },
+  ribbonSize: {
+    type: ''
+  },
+  ribbonColor: {
+    type: ''
+  }
+};
+
+export const GameCardWithPromotionalPrice: Story<GameCardProps> = args => (
+  <div style={{ maxWidth: '30rem', margin: '0 auto' }}>
     <GameCard {...args} />
   </div>
 );
 
-WithPromotionalPrice.args = {
+GameCardWithPromotionalPrice.args = {
   promotionalPrice: 'R$ 149,90'
+};
+
+export const GameCardWithRibbon: Story<GameCardProps> = args => (
+  <div style={{ maxWidth: '30rem', margin: '0 auto' }}>
+    <GameCard {...args} />
+  </div>
+);
+
+GameCardWithRibbon.args = {
+  ribbon: 'diego',
+  ribbonSize: 'small',
+  ribbonColor: 'secondary'
 };

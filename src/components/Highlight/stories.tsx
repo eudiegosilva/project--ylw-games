@@ -19,12 +19,12 @@ export const Default: Story<HighlightProps> = args => (
   </div>
 );
 
-export const WithFloatImage: Story<HighlightProps> = args => (
+export const HighlightWithFloatImage: Story<HighlightProps> = args => (
   <div style={{ maxWidth: '104rem', margin: '0 auto' }}>
     <Highlight {...args} />
   </div>
 );
 
-WithFloatImage.args = {
+HighlightWithFloatImage.args = {
   floatImage: '/img/cyberpunk-2077-float.png'
 };

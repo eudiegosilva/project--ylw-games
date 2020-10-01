@@ -3,6 +3,7 @@ import * as s from './styles';
 import { Heart as HeartIcon } from '@styled-icons/feather';
 import { Heart as HeartFilledIcon } from '@styled-icons/fa-solid/Heart';
 import { ShoppingCart as ShoppingCartIcon } from '@styled-icons/feather/ShoppingCart';
+import Ribbon, { RibbonColors, RibbonSizes } from 'components/Ribbon';
 
 export type GameCardProps = {
   title: string;
@@ -12,6 +13,9 @@ export type GameCardProps = {
   promotionalPrice?: string;
   favorite?: boolean;
   onFavorite?: () => void;
+  ribbon?: React.ReactNode;
+  ribbonSize?: RibbonSizes;
+  ribbonColor?: RibbonColors;
 };
 
 const GameCard = ({
@@ -21,9 +25,17 @@ const GameCard = ({
   price,
   promotionalPrice,
   favorite = false,
-  onFavorite
+  onFavorite,
+  ribbon,
+  ribbonColor = 'primary',
+  ribbonSize = 'small'
 }: GameCardProps) => (
   <s.Container>
+    {!!ribbon && (
+      <Ribbon color={ribbonColor} size={ribbonSize}>
+        {ribbon}
+      </Ribbon>
+    )}
     <s.ImageBox>
       <s.GameImage src={image} alt={title} />
     </s.ImageBox>
@@ -32,10 +44,7 @@ const GameCard = ({
         <s.GameTitle>{title}</s.GameTitle>
         <s.GameDeveloper>{developer}</s.GameDeveloper>
       </s.InfoWrapper>
-      <s.FavoriteButton
-        role="button"
-        onClick={() => !!onFavorite && onFavorite()}
-      >
+      <s.FavoriteButton role="button" onClick={onFavorite}>
         {favorite ? (
           <HeartFilledIcon aria-label="remove from wishlist" />
         ) : (

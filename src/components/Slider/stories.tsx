@@ -1,23 +1,13 @@
 import { Story, Meta } from '@storybook/react/types-6-0';
 import { Settings } from 'react-slick';
-import styled, { css } from 'styled-components';
 import Slider from '.';
+
+import * as s from './styles';
 
 export default {
   title: 'Design System/Slider',
   component: Slider
 } as Meta;
-
-const Slide = styled.div`
-  ${({ theme }) => css`
-    background: ${theme.colors.primary};
-    border: 0.4rem solid ${theme.colors.secondary};
-    color: ${theme.colors.secondary};
-    padding: 10rem 0;
-    text-align: center;
-    width: 30rem;
-  `}
-`;
 
 const horizontalSettings: Settings = {
   dots: true,
@@ -35,10 +25,10 @@ export const SliderHorizontal: Story = () => (
     }}
   >
     <Slider settings={horizontalSettings}>
-      <Slide>1</Slide>
-      <Slide>2</Slide>
-      <Slide>3</Slide>
-      <Slide>4</Slide>
+      <s.Slide>1</s.Slide>
+      <s.Slide>2</s.Slide>
+      <s.Slide>3</s.Slide>
+      <s.Slide>4</s.Slide>
     </Slider>
   </div>
 );
@@ -59,10 +49,10 @@ export const SliderVertical: Story = () => (
     }}
   >
     <Slider settings={verticalSettings}>
-      <Slide>1</Slide>
-      <Slide>2</Slide>
-      <Slide>3</Slide>
-      <Slide>4</Slide>
+      <s.Slide>1</s.Slide>
+      <s.Slide>2</s.Slide>
+      <s.Slide>3</s.Slide>
+      <s.Slide>4</s.Slide>
     </Slider>
   </div>
 );

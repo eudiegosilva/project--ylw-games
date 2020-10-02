@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Container = styled.section`
   .slick-slider {
@@ -100,4 +100,15 @@ export const Container = styled.section`
   .slick-arrow.slick-hidden {
     display: none;
   }
+`;
+
+export const Slide = styled.div`
+  ${({ theme }) => css`
+    background: ${theme.colors.primary};
+    border: 0.4rem solid ${theme.colors.secondary};
+    color: ${theme.colors.secondary};
+    padding: 10rem 0;
+    text-align: center;
+    width: 30rem;
+  `}
 `;

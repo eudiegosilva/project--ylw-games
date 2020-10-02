@@ -3,7 +3,7 @@ import { renderWithTheme } from 'utils/tests/helpers';
 import Banner from '.';
 
 const bannerProps = {
-  image: 'https://source.unsplash.com/user/willianjusten/1042x580',
+  image: 'https://source.unsplash.com/user/ryz0n/2048x1024',
   title: 'Defy death',
   subtitle: '<p>Play the new <strong>CrashLands</strong> season</p>',
   buttonLabel: 'Buy now',

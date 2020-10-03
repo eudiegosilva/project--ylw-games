@@ -11,13 +11,16 @@ export default {
     },
     icon: {
       type: ''
+    },
+    as: {
+      type: ''
     }
   }
 } as Meta;
 
-export const Default: Story = args => <Button {...args} />;
+export const ButtonDefault: Story = args => <Button {...args} />;
 
-Default.args = {
+ButtonDefault.args = {
   children: 'Button',
   size: 'medium',
   fullWidth: false

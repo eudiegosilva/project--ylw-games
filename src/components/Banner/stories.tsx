@@ -16,7 +16,7 @@ export default {
   }
 } as Meta;
 
-export const Default: Story<BannerProps> = args => (
+export const BannerDefault: Story<BannerProps> = args => (
   <div
     style={{
       maxWidth: '104rem',
@@ -27,7 +27,7 @@ export const Default: Story<BannerProps> = args => (
   </div>
 );
 
-Default.argTypes = {
+BannerDefault.argTypes = {
   ribbon: {
     type: ''
   },

@@ -6,9 +6,9 @@ export default {
   component: Logo
 } as Meta;
 
-export const Default: Story<LogoProps> = args => <Logo {...args} />;
+export const LogoDefault: Story<LogoProps> = args => <Logo {...args} />;
 
-Default.args = {
+LogoDefault.args = {
   color: 'secondary'
 };
 
@@ -23,5 +23,4 @@ LogoWithoutText.parameters = {
   viewport: {
     defaultViewport: 'mobile1'
   }
-  // layout: 'fullscreen'
 };

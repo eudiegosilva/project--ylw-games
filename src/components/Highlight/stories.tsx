@@ -10,10 +10,18 @@ export default {
     buttonLabel: 'buy now',
     buttonLink: '/cyberpunk2077',
     backgroundImage: '/img/cyberpunk-2077-img.png'
+  },
+  argTypes: {
+    floatImage: {
+      type: ''
+    },
+    backgroundImage: {
+      type: ''
+    }
   }
 } as Meta;
 
-export const Default: Story<HighlightProps> = args => (
+export const HighlightDefault: Story<HighlightProps> = args => (
   <div style={{ maxWidth: '104rem', margin: '0 auto' }}>
     <Highlight {...args} />
   </div>

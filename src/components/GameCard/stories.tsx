@@ -16,17 +16,20 @@ export default {
     },
     ribbon: {
       type: 'string'
+    },
+    image: {
+      type: ''
     }
   }
 } as Meta;
 
-export const Default: Story<GameCardProps> = args => (
+export const GameCardDefault: Story<GameCardProps> = args => (
   <div style={{ maxWidth: '30rem', margin: '0 auto' }}>
     <GameCard {...args} />
   </div>
 );
 
-Default.argTypes = {
+GameCardDefault.argTypes = {
   ribbon: {
     type: ''
   },
@@ -55,7 +58,7 @@ export const GameCardWithRibbon: Story<GameCardProps> = args => (
 );
 
 GameCardWithRibbon.args = {
-  ribbon: 'diego',
+  ribbon: 'ribbon',
   ribbonSize: 'small',
   ribbonColor: 'secondary'
 };

@@ -14,7 +14,7 @@ export default {
   }
 } as Meta;
 
-export const Default: Story<RibbonProps> = args => (
+export const RibbonDefault: Story<RibbonProps> = args => (
   <div
     style={{
       width: '40rem',

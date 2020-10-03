@@ -1,6 +1,6 @@
 import 'match-media-mock';
-import { renderWithTheme } from 'utils/tests/helpers';
 import { screen } from '@testing-library/react';
+import { renderWithTheme } from 'utils/tests/helpers';
 
 import BannerSlider from '.';
 
@@ -43,5 +43,11 @@ describe('<BannerSlider />', () => {
     expect(
       screen.getByRole('heading', { name: /title example ii/i, hidden: true })
     ).toBeInTheDocument();
+  });
+
+  it('should render with dots', () => {
+    const { container } = renderWithTheme(<BannerSlider items={items} />);
+
+    expect(container.querySelector('.slick-dots')).toBeInTheDocument();
   });
 });

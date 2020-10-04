@@ -9,13 +9,13 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
       <Head>
-        <title>yellow | example-store-client</title>
+        <title>YLW games</title>
         <link rel="shortcut icon" href="/img/icon-512.png" />
         <link rel="apple-touch-icon" href="/img/icon-512.png" />
         <link rel="manifest" href="/manifest.json" />
         <meta
           name="description"
-          content="A YELLOW example for a store client with TypeScript, React, NextJS and Styled Components"
+          content="A YLW games for a store client with TypeScript, React, NextJS and Styled Components"
         />
       </Head>
       <GlobalStyles />

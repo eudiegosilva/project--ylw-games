@@ -1,6 +1,6 @@
 {
-  "name": "YELLOW | Example Store Client",
-  "short_name": "YELLOW | Example Store Client",
+  "name": "YLW games",
+  "short_name": "YLW games",
   "icons": [
     {
       "src": "/img/icon-192.png",
@@ -14,7 +14,7 @@
     }
   ],
   "background_color": "#171717",
-  "description": "A YELLOW example for a simple EXAMPE STORE CLIENT using Typescript, React, NextJS and Styled Components!",
+  "description": "A YLW games store using Typescript, React, NextJS and Styled Components!",
   "display": "fullscreen",
   "start_url": "/",
   "theme_color": "#FFCB00"

@@ -91,7 +91,7 @@ const Footer = () => (
     </s.Content>
 
     <s.CopyrightWrapper>
-      YLW Games 2020 &copy; All rights reserved.
+      YLW games 2020 &copy; All rights reserved.
     </s.CopyrightWrapper>
   </s.Container>
 );

@@ -253,7 +253,7 @@ exports[`<Footer /> should render 4 column topics 1`] = `
   <div
     class="c6"
   >
-    YLW Games 2020 © All rights reserved.
+    YLW games 2020 © All rights reserved.
   </div>
 </footer>
 `;

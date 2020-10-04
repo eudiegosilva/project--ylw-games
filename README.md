@@ -1,6 +1,6 @@
-# EXAMPLE STORE CLIENT
+# YLW GAMES
 
-This is a example of a STORE CLIENT develped by [Yellow Space Stone](https://github.com/yellowspacestone).
+This is a YLW GAMES develped by [Yellow Space Stone](https://github.com/yellowspacestone).
 
 ## What is inside?
 

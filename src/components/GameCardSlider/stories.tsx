@@ -52,6 +52,11 @@ export default {
   title: 'Design System/GameCardSlider',
   component: GameCardSlider,
   args: { items },
+  argTypes: {
+    items: {
+      type: ''
+    }
+  },
   parameters: {
     layout: 'fullscreen',
     backgrounds: {
@@ -62,10 +67,6 @@ export default {
 
 export const GameCardSliderDefault: Story<GameCardProps[]> = args => (
   <div style={{ maxWidth: '130rem', margin: '0 auto' }}>
-    <GameCardSlider items={args} {...args} />
+    <GameCardSlider items={args} {...args} color="white" />
   </div>
 );
-
-// GameCardSliderDefault.args = {
-//   color: 'white'
-// };

@@ -8,7 +8,7 @@ export default {
     image: 'https://source.unsplash.com/user/ryz0n/2048x1024',
     title: 'Banner title',
     subtitle: '<p>Just a example <strong>description</strong> banner</p>',
-    buttonLabel: 'Button',
+    buttonLabel: 'buy now',
     buttonLink: '/Banner/link'
   },
   parameters: {
@@ -46,7 +46,7 @@ export const BannerWithRibbon: Story<BannerProps> = args => (
 );
 
 BannerWithRibbon.args = {
-  ribbon: 'ribbon',
+  ribbon: 'soon',
   ribbonSize: 'medium',
   ribbonColor: 'primary'
 };

@@ -21,7 +21,7 @@ export default {
 export const ButtonDefault: Story = args => <Button {...args} />;
 
 ButtonDefault.args = {
-  children: 'Button',
+  children: 'buy now',
   size: 'medium',
   fullWidth: false
 };
@@ -29,7 +29,7 @@ ButtonDefault.args = {
 export const ButtonWithIcon: Story = args => <Button {...args} />;
 
 ButtonWithIcon.args = {
-  children: 'Button',
+  children: 'buy now',
   icon: <ShoppingCartIcon />,
   size: 'medium'
 };
@@ -37,7 +37,7 @@ ButtonWithIcon.args = {
 export const ButtonAsLink: Story = args => <Button {...args} />;
 
 ButtonAsLink.args = {
-  children: 'Button',
+  children: 'buy now',
   as: 'a',
   href: '/link'
 };

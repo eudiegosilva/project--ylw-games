@@ -58,7 +58,7 @@ export const GameCardWithRibbon: Story<GameCardProps> = args => (
 );
 
 GameCardWithRibbon.args = {
-  ribbon: 'ribbon',
+  ribbon: 'soon',
   ribbonSize: 'small',
   ribbonColor: 'secondary'
 };

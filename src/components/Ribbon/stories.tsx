@@ -5,7 +5,7 @@ export default {
   title: 'Design System/Ribbon',
   component: Ribbon,
   args: {
-    children: 'ribbon'
+    children: 'soon'
   },
   argTypes: {
     children: {

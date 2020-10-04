@@ -1,6 +1,18 @@
-import { createGlobalStyle, css } from 'styled-components';
+import {
+  createGlobalStyle,
+  css,
+  DefaultTheme,
+  GlobalStyleComponent
+} from 'styled-components';
 
-const GlobalStyles = createGlobalStyle`
+type GlobalStylesProps = {
+  removeBackgroundColor?: boolean;
+};
+
+const GlobalStyles: GlobalStyleComponent<
+  GlobalStylesProps,
+  DefaultTheme
+> = createGlobalStyle`
   @font-face {
     font-family: 'Poppins';
     font-style: normal;
@@ -33,9 +45,14 @@ const GlobalStyles = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     font-family: ${props => props.theme.font.family};
+
+    &::before,
+    &::after {
+      box-sizing: inherit;
+    }
   }
 
-  ${({ theme }) => css`
+  ${({ theme, removeBackgroundColor }) => css`
     html {
       font-size: 62.5%;
     }
@@ -43,6 +60,11 @@ const GlobalStyles = createGlobalStyle`
     body {
       font-family: ${theme.font.family};
       font-size: ${theme.font.sizes.medium};
+
+      ${!removeBackgroundColor &&
+      css`
+        background-color: ${theme.colors.secondary};
+      `}
     }
   `}
 

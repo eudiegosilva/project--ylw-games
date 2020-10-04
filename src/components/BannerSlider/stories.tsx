@@ -28,6 +28,7 @@ const items = [
     buttonLink: '/games/te3'
   }
 ];
+
 export default {
   title: 'Design System/BannerSlider',
   component: BannerSlider,

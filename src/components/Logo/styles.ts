@@ -13,7 +13,7 @@ const containerModifiers = {
   hideTextOnMobile: () => css`
     ${media.lessThan('medium')`
       width: 5.8rem;
-      heigth: 4.5rem;
+      height: 4.5rem;
 
       svg {
         height: 4.5rem;

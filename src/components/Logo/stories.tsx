@@ -3,23 +3,32 @@ import Logo, { LogoProps } from '.';
 
 export default {
   title: 'Design System/Logo',
-  component: Logo
+  component: Logo,
+  args: {
+    color: 'secondary'
+  },
+  parameters: {
+    backgrounds: {
+      default: 'white'
+    }
+  }
 } as Meta;
 
-export const LogoDefault: Story<LogoProps> = args => <Logo {...args} />;
+export const LogoOnDesktop: Story<LogoProps> = args => <Logo {...args} />;
 
-LogoDefault.args = {
-  color: 'secondary'
-};
+export const LogoOnMobile: Story<LogoProps> = args => <Logo {...args} />;
 
-export const LogoWithoutText: Story<LogoProps> = args => <Logo {...args} />;
-
-LogoWithoutText.args = {
-  color: 'secondary',
+LogoOnMobile.args = {
   hideTextOnMobile: true
 };
 
-LogoWithoutText.parameters = {
+LogoOnMobile.argTypes = {
+  size: {
+    type: ''
+  }
+};
+
+LogoOnMobile.parameters = {
   viewport: {
     defaultViewport: 'mobile1'
   }

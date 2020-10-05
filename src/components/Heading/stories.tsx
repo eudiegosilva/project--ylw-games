@@ -4,9 +4,22 @@ import Heading, { HeadingProps } from '.';
 export default {
   title: 'Design System/Heading',
   component: Heading,
+  args: {
+    children: 'Heading',
+    color: 'secondary',
+    lineColor: 'primary',
+    size: 'medium',
+    lineLeft: false,
+    lineBottom: false
+  },
   argTypes: {
     children: {
       type: 'string'
+    }
+  },
+  parameters: {
+    backgrounds: {
+      default: 'white'
     }
   }
 } as Meta;
@@ -15,25 +28,14 @@ export const HeadingDefault: Story<HeadingProps> = args => (
   <Heading {...args} />
 );
 
-HeadingDefault.args = {
-  children: 'Heading',
-  color: 'secondary',
-  lineLeft: false,
-  lineBottom: false,
-  lineColor: 'primary',
-  size: 'medium'
-};
+HeadingDefault.args = {};
 
 export const HeadingWithLeftLine: Story<HeadingProps> = args => (
   <Heading {...args} />
 );
 
 HeadingWithLeftLine.args = {
-  children: 'Heading',
-  color: 'secondary',
-  lineLeft: true,
-  lineBottom: false,
-  lineColor: 'primary'
+  lineLeft: true
 };
 
 export const HeadingWithBottomLine: Story<HeadingProps> = args => (
@@ -41,9 +43,5 @@ export const HeadingWithBottomLine: Story<HeadingProps> = args => (
 );
 
 HeadingWithBottomLine.args = {
-  children: 'Heading',
-  color: 'secondary',
-  lineLeft: false,
-  lineBottom: true,
-  lineColor: 'primary'
+  lineBottom: true
 };

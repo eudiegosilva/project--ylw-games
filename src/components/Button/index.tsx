@@ -9,7 +9,7 @@ export type ButtonProps = {
   size?: 'small' | 'medium' | 'large';
   fullWidth?: boolean;
   icon?: React.ReactNode;
-  as?: React.ElementType;
+  as?: 'button' | 'a';
 } & ButtonTypes;
 
 const Button = ({

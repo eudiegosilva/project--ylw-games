@@ -3,17 +3,21 @@ import Menu, { MenuProps } from '.';
 
 export default {
   title: 'Design System/Menu',
-  component: Menu
+  component: Menu,
+  parameters: {
+    backgrounds: {
+      default: 'dark'
+    },
+    layout: 'fullscreen'
+  }
 } as Meta;
 
-export const MenuDefault: Story<MenuProps> = args => <Menu {...args} />;
+export const MenuOnMobile: Story<MenuProps> = args => <Menu {...args} />;
 
-MenuDefault.parameters = {
+MenuOnMobile.parameters = {
   viewport: {
     defaultViewport: 'mobile1'
-  },
-  backgrounds: {
-    default: 'dark'
-  },
-  layout: 'fullscreen'
+  }
 };
+
+export const MenuOnDesktop: Story<MenuProps> = args => <Menu {...args} />;

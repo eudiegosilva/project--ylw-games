@@ -5,6 +5,11 @@ import Button from '.';
 export default {
   title: 'Design System/Button',
   component: Button,
+  args: {
+    children: 'buy now',
+    fullWidth: false,
+    size: 'medium'
+  },
   argTypes: {
     children: {
       type: 'string'
@@ -20,24 +25,15 @@ export default {
 
 export const ButtonDefault: Story = args => <Button {...args} />;
 
-ButtonDefault.args = {
-  children: 'buy now',
-  size: 'medium',
-  fullWidth: false
-};
-
 export const ButtonWithIcon: Story = args => <Button {...args} />;
 
 ButtonWithIcon.args = {
-  children: 'buy now',
-  icon: <ShoppingCartIcon />,
-  size: 'medium'
+  icon: <ShoppingCartIcon />
 };
 
 export const ButtonAsLink: Story = args => <Button {...args} />;
 
 ButtonAsLink.args = {
-  children: 'buy now',
   as: 'a',
   href: '/link'
 };

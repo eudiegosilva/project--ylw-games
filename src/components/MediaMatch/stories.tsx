@@ -4,19 +4,13 @@ import MediaMatch from '.';
 
 export default {
   title: 'Design System/MediaMatch',
-  component: MediaMatch
+  component: MediaMatch,
+  parameters: {
+    backgrounds: {
+      default: 'white'
+    }
+  }
 } as Meta;
-
-export const MediaMatchOnDesktop: Story = () => (
-  <>
-    <small>You can view Heading only Desktop</small>
-    <MediaMatch greaterThan="medium">
-      <Heading color="secondary" lineBottom>
-        Heading on Desktop
-      </Heading>
-    </MediaMatch>
-  </>
-);
 
 export const MediaMatchOnMobile: Story = () => (
   <>
@@ -34,3 +28,14 @@ MediaMatchOnMobile.parameters = {
     defaultViewport: 'mobile1'
   }
 };
+
+export const MediaMatchOnDesktop: Story = () => (
+  <>
+    <small>You can view Heading only Desktop</small>
+    <MediaMatch greaterThan="medium">
+      <Heading color="secondary" lineBottom>
+        Heading on Desktop
+      </Heading>
+    </MediaMatch>
+  </>
+);

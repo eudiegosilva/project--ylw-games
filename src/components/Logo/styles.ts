@@ -30,6 +30,6 @@ export const Container = styled.div<LogoProps>`
   ${({ theme, color, size, hideTextOnMobile }) => css`
     color: ${theme.colors[color!]};
     ${!!size && containerModifiers[size]}
-    ${!!hideTextOnMobile && containerModifiers.hideTextOnMobile}
+    ${!!hideTextOnMobile && containerModifiers.hideTextOnMobile};
   `}
 `;

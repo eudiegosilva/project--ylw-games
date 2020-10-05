@@ -61,6 +61,8 @@ export const MenuFullScreen = styled.nav<MenuFullScreenProps>`
     right: 0;
     transition: 0.3s ease-in-out;
     top: 0;
+    z-index: ${theme.layers.alwaysOnTop};
+    position: fixed;
 
     > svg {
       cursor: pointer;

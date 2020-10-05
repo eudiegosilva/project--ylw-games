@@ -59,6 +59,12 @@ export const SectionNews = styled(Sections)`
       background-color: ${theme.colors.white};
       clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
     `}
+
+    ${HeadingStyles.Container} {
+      ${media.lessThan('medium')`
+        color: ${theme.colors.white};
+    `}
+    }
   `}
 `;
 

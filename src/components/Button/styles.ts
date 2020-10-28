@@ -1,9 +1,10 @@
 import styled, { css, DefaultTheme } from 'styled-components';
+import { darken } from 'polished';
 import { ButtonProps } from '.';
 
 type ButtonStyleProps = { hasIcon: boolean } & Pick<
   ButtonProps,
-  'size' | 'fullWidth'
+  'size' | 'fullWidth' | 'minimal'
 >;
 
 const buttonModifiers = {
@@ -31,11 +32,19 @@ const buttonModifiers = {
         margin-left: ${theme.spacings.xxsmall};
       }
     }
+  `,
+  minimal: (theme: DefaultTheme) => css`
+    background: none;
+    color: ${theme.colors.primary};
+
+    &:hover {
+      color: ${darken(0.1, theme.colors.primary)};
+    }
   `
 };
 
 export const Container = styled.button<ButtonStyleProps>`
-  ${({ theme, size, fullWidth, hasIcon }) => css`
+  ${({ theme, size, fullWidth, hasIcon, minimal }) => css`
     align-items: center;
     display: inline-flex;
     justify-content: center;
@@ -49,12 +58,13 @@ export const Container = styled.button<ButtonStyleProps>`
     text-decoration: none;
 
     &:hover {
-      background: ${theme.colors.primaryHover};
+      background: ${minimal ? 'none' : theme.colors.primaryHover};
     }
 
     ${!!size && buttonModifiers[size](theme)};
     ${!!fullWidth && buttonModifiers.fullWidth};
-    ${hasIcon && buttonModifiers.withIcon(theme)};
+    ${!!hasIcon && buttonModifiers.withIcon(theme)};
+    ${!!minimal && buttonModifiers.minimal(theme)};
   `}
 `;
 

@@ -19,14 +19,14 @@ const Button = ({
   minimal = false,
   icon,
   size = 'medium',
-  ...rest
+  ...props
 }: ButtonProps) => (
   <s.Container
     size={size}
     fullWidth={fullWidth}
     hasIcon={!!icon}
     minimal={minimal}
-    {...rest}
+    {...props}
   >
     {!!icon && icon}
     {!!children && <s.IconWrapper>{children}</s.IconWrapper>}

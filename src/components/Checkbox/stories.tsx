@@ -4,6 +4,9 @@ import Checkbox, { CheckboxProps } from '.';
 export default {
   title: 'Design System/Checkbox',
   component: Checkbox,
+  parameters: {
+    layout: 'fullscreen'
+  },
   args: {
     label: 'checkbox',
     labelFor: 'check'
@@ -15,4 +18,13 @@ export default {
   }
 } as Meta;
 
-export const Default: Story<CheckboxProps> = args => <Checkbox {...args} />;
+export const CheckboxDefault: Story<CheckboxProps> = args => (
+  <>
+    <div style={{ padding: 10 }}>
+      <Checkbox {...args} name="checkbox" checkedByDefault />
+    </div>
+    <div style={{ padding: 10 }}>
+      <Checkbox {...args} name="checkbox" />
+    </div>
+  </>
+);

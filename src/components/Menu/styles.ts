@@ -59,7 +59,7 @@ export const MenuFullScreen = styled.nav<MenuFullScreenProps>`
     pointer-events: ${isOpen ? 'all' : 'none'};
     position: absolute;
     right: 0;
-    transition: 0.3s ease-in-out;
+    transition: ${theme.transition.default};
     top: 0;
     z-index: ${theme.layers.alwaysOnTop};
     position: fixed;
@@ -88,12 +88,12 @@ export const MenuFullScreen = styled.nav<MenuFullScreenProps>`
       font-weight: ${theme.font.bold};
       margin-bottom: ${theme.spacings.small};
       transform: ${isOpen ? 'translateY(0)' : 'translateY(3rem)'};
-      transition: 0.3s ease-in-out;
+      transition: ${theme.transition.default};
     }
 
     ${RegisterBoxWrapper} {
       transform: ${isOpen ? 'translateY(0)' : 'translateY(3rem)'};
-      transition: 0.3s ease-in-out;
+      transition: ${theme.transition.default};
     }
   `}
 `;

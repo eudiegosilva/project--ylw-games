@@ -7,10 +7,6 @@ export default {
   parameters: {
     layout: 'fullscreen'
   },
-  args: {
-    label: 'checkbox',
-    labelFor: 'check'
-  },
   argTypes: {
     onCheck: {
       action: 'checked'
@@ -21,10 +17,21 @@ export default {
 export const CheckboxDefault: Story<CheckboxProps> = args => (
   <>
     <div style={{ padding: 10 }}>
-      <Checkbox {...args} name="checkbox" checkedByDefault />
+      <Checkbox
+        {...args}
+        name="checkbox"
+        label="checked"
+        labelFor="checkboxchecked"
+        checkedByDefault
+      />
     </div>
     <div style={{ padding: 10 }}>
-      <Checkbox {...args} name="checkbox" />
+      <Checkbox
+        {...args}
+        name="checkboxunchecked"
+        label="unchecked"
+        labelFor="checkboxunchecked"
+      />
     </div>
   </>
 );

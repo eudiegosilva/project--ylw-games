@@ -23,6 +23,7 @@ export const CheckboxDefault: Story<CheckboxProps> = args => (
         label="checked"
         labelFor="checkboxchecked"
         checkedByDefault
+        labelColor="secondary"
       />
     </div>
     <div style={{ padding: 10 }}>
@@ -31,6 +32,7 @@ export const CheckboxDefault: Story<CheckboxProps> = args => (
         name="checkboxunchecked"
         label="unchecked"
         labelFor="checkboxunchecked"
+        labelColor="secondary"
       />
     </div>
   </>

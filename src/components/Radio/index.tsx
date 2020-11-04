@@ -14,7 +14,7 @@ export type RadioProps = {
 const Radio = ({
   label,
   labelFor = '',
-  labelColor = 'white',
+  labelColor,
   value,
   onCheck,
   ...props

@@ -14,7 +14,7 @@ export const decorators = [
 export const parameters = {
   controls: { expanded: true },
   backgrounds: {
-    default: 'dark',
+    default: 'white',
     values: [
       {
         name: 'dark',

@@ -23,6 +23,7 @@ export const RadioDefault: Story<RadioProps> = args => (
         id="first"
         name="value"
         value="first value"
+        labelColor="secondary"
         defaultChecked
         {...args}
       />
@@ -34,6 +35,7 @@ export const RadioDefault: Story<RadioProps> = args => (
         id="second"
         name="value"
         value="second value"
+        labelColor="secondary"
         {...args}
       />
     </div>
@@ -44,6 +46,7 @@ export const RadioDefault: Story<RadioProps> = args => (
         id="third"
         name="value"
         value="third value"
+        labelColor="secondary"
         {...args}
       />
     </div>

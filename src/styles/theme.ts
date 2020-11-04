@@ -25,6 +25,7 @@ export default {
     black: '#000000',
     secondary: '#171717',
     grayWeb: '#808080',
+    grayLight: '#EAEAEA',
     white: '#FFFFFF',
     primary: '#FFCB00',
     primaryHover: '#FFBA00'

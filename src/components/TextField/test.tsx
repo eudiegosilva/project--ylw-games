@@ -6,25 +6,25 @@ import { Email } from '@styled-icons/material-outlined';
 import TextField from '.';
 
 describe('<TextField />', () => {
-  it('renders with Label', () => {
+  it('should render with label', () => {
     renderWithTheme(<TextField label="label" labelFor="field" id="field" />);
 
     expect(screen.getByLabelText('label')).toBeInTheDocument();
   });
 
-  it('renders without Label', () => {
+  it('should render without Label', () => {
     renderWithTheme(<TextField />);
 
     expect(screen.queryByLabelText('label')).not.toBeInTheDocument();
   });
 
-  it('renders with placeholder', () => {
+  it('should render with placeholder', () => {
     renderWithTheme(<TextField placeholder="some placeholder" />);
 
     expect(screen.getByPlaceholderText('some placeholder')).toBeInTheDocument();
   });
 
-  it('changes its value when typing', async () => {
+  it('should change value when typing', async () => {
     const onInput = jest.fn();
     renderWithTheme(
       <TextField
@@ -46,7 +46,7 @@ describe('<TextField />', () => {
     expect(onInput).toHaveBeenCalledWith(text);
   });
 
-  it('is accessible by tab', () => {
+  it('should accessible by tab key', () => {
     renderWithTheme(
       <TextField label="textField" labelFor="textField" id="textField" />
     );
@@ -62,5 +62,13 @@ describe('<TextField />', () => {
     renderWithTheme(<TextField icon={<Email data-testid="icon" />} />);
 
     expect(screen.getByTestId('icon')).toBeInTheDocument();
+  });
+
+  it('shoud renders with Icon on the right side', () => {
+    renderWithTheme(
+      <TextField icon={<Email data-testid="icon" />} iconPosition="right" />
+    );
+
+    expect(screen.getByTestId('icon').parentElement).toHaveStyle({ order: 1 });
   });
 });

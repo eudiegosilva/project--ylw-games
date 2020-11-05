@@ -1,10 +1,43 @@
-import styled, { css } from 'styled-components';
+import styled, { css, DefaultTheme } from 'styled-components';
 
 import { TextFieldProps } from '.';
 
 type IconPositionProps = Pick<TextFieldProps, 'iconPosition'>;
+type DisabledProps = Pick<TextFieldProps, 'disabled'>;
+type TextFieldWrapperProps = Pick<TextFieldProps, 'disabled'> & {
+  error?: boolean;
+};
 
-export const TextFieldWrapper = styled.div``;
+const textFieldModifiers = {
+  disabled: (theme: DefaultTheme) => css`
+    ${Label},
+    ${Input},
+    ${Icon} {
+      cursor: not-allowed;
+      color: ${theme.colors.grayWeb};
+
+      &::placeholder {
+        color: currentColor;
+      }
+    }
+  `,
+  error: (theme: DefaultTheme) => css`
+    ${InputWrapper} {
+      border-color: ${theme.colors.error};
+    }
+    ${Icon},
+    ${Label} {
+      color: ${theme.colors.error};
+    }
+  `
+};
+
+export const TextFieldWrapper = styled.div<TextFieldWrapperProps>`
+  ${({ theme, disabled, error }) => css`
+    ${disabled && textFieldModifiers.disabled(theme)}
+    ${error && textFieldModifiers.error(theme)}
+  `}
+`;
 
 export const InputWrapper = styled.div`
   ${({ theme }) => css`
@@ -13,7 +46,7 @@ export const InputWrapper = styled.div`
     border-radius: 0.2rem;
     padding: 0 ${theme.spacings.xxsmall};
     border: 0.2rem solid;
-    border-color: ${theme.colors.primary};
+    border-color: ${theme.colors.grayLight};
 
     &:focus-within {
       box-shadow: 0 0 0.5rem ${theme.colors.primary};
@@ -53,5 +86,12 @@ export const Icon = styled.div<IconPositionProps>`
     & > svg {
       width: 100%;
     }
+  `}
+`;
+
+export const Error = styled.p`
+  ${({ theme }) => css`
+    color: ${theme.colors.error};
+    font-size: ${theme.font.sizes.xsmall};
   `}
 `;

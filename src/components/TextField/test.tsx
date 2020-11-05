@@ -71,4 +71,43 @@ describe('<TextField />', () => {
 
     expect(screen.getByTestId('icon').parentElement).toHaveStyle({ order: 1 });
   });
+
+  it('shoul not change values when disabled', async () => {
+    const onInput = jest.fn();
+    renderWithTheme(
+      <TextField
+        onInput={onInput}
+        label="textField"
+        labelFor="textField"
+        id="textField"
+        disabled
+      />
+    );
+
+    const input = screen.getByRole('textbox');
+    expect(input).toBeDisabled();
+
+    const text = 'this is my new text';
+    userEvent.type(input, text);
+
+    await waitFor(() => {
+      expect(input).not.toHaveValue(text);
+    });
+    expect(onInput).not.toHaveBeenCalled();
+  });
+
+  it('should render with error', () => {
+    const { container } = renderWithTheme(
+      <TextField
+        icon={<Email data-testid="icon" />}
+        label="textField"
+        labelFor="textField"
+        error="error message"
+      />
+    );
+
+    expect(screen.getByText('error message')).toBeInTheDocument();
+    expect(screen.getByText('error message')).toHaveStyle({ color: '#E72176' });
+    expect(container.firstChild).toMatchSnapshot();
+  });
 });

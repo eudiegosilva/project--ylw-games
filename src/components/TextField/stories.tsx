@@ -24,3 +24,9 @@ export const TextFieldDefault: Story<TextFieldProps> = args => (
     <TextField {...args} />
   </div>
 );
+
+export const TextFieldWithError: Story<TextFieldProps> = args => (
+  <div style={{ maxWidth: 300, padding: 15 }}>
+    <TextField error="...something is wrong" {...args} />
+  </div>
+);

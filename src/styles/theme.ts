@@ -26,9 +26,11 @@ export default {
     secondary: '#171717',
     grayWeb: '#808080',
     grayLight: '#EAEAEA',
+    grayDark: '#2E2F42',
     white: '#FFFFFF',
     primary: '#FFCB00',
-    primaryHover: '#FFBA00'
+    primaryHover: '#FFBA00',
+    error: '#E72176'
   },
   spacings: {
     xxsmall: '0.8rem',

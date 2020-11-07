@@ -42,4 +42,9 @@ describe('<Logo />', () => {
       }
     );
   });
+
+  it('should render a logo with id', () => {
+    const { container } = renderWithTheme(<Logo id="testId" />);
+    expect(container.querySelector('#paint_linear_testId')).toBeInTheDocument();
+  });
 });

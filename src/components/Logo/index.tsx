@@ -4,14 +4,16 @@ export type LogoProps = {
   color?: 'white' | 'secondary';
   size?: 'normal' | 'large';
   hideTextOnMobile?: true | false;
+  id?: string;
 };
 
 const Logo = ({
   color = 'white',
   size = 'normal',
-  hideTextOnMobile = false
+  hideTextOnMobile = false,
+  id = 'logo'
 }: LogoProps) => (
-  <s.Container color={color} size={size} hideTextOnMobile={hideTextOnMobile}>
+  <s.LogoWrapper color={color} size={size} hideTextOnMobile={hideTextOnMobile}>
     <svg
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -26,7 +28,7 @@ const Logo = ({
       />
       <path
         d="M.055 15.125L.019 35.77c-.008 4.796 5.336 7.662 9.327 5.003l20.596-13.722L50.49 40.844c3.982 2.673 9.336-.176 9.344-4.972l.034-19.997c.014-7.881-7.549-13.565-15.116-11.36l-.873.254a50.874 50.874 0 01-29.358-.271C7.351 2.264.068 7.614.055 15.125z"
-        fill="url(#paint0_linear)"
+        fill={`url(#paint_linear_${id})`}
       />
       <path
         d="M30.163 27.057l-6.033-4.292a.5.5 0 00-.782.494l1.293 7.298 5.523-3.5z"
@@ -72,7 +74,7 @@ const Logo = ({
       />
       <defs>
         <linearGradient
-          id="paint0_linear"
+          id={`paint_linear_${id}`}
           x1="29.228"
           y1="-14.198"
           x2="30.641"
@@ -83,7 +85,7 @@ const Logo = ({
         </linearGradient>
       </defs>
     </svg>
-  </s.Container>
+  </s.LogoWrapper>
 );
 
 export default Logo;

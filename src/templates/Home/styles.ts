@@ -7,7 +7,7 @@ import * as HighlightStyles from 'components/Highlight/styles';
 
 const Sections = styled.section`
   ${({ theme }) => css`
-    ${HeadingStyles.Container},
+    ${HeadingStyles.HeadingWrapper},
     ${GameCardSliderStyles.Container},
     ${HighlightStyles.Container} {
       margin-bottom: ${theme.spacings.medium};
@@ -60,7 +60,7 @@ export const SectionNews = styled(Sections)`
       clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
     `}
 
-    ${HeadingStyles.Container} {
+    ${HeadingStyles.HeadingWrapper} {
       ${media.lessThan('medium')`
         color: ${theme.colors.white};
     `}

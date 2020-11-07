@@ -31,10 +31,13 @@ const headingModifiers = {
       font-size: ${theme.font.sizes.xxlarge};
     `}
     font-size: ${theme.font.sizes.xlarge};
+  `,
+  huge: (theme: DefaultTheme) => css`
+    font-size: ${theme.font.sizes.huge};
   `
 };
 
-export const Container = styled.h2<HeadingProps>`
+export const HeadingWrapper = styled.h2<HeadingProps>`
   ${({ theme, color, lineLeft, lineBottom, size, lineColor }) => css`
     color: ${theme.colors[color!]};
 

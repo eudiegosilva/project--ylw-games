@@ -5,7 +5,7 @@ export type HeadingProps = {
   color?: 'white' | 'secondary';
   lineLeft?: true | false;
   lineBottom?: true | false;
-  size?: 'small' | 'medium';
+  size?: 'small' | 'medium' | 'huge';
   lineColor?: LineColorProps;
 };
 
@@ -19,7 +19,7 @@ const Heading = ({
   size = 'medium',
   lineColor = 'primary'
 }: HeadingProps) => (
-  <s.Container
+  <s.HeadingWrapper
     color={color}
     lineLeft={lineLeft}
     lineBottom={lineBottom}
@@ -27,7 +27,7 @@ const Heading = ({
     lineColor={lineColor}
   >
     {children}
-  </s.Container>
+  </s.HeadingWrapper>
 );
 
 export default Heading;

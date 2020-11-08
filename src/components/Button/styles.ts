@@ -43,7 +43,7 @@ const buttonModifiers = {
   `
 };
 
-export const Container = styled.button<ButtonStyleProps>`
+export const Wrapper = styled.button<ButtonStyleProps>`
   ${({ theme, size, fullWidth, hasIcon, minimal }) => css`
     align-items: center;
     display: inline-flex;

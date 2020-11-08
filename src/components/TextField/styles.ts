@@ -4,7 +4,7 @@ import { TextFieldProps } from '.';
 
 type IconPositionProps = Pick<TextFieldProps, 'iconPosition'>;
 type DisabledProps = Pick<TextFieldProps, 'disabled'>;
-type TextFieldWrapperProps = Pick<TextFieldProps, 'disabled'> & {
+type WrapperProps = Pick<TextFieldProps, 'disabled'> & {
   error?: boolean;
 };
 
@@ -32,7 +32,7 @@ const textFieldModifiers = {
   `
 };
 
-export const TextFieldWrapper = styled.div<TextFieldWrapperProps>`
+export const Wrapper = styled.div<WrapperProps>`
   ${({ theme, disabled, error }) => css`
     ${disabled && textFieldModifiers.disabled(theme)}
     ${error && textFieldModifiers.error(theme)}

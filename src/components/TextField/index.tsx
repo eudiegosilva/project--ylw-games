@@ -33,7 +33,7 @@ const TextField = ({
   };
 
   return (
-    <s.TextFieldWrapper disabled={disabled} error={!!error}>
+    <s.Wrapper disabled={disabled} error={!!error}>
       {!!label && <s.Label htmlFor={labelFor}>{label}</s.Label>}
       <s.InputWrapper>
         {!!icon && <s.Icon iconPosition={iconPosition}>{icon}</s.Icon>}
@@ -47,7 +47,7 @@ const TextField = ({
         />
       </s.InputWrapper>
       {!!error && <s.Error>{error}</s.Error>}
-    </s.TextFieldWrapper>
+    </s.Wrapper>
   );
 };
 

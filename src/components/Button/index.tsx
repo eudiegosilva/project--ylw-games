@@ -21,7 +21,7 @@ const Button = ({
   size = 'medium',
   ...props
 }: ButtonProps) => (
-  <s.Container
+  <s.Wrapper
     size={size}
     fullWidth={fullWidth}
     hasIcon={!!icon}
@@ -30,7 +30,7 @@ const Button = ({
   >
     {!!icon && icon}
     {!!children && <s.IconWrapper>{children}</s.IconWrapper>}
-  </s.Container>
+  </s.Wrapper>
 );
 
 export default Button;

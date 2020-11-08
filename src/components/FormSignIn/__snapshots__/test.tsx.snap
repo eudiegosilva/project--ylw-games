@@ -229,6 +229,7 @@ exports[`<FormSignIn /> should render the form 1`] = `
           class="c9"
         >
           don't have an account?
+           
           <a
             href="/sign-up"
           >

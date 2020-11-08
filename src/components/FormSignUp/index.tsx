@@ -1,13 +1,16 @@
 import Link from 'next/link';
+
 import Button from 'components/Button';
 import TextField from 'components/TextField';
-import { Lock, Mail } from '@styled-icons/feather';
+import { User, Lock, Mail } from '@styled-icons/feather';
 
 import * as s from './styles';
 
-const FormSignIn = () => (
+const FormSignUp = () => (
   <s.Wrapper>
     <form>
+      <TextField name="name" placeholder="name" type="name" icon={<User />} />
+
       <TextField
         name="email"
         placeholder="email"
@@ -21,19 +24,26 @@ const FormSignIn = () => (
         type="password"
         icon={<Lock />}
       />
-      <s.ForgotPassword href="#">forgot your password?</s.ForgotPassword>
+
+      <TextField
+        name="confirm-password"
+        placeholder="confirm password"
+        type="password"
+        icon={<Lock />}
+      />
+
       <Button size="large" fullWidth>
-        sign in now
+        sign up now
       </Button>
 
       <s.FormLink>
-        don&apos;t have an account?{' '}
-        <Link href="/sign-up">
-          <a>sign up</a>
+        already have an account?{' '}
+        <Link href="/sign-in">
+          <a>sign in</a>
         </Link>
       </s.FormLink>
     </form>
   </s.Wrapper>
 );
 
-export default FormSignIn;
+export default FormSignUp;

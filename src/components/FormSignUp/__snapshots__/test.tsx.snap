@@ -1,0 +1,301 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FormSignUp /> should render the form 1`] = `
+.c7 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFCB00;
+  border-radius: 0.4rem;
+  border: none;
+  color: #171717;
+  cursor: pointer;
+  padding: 0.8rem;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 1.6rem;
+  height: 5rem;
+  padding: 0.8rem 4.8rem;
+  width: 100%;
+}
+
+.c7:hover {
+  background: #FFBA00;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background: #EAEAEA;
+  border-radius: 0.2rem;
+  padding: 0 0.8rem;
+  border: 0.2rem solid;
+  border-color: #EAEAEA;
+}
+
+.c2:focus-within {
+  box-shadow: 0 0 0.5rem #FFCB00;
+}
+
+.c5 {
+  color: #000000;
+  font-family: Poppins,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+  font-size: 1.6rem;
+  padding: 0.8rem 0;
+  padding-left: 0.8rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 2.2rem;
+  color: #808080;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+}
+
+.c3 > svg {
+  width: 100%;
+}
+
+.c4 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.c0 .c1 {
+  margin: 0.8rem 0;
+}
+
+.c0 .c6 {
+  margin: 3.2rem auto 1.6rem;
+}
+
+.c8 {
+  font-size: 1.4rem;
+  color: #000000;
+  text-align: center;
+}
+
+.c8 a {
+  color: #FFCB00;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-bottom: 0.1rem solid #FFCB00;
+  -webkit-transition: color,border,0.1s ease-in-out;
+  transition: color,border,0.1s ease-in-out;
+}
+
+.c8 a:hover {
+  color: #FFBA00;
+  border-bottom: 0.1rem solid #FFBA00;
+}
+
+<div
+  class="c0"
+>
+  <form>
+    <div
+      class="c1 "
+    >
+      <div
+        class="c2"
+      >
+        <div
+          class="c3"
+        >
+          <svg
+            aria-hidden="true"
+            class="c4"
+            fill="none"
+            focusable="false"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"
+            />
+            <circle
+              cx="12"
+              cy="7"
+              r="4"
+            />
+          </svg>
+        </div>
+        <input
+          class="c5"
+          name="name"
+          placeholder="name"
+          type="name"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      class="c1 "
+    >
+      <div
+        class="c2"
+      >
+        <div
+          class="c3"
+        >
+          <svg
+            aria-hidden="true"
+            class="c4"
+            fill="none"
+            focusable="false"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+            />
+            <polyline
+              points="22,6 12,13 2,6"
+            />
+          </svg>
+        </div>
+        <input
+          class="c5"
+          name="email"
+          placeholder="email"
+          type="email"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      class="c1 "
+    >
+      <div
+        class="c2"
+      >
+        <div
+          class="c3"
+        >
+          <svg
+            aria-hidden="true"
+            class="c4"
+            fill="none"
+            focusable="false"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              height="11"
+              rx="2"
+              ry="2"
+              width="18"
+              x="3"
+              y="11"
+            />
+            <path
+              d="M7 11V7a5 5 0 0110 0v4"
+            />
+          </svg>
+        </div>
+        <input
+          class="c5"
+          name="password"
+          placeholder="password"
+          type="password"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      class="c1 "
+    >
+      <div
+        class="c2"
+      >
+        <div
+          class="c3"
+        >
+          <svg
+            aria-hidden="true"
+            class="c4"
+            fill="none"
+            focusable="false"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              height="11"
+              rx="2"
+              ry="2"
+              width="18"
+              x="3"
+              y="11"
+            />
+            <path
+              d="M7 11V7a5 5 0 0110 0v4"
+            />
+          </svg>
+        </div>
+        <input
+          class="c5"
+          name="confirm-password"
+          placeholder="confirm password"
+          type="password"
+          value=""
+        />
+      </div>
+    </div>
+    <button
+      class="c6 c7"
+    >
+      <span
+        class=""
+      >
+        sign up now
+      </span>
+    </button>
+    <div
+      class="c8"
+    >
+      already have an account?
+       
+      <a
+        href="/sign-in"
+      >
+        sign in
+      </a>
+    </div>
+  </form>
+</div>
+`;

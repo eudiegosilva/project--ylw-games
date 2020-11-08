@@ -12,7 +12,7 @@ const textFieldModifiers = {
   disabled: (theme: DefaultTheme) => css`
     ${Label},
     ${Input},
-    ${Icon} {
+    ${IconWrapper} {
       cursor: not-allowed;
       color: ${theme.colors.grayWeb};
 
@@ -25,7 +25,7 @@ const textFieldModifiers = {
     ${InputWrapper} {
       border-color: ${theme.colors.error};
     }
-    ${Icon},
+    ${IconWrapper},
     ${Label} {
       color: ${theme.colors.error};
     }
@@ -76,7 +76,7 @@ export const Label = styled.label`
   `}
 `;
 
-export const Icon = styled.div<IconPositionProps>`
+export const IconWrapper = styled.div<IconPositionProps>`
   ${({ theme, iconPosition }) => css`
     display: flex;
     width: 2.2rem;

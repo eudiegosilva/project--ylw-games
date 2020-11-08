@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-export const Container = styled.section`
+export const Wrapper = styled.section`
   .slick-slider {
     position: relative;
 

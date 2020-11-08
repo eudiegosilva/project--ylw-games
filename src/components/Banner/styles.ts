@@ -7,11 +7,11 @@ type ImageProps = {
   src: string;
 };
 
-export const Container = styled.main`
+export const Wrapper = styled.main`
   position: relative;
 
   ${media.lessThan('medium')`
-    ${RibbonStyles.Container}{
+    ${RibbonStyles.Wrapper}{
       right: 0;
 
       &::before {

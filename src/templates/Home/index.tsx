@@ -34,7 +34,7 @@ const Home = ({
   freeHighlight,
   freeGames
 }: HomeTemplateProps) => (
-  <s.Container>
+  <s.Wrapper>
     <Container>
       <Menu />
       <s.SectionBanner>
@@ -87,7 +87,7 @@ const Home = ({
         <Footer />
       </Container>
     </s.SectionFooter>
-  </s.Container>
+  </s.Wrapper>
 );
 
 export default Home;

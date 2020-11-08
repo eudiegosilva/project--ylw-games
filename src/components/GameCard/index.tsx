@@ -1,9 +1,11 @@
 import Button from 'components/Button';
-import * as s from './styles';
+import Ribbon, { RibbonColors, RibbonSizes } from 'components/Ribbon';
+
 import { Heart as HeartIcon } from '@styled-icons/feather';
 import { Heart as HeartFilledIcon } from '@styled-icons/fa-solid/Heart';
 import { ShoppingCart as ShoppingCartIcon } from '@styled-icons/feather/ShoppingCart';
-import Ribbon, { RibbonColors, RibbonSizes } from 'components/Ribbon';
+
+import * as s from './styles';
 
 export type GameCardProps = {
   title: string;
@@ -30,16 +32,16 @@ const GameCard = ({
   ribbonColor = 'primary',
   ribbonSize = 'small'
 }: GameCardProps) => (
-  <s.Container>
+  <s.Wrapper>
     {!!ribbon && (
       <Ribbon color={ribbonColor} size={ribbonSize}>
         {ribbon}
       </Ribbon>
     )}
-    <s.ImageBox>
+    <s.ImageWrapper>
       <s.GameImage src={image} alt={title} />
-    </s.ImageBox>
-    <s.Content>
+    </s.ImageWrapper>
+    <s.ContentWrapper>
       <s.InfoWrapper>
         <s.GameTitle>{title}</s.GameTitle>
         <s.GameDeveloper>{developer}</s.GameDeveloper>
@@ -51,7 +53,7 @@ const GameCard = ({
           <HeartIcon aria-label="add to wishlist" />
         )}
       </s.FavoriteButton>
-      <s.PriceBox>
+      <s.PriceWrapper>
         {!!promotionalPrice && (
           <s.GamePrice isPromotional aria-label="game price">
             {price}
@@ -61,9 +63,9 @@ const GameCard = ({
           {promotionalPrice || price}
         </s.GamePrice>
         <Button icon={<ShoppingCartIcon />} size="small" />
-      </s.PriceBox>
-    </s.Content>
-  </s.Container>
+      </s.PriceWrapper>
+    </s.ContentWrapper>
+  </s.Wrapper>
 );
 
 export default GameCard;

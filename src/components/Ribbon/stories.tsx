@@ -1,4 +1,5 @@
 import { Story, Meta } from '@storybook/react/types-6-0';
+
 import Ribbon, { RibbonProps } from '.';
 
 export default {
@@ -20,7 +21,7 @@ export const RibbonDefault: Story<RibbonProps> = args => (
       width: '40rem',
       height: '25rem',
       position: 'relative',
-      backgroundColor: '#667788',
+      backgroundColor: '#171717',
       margin: '0 auto'
     }}
   >

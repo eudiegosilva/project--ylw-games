@@ -13,7 +13,7 @@ const Logo = ({
   hideTextOnMobile = false,
   id = 'logo'
 }: LogoProps) => (
-  <s.LogoWrapper color={color} size={size} hideTextOnMobile={hideTextOnMobile}>
+  <s.Wrapper color={color} size={size} hideTextOnMobile={hideTextOnMobile}>
     <svg
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -85,7 +85,7 @@ const Logo = ({
         </linearGradient>
       </defs>
     </svg>
-  </s.LogoWrapper>
+  </s.Wrapper>
 );
 
 export default Logo;

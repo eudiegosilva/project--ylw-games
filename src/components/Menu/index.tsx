@@ -1,13 +1,14 @@
 import { useState } from 'react';
 import Link from 'next/link';
-import { Search as SearchIcon } from '@styled-icons/feather/Search';
-import { ShoppingCart as ShoppingCartIcon } from '@styled-icons/feather/ShoppingCart';
-import { Menu2 as MenuIcon } from '@styled-icons/remix-line/Menu2';
-import { Close as CloseIcon } from '@styled-icons/evil/Close';
 
 import Logo from 'components/Logo';
 import Button from 'components/Button';
 import MediaMatch from 'components/MediaMatch';
+
+import { Search as SearchIcon } from '@styled-icons/feather/Search';
+import { ShoppingCart as ShoppingCartIcon } from '@styled-icons/feather/ShoppingCart';
+import { Menu2 as MenuIcon } from '@styled-icons/remix-line/Menu2';
+import { Close as CloseIcon } from '@styled-icons/evil/Close';
 
 import * as s from './styles';
 
@@ -18,7 +19,7 @@ export type MenuProps = {
 const Menu = ({ username }: MenuProps) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <s.Container>
+    <s.Wrapper>
       <MediaMatch lessThan="medium">
         <s.IconWrapper onClick={() => setIsOpen(true)}>
           <MenuIcon aria-label="open menu" />
@@ -73,25 +74,25 @@ const Menu = ({ username }: MenuProps) => {
         </s.MenuFullScreenNav>
 
         {!username && (
-          <s.RegisterBoxWrapper>
+          <s.RegisterWrapper>
             <Link href="/sign-in" passHref>
               <Button as="a" fullWidth aria-label="login now">
                 sign in
               </Button>
             </Link>
-            <s.TextWrapper>or</s.TextWrapper>
+            <s.Text>or</s.Text>
             <Link href="/sign-up" passHref>
-              <s.CreateAccountWrapper
+              <s.CreateAccountLink
                 title="create account"
                 aria-label="create account"
               >
                 sign up
-              </s.CreateAccountWrapper>
+              </s.CreateAccountLink>
             </Link>
-          </s.RegisterBoxWrapper>
+          </s.RegisterWrapper>
         )}
       </s.MenuFullScreen>
-    </s.Container>
+    </s.Wrapper>
   );
 };
 

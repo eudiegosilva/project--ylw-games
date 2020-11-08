@@ -5,22 +5,24 @@ import * as HeadingStyles from 'components/Heading/styles';
 import * as GameCardSliderStyles from 'components/GameCardSlider/styles';
 import * as HighlightStyles from 'components/Highlight/styles';
 
+export const Wrapper = styled.section``;
+
 const Sections = styled.section`
   ${({ theme }) => css`
-    ${HeadingStyles.HeadingWrapper},
-    ${GameCardSliderStyles.Container},
-    ${HighlightStyles.Container} {
+    ${HeadingStyles.Wrapper},
+    ${GameCardSliderStyles.Wrapper},
+    ${HighlightStyles.Wrapper} {
       margin-bottom: ${theme.spacings.medium};
     }
 
-    ${HighlightStyles.Container} {
+    ${HighlightStyles.Wrapper} {
       ${media.lessThan('medium')`
         margin-right: calc(-${theme.grid.gutter} / 2);
         margin-left: calc(-${theme.grid.gutter} / 2);
       `}
     }
 
-    ${GameCardSliderStyles.Container} {
+    ${GameCardSliderStyles.Wrapper} {
       ${media.lessThan('huge')`
         margin-right: calc(-${theme.grid.gutter} / 2);
       `}
@@ -29,8 +31,6 @@ const Sections = styled.section`
     margin-bottom: calc(${theme.spacings.large} * 2);
   `}
 `;
-
-export const Container = styled.section``;
 
 export const SectionBanner = styled.section`
   ${({ theme }) => css`
@@ -60,7 +60,7 @@ export const SectionNews = styled(Sections)`
       clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
     `}
 
-    ${HeadingStyles.HeadingWrapper} {
+    ${HeadingStyles.Wrapper} {
       ${media.lessThan('medium')`
         color: ${theme.colors.white};
     `}
@@ -72,7 +72,7 @@ export const SectionMostPopular = styled(Sections)``;
 
 export const SectionUpcoming = styled(Sections)`
   ${({ theme }) => css`
-    ${HighlightStyles.Container} {
+    ${HighlightStyles.Wrapper} {
       margin-top: calc(${theme.spacings.xlarge} * 2);
     }
   `}

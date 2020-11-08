@@ -1,12 +1,14 @@
 import Link from 'next/link';
+
 import Heading from 'components/Heading';
 import Logo from 'components/Logo';
+
 import * as s from './styles';
 
 const Footer = () => (
-  <s.Container>
+  <s.Wrapper>
     <Logo color="secondary" />
-    <s.Content>
+    <s.ContentWrapper>
       <s.Column>
         <Heading
           color="secondary"
@@ -88,12 +90,12 @@ const Footer = () => (
         <span>Lorem ipsum.</span>
         <span>Lorem ipsum dolor sit.</span>
       </s.Column>
-    </s.Content>
+    </s.ContentWrapper>
 
     <s.CopyrightWrapper>
       YLW games 2020 &copy; All rights reserved.
     </s.CopyrightWrapper>
-  </s.Container>
+  </s.Wrapper>
 );
 
 export default Footer;

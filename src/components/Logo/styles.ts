@@ -26,7 +26,7 @@ const containerModifiers = {
   `
 };
 
-export const LogoWrapper = styled.div<LogoProps>`
+export const Wrapper = styled.div<LogoProps>`
   ${({ theme, color, size, hideTextOnMobile }) => css`
     color: ${theme.colors[color!]};
     ${!!size && containerModifiers[size]}

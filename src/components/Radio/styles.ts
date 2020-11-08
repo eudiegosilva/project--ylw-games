@@ -1,14 +1,15 @@
 import styled, { css } from 'styled-components';
+
 import { RadioProps } from '.';
 
 type LabelProps = Pick<RadioProps, 'labelColor'>;
 
-export const RadioWrapper = styled.main`
+export const Wrapper = styled.main`
   display: flex;
   align-items: center;
 `;
 
-export const RadioInput = styled.input`
+export const Input = styled.input`
   ${({ theme }) => css`
     display: flex;
     align-items: center;

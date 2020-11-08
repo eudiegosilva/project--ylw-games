@@ -3,20 +3,20 @@ import media from 'styled-media-query';
 
 import * as HeadingStyles from 'components/Heading/styles';
 
-export const Container = styled.footer`
-  ${HeadingStyles.HeadingWrapper} {
+export const Wrapper = styled.footer`
+  ${HeadingStyles.Wrapper} {
     text-transform: uppercase;
   }
 `;
 
-export const Content = styled.div`
+export const ContentWrapper = styled.div`
   ${({ theme }) => css`
     display: grid;
     gap: ${theme.grid.gutter};
     grid-template-columns: 1fr 1fr;
     margin-top: ${theme.spacings.medium};
     ${media.greaterThan('medium')`
-      grid-template-columns: repeat(4, 1fr)
+      grid-template-columns: repeat(4, 1fr);
     `}
   `}
 `;

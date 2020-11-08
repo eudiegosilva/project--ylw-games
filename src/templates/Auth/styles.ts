@@ -95,11 +95,11 @@ export const ContentWrapper = styled.div`
   ${({ theme }) => css`
     width: 30rem;
 
-    ${LogoStyles.LogoWrapper} {
+    ${LogoStyles.Wrapper} {
       margin: 0 auto ${theme.spacings.xxlarge};
     }
 
-    ${HeadingStyles.HeadingWrapper} {
+    ${HeadingStyles.Wrapper} {
       margin-bottom: ${theme.spacings.medium};
     }
 

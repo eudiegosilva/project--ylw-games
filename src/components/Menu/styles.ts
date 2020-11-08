@@ -5,7 +5,7 @@ type MenuFullScreenProps = {
   isOpen: boolean;
 };
 
-export const Container = styled.menu`
+export const Wrapper = styled.menu`
   ${({ theme }) => css`
     display: flex;
     align-items: center;
@@ -91,7 +91,7 @@ export const MenuFullScreen = styled.nav<MenuFullScreenProps>`
       transition: ${theme.transition.default};
     }
 
-    ${RegisterBoxWrapper} {
+    ${RegisterWrapper} {
       transform: ${isOpen ? 'translateY(0)' : 'translateY(3rem)'};
       transition: ${theme.transition.default};
     }
@@ -139,7 +139,7 @@ export const MenuFullScreenLink = styled.a`
   `}
 `;
 
-export const RegisterBoxWrapper = styled.div`
+export const RegisterWrapper = styled.div`
   ${({ theme }) => css`
     display: flex;
     flex-direction: column;
@@ -154,9 +154,9 @@ export const RegisterBoxWrapper = styled.div`
   `}
 `;
 
-export const TextWrapper = styled.span``;
+export const Text = styled.span``;
 
-export const CreateAccountWrapper = styled.a`
+export const CreateAccountLink = styled.a`
   ${({ theme }) => css`
     text-decoration: none;
     color: ${theme.colors.primary};

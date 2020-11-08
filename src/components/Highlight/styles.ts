@@ -3,30 +3,30 @@ import media from 'styled-media-query';
 
 import { HighlightProps } from '.';
 
-type ContainerProps = Pick<HighlightProps, 'backgroundImage' | 'alignment'>;
+type WrapperProps = Pick<HighlightProps, 'backgroundImage' | 'alignment'>;
 
 const containerModifiers = {
   right: () => css`
     grid-template-areas: 'FLOAT_IMAGE CONTENT';
     grid-template-columns: 1.3fr 2fr;
 
-    ${Content} {
+    ${ContentWrapper} {
       text-align: right;
     }
   `,
   left: () => css`
     grid-template-areas: 'CONTENT FLOAT_IMAGE';
     grid-template-columns: 2fr 1.3fr;
-    ${Content} {
+    ${ContentWrapper} {
       text-align: left;
     }
-    ${FloatImageWrapper} {
+    ${FloatImage} {
       justify-self: end;
     }
   `
 };
 
-export const Container = styled.section<ContainerProps>`
+export const Wrapper = styled.section<WrapperProps>`
   ${({ backgroundImage, alignment }) => css`
     position: relative;
     height: 23rem;
@@ -52,7 +52,7 @@ export const Container = styled.section<ContainerProps>`
   `}
 `;
 
-export const FloatImageWrapper = styled.img`
+export const FloatImage = styled.img`
   ${({ theme }) => css`
     grid-area: FLOAT_IMAGE;
     z-index: ${theme.layers.base};
@@ -66,7 +66,7 @@ export const FloatImageWrapper = styled.img`
   `}
 `;
 
-export const Content = styled.div`
+export const ContentWrapper = styled.div`
   ${({ theme }) => css`
     grid-area: CONTENT;
     z-index: ${theme.layers.base};

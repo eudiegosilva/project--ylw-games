@@ -14,9 +14,9 @@ const Ribbon = ({
   color = 'primary',
   size = 'medium'
 }: RibbonProps) => (
-  <s.Container color={color} size={size}>
+  <s.Wrapper color={color} size={size}>
     {children}
-  </s.Container>
+  </s.Wrapper>
 );
 
 export default Ribbon;

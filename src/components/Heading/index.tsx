@@ -19,7 +19,7 @@ const Heading = ({
   size = 'medium',
   lineColor = 'primary'
 }: HeadingProps) => (
-  <s.HeadingWrapper
+  <s.Wrapper
     color={color}
     lineLeft={lineLeft}
     lineBottom={lineBottom}
@@ -27,7 +27,7 @@ const Heading = ({
     lineColor={lineColor}
   >
     {children}
-  </s.HeadingWrapper>
+  </s.Wrapper>
 );
 
 export default Heading;

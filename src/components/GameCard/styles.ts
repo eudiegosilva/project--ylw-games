@@ -20,7 +20,7 @@ const gamePriceModifiers = {
   `
 };
 
-export const Container = styled.article`
+export const Wrapper = styled.article`
   ${({ theme }) => css`
     position: relative;
     display: flex;
@@ -31,7 +31,7 @@ export const Container = styled.article`
   `}
 `;
 
-export const ImageBox = styled.div`
+export const ImageWrapper = styled.div`
   height: 14rem;
   width: 100%;
   background: #f6f7f8;
@@ -61,7 +61,7 @@ export const ImageBox = styled.div`
   }
 `;
 
-export const Content = styled.div`
+export const ContentWrapper = styled.div`
   ${({ theme }) => css`
     display: flex;
     flex-direction: column;
@@ -111,7 +111,7 @@ export const FavoriteButton = styled.div`
   `}
 `;
 
-export const PriceBox = styled.div`
+export const PriceWrapper = styled.div`
   ${({ theme }) => css`
     display: flex;
     align-items: center;
@@ -126,6 +126,7 @@ export const GamePrice = styled.div<GamePriceProps>`
     font-weight: ${theme.font.bold};
     height: 3rem;
     align-items: center;
+
     ${!isPromotional && gamePriceModifiers.default(theme)}
     ${isPromotional && gamePriceModifiers.promotional(theme)}
   `}

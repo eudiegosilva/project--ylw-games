@@ -4,12 +4,12 @@ import { CheckboxProps } from '.';
 
 type labelProps = Pick<CheckboxProps, 'labelColor'>;
 
-export const CheckboxWrapper = styled.div`
+export const Wrapper = styled.div`
   display: flex;
   align-items: center;
 `;
 
-export const CheckboxInput = styled.input`
+export const Input = styled.input`
   ${({ theme }) => css`
     cursor: pointer;
     display: flex;

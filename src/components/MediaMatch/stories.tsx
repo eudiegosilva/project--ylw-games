@@ -1,4 +1,5 @@
 import { Story, Meta } from '@storybook/react/types-6-0';
+
 import Heading from 'components/Heading';
 import MediaMatch from '.';
 

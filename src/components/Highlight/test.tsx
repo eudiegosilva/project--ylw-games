@@ -52,7 +52,7 @@ describe('<Highlight />', () => {
       "'FLOAT_IMAGE CONTENT'"
     );
     expect(container.firstChild).toHaveStyleRule('text-align', 'right', {
-      modifier: `${s.Content}`
+      modifier: `${s.ContentWrapper}`
     });
   });
 
@@ -66,7 +66,7 @@ describe('<Highlight />', () => {
       "'CONTENT FLOAT_IMAGE'"
     );
     expect(container.firstChild).toHaveStyleRule('text-align', 'left', {
-      modifier: `${s.Content}`
+      modifier: `${s.ContentWrapper}`
     });
   });
 });

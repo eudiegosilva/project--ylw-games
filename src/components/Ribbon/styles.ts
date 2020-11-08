@@ -1,6 +1,7 @@
 import styled, { css, DefaultTheme } from 'styled-components';
-import { RibbonColors, RibbonProps } from '.';
 import { darken } from 'polished';
+
+import { RibbonColors, RibbonProps } from '.';
 
 const ribbonModifiers = {
   color: (theme: DefaultTheme, color: RibbonColors) => css`
@@ -40,7 +41,7 @@ const ribbonModifiers = {
   `
 };
 
-export const Container = styled.div<Omit<RibbonProps, 'children'>>`
+export const Wrapper = styled.div<Omit<RibbonProps, 'children'>>`
   ${({ theme, color, size }) => css`
     position: absolute;
     top: ${theme.spacings.xsmall};
@@ -59,6 +60,7 @@ export const Container = styled.div<Omit<RibbonProps, 'children'>>`
       border-bottom-color: transparent;
       border-bottom-width: 1rem;
     }
+
     ${!!size && ribbonModifiers[size](theme)}
     ${!!color && ribbonModifiers.color(theme, color)};
   `}

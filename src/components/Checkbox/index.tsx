@@ -1,4 +1,5 @@
 import { InputHTMLAttributes, useState } from 'react';
+
 import * as s from './styles';
 
 export type CheckboxProps = {
@@ -28,8 +29,8 @@ const Checkbox = ({
   };
 
   return (
-    <s.CheckboxWrapper>
-      <s.CheckboxInput
+    <s.Wrapper>
+      <s.Input
         id={labelFor}
         type="checkbox"
         onChange={onChange}
@@ -42,7 +43,7 @@ const Checkbox = ({
           {label}
         </s.Label>
       )}
-    </s.CheckboxWrapper>
+    </s.Wrapper>
   );
 };
 

@@ -2,10 +2,9 @@ import styled, { css, DefaultTheme } from 'styled-components';
 import { darken } from 'polished';
 import { ButtonProps } from '.';
 
-export type WrapperProps = { hasIcon: boolean } & Pick<
-  ButtonProps,
-  'size' | 'fullWidth' | 'minimal'
->;
+export type WrapperProps = {
+  hasIcon: boolean;
+} & Pick<ButtonProps, 'size' | 'fullWidth' | 'minimal'>;
 
 const buttonModifiers = {
   small: (theme: DefaultTheme) => css`

@@ -10,7 +10,7 @@ export type ButtonProps = {
   fullWidth?: boolean;
   minimal?: boolean;
   icon?: React.ReactNode;
-  as?: 'button' | 'a';
+  as?: React.ElementType;
 } & ButtonTypes;
 
 const Button: React.ForwardRefRenderFunction<s.WrapperProps, ButtonProps> = (

@@ -53,6 +53,11 @@ export const BannerContent = styled.section`
     grid-template-columns: 1fr;
     position: relative;
     z-index: ${theme.layers.base};
+
+    a {
+      width: fit-content;
+      height: fit-content;
+    }
   `}
 `;
 

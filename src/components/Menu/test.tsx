@@ -29,11 +29,11 @@ describe('<Menu />', () => {
     expect(fullMenuElement).toHaveStyle({ opacity: 0 });
   });
 
-  it('should show login and create account buttons when logged out', () => {
+  it('should show sign in and create account buttons when logged out', () => {
     renderWithTheme(<Menu />);
 
-    expect(screen.getByText(/login now/i)).toBeInTheDocument();
-    expect(screen.getByText(/create account/i)).toBeInTheDocument();
+    expect(screen.getAllByText(/sign in/i)).toHaveLength(2);
+    expect(screen.getByText(/sign up/i)).toBeInTheDocument();
     expect(screen.queryByText(/my account/i)).not.toBeInTheDocument();
     expect(screen.queryByText(/wishlist/i)).not.toBeInTheDocument();
   });
@@ -41,9 +41,9 @@ describe('<Menu />', () => {
   it('should show "my account" and "wishlist" buttons when logged in', () => {
     renderWithTheme(<Menu username="some_user" />);
 
+    expect(screen.queryByText(/sign in/i)).not.toBeInTheDocument();
+    expect(screen.queryByText(/sign up/i)).not.toBeInTheDocument();
     expect(screen.getByText(/my account/i)).toBeInTheDocument();
     expect(screen.getByText(/wishlist/i)).toBeInTheDocument();
-    expect(screen.queryByText(/login now/i)).not.toBeInTheDocument();
-    expect(screen.queryByText(/create account/i)).not.toBeInTheDocument();
   });
 });

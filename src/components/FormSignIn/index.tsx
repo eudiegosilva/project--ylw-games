@@ -1,12 +1,15 @@
 import Link from 'next/link';
+
 import Button from 'components/Button';
 import TextField from 'components/TextField';
+import { FormWrapper, FormLink } from 'components/Form';
+
 import { Lock, Mail } from '@styled-icons/feather';
 
 import * as s from './styles';
 
 const FormSignIn = () => (
-  <s.Wrapper>
+  <FormWrapper>
     <form>
       <TextField
         name="email"
@@ -26,14 +29,14 @@ const FormSignIn = () => (
         sign in now
       </Button>
 
-      <s.FormLink>
+      <FormLink>
         don&apos;t have an account?{' '}
         <Link href="/sign-up">
           <a>sign up</a>
         </Link>
-      </s.FormLink>
+      </FormLink>
     </form>
-  </s.Wrapper>
+  </FormWrapper>
 );
 
 export default FormSignIn;

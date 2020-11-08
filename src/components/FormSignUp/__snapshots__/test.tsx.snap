@@ -78,12 +78,6 @@ exports[`<FormSignUp /> should render the form 1`] = `
   width: 100%;
 }
 
-.c4 {
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
-}
-
 .c0 .c1 {
   margin: 0.8rem 0;
 }
@@ -110,6 +104,12 @@ exports[`<FormSignUp /> should render the form 1`] = `
 .c8 a:hover {
   color: #FFBA00;
   border-bottom: 0.1rem solid #FFBA00;
+}
+
+.c4 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
 }
 
 <div

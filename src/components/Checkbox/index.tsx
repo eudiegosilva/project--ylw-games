@@ -5,18 +5,18 @@ export type CheckboxProps = {
   label?: string;
   labelFor?: string;
   labelColor?: 'white' | 'primary' | 'secondary';
-  onCheck?: (status: boolean) => void;
   checkedByDefault?: boolean;
   value?: string | ReadonlyArray<string> | number;
+  onCheck?: (status: boolean) => void;
 } & InputHTMLAttributes<HTMLInputElement>;
 
 const Checkbox = ({
   label,
   labelFor = '',
   labelColor = 'white',
-  onCheck,
   checkedByDefault = false,
   value,
+  onCheck,
   ...props
 }: CheckboxProps) => {
   const [checked, setChecked] = useState(checkedByDefault);

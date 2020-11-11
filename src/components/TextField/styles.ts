@@ -3,7 +3,6 @@ import styled, { css, DefaultTheme } from 'styled-components';
 import { TextFieldProps } from '.';
 
 type IconPositionProps = Pick<TextFieldProps, 'iconPosition'>;
-type DisabledProps = Pick<TextFieldProps, 'disabled'>;
 type WrapperProps = Pick<TextFieldProps, 'disabled'> & {
   error?: boolean;
 };

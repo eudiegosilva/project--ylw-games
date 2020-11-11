@@ -71,11 +71,11 @@ exports[`<Banner /> should succefully render 1`] = `
 }
 
 @media (max-width:768px) {
-  .c0 .sc-AxiKw {
+  .c0 .sc-dlfnbm {
     right: 0;
   }
 
-  .c0 .sc-AxiKw::before {
+  .c0 .sc-dlfnbm::before {
     display: none;
   }
 }

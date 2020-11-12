@@ -65,6 +65,19 @@ const GlobalStyles: GlobalStyleComponent<
       css`
         background-color: ${theme.colors.secondary};
       `}
+
+      ::-webkit-scrollbar {
+        background-color: ${theme.colors.secondary};
+        width: 0.8rem;
+      }
+      ::-webkit-scrollbar-track {
+        background-color: ${theme.colors.secondary};
+        border-radius: ${theme.border.radius};
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: ${theme.colors.primary};
+        border-radius: ${theme.border.radius};
+      }
     }
   `}
 

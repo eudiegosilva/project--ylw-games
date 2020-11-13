@@ -1,0 +1,319 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GameInfo /> should render game info 1`] = `
+.c6 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFCB00;
+  border-radius: 0.4rem;
+  border: none;
+  color: #171717;
+  cursor: pointer;
+  padding: 0.8rem;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 1.4rem;
+  height: 4rem;
+  padding: 0.8rem 3.2rem;
+}
+
+.c6:hover {
+  background: #FFBA00;
+}
+
+.c6 svg {
+  width: 1.5rem;
+}
+
+.c6 svg + span {
+  margin-left: 0.8rem;
+}
+
+.c8 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFCB00;
+  border-radius: 0.4rem;
+  border: none;
+  color: #171717;
+  cursor: pointer;
+  padding: 0.8rem;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 1.4rem;
+  height: 4rem;
+  padding: 0.8rem 3.2rem;
+  background: none;
+  color: #FFCB00;
+}
+
+.c8:hover {
+  background: none;
+}
+
+.c8 svg {
+  width: 1.5rem;
+}
+
+.c8 svg + span {
+  margin-left: 0.8rem;
+}
+
+.c8:hover {
+  color: #cca200;
+}
+
+.c1 {
+  color: #171717;
+  margin-bottom: 3.2rem;
+  position: relative;
+  font-size: 2.0rem;
+}
+
+.c1::after {
+  position: absolute;
+  content: '';
+  border-bottom: 0.5rem solid #FFCB00;
+  bottom: -1rem;
+  left: 0;
+  width: 5rem;
+}
+
+.c3 {
+  position: absolute;
+  top: 1.6rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 600;
+  color: #FFFFFF;
+  font-size: 1.4rem;
+  height: 3.6rem;
+  padding: 0 2.4rem;
+  right: -2rem;
+  background-color: #171717;
+  color: #FFCB00;
+}
+
+.c3::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  border-style: solid;
+  border-left-width: 0rem;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-bottom-width: 1rem;
+}
+
+.c3::before {
+  top: 3.6rem;
+  border-top-width: 1rem;
+  border-right-width: 2rem;
+}
+
+.c3::before {
+  border-left-color: #000;
+  border-top-color: #000;
+}
+
+.c7 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.c0 {
+  position: relative;
+  background-color: #FFFFFF;
+  padding: 1.6rem;
+}
+
+.c0 .c2 {
+  right: -1rem;
+}
+
+.c0 .c2:before {
+  border-right-width: 1rem;
+}
+
+.c4 {
+  font-size: 1.4rem;
+  color: #808080;
+  margin-bottom: 2.4rem;
+  text-align: justify;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 > button {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.c5 > button + button {
+  color: #171717;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    font-size: 2.8rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 .c2 {
+    right: 2.4rem;
+    top: 2.4rem;
+  }
+
+  .c0 .c2:before {
+    border: none;
+  }
+}
+
+@media (min-width:450px) {
+  .c4 {
+    max-width: 70%;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+
+  .c5 > button {
+    width: initial;
+    margin-bottom: 0;
+  }
+}
+
+<div
+  class="c0"
+>
+  <h2
+    class="c1"
+    color="secondary"
+  >
+    game title
+  </h2>
+  <div
+    class="c2 c3"
+    color="secondary"
+  >
+    $
+    99,99
+  </div>
+  <p
+    class="c4"
+  >
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ad eveniet maxime cumque, excepturi nihil delectus tempore quaerat distinctio facere.
+  </p>
+  <div
+    class="c5"
+  >
+    <button
+      class="c6"
+    >
+      <svg
+        aria-hidden="true"
+        class="c7"
+        fill="none"
+        focusable="false"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="9"
+          cy="21"
+          r="1"
+        />
+        <circle
+          cx="20"
+          cy="21"
+          r="1"
+        />
+        <path
+          d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"
+        />
+      </svg>
+      <span
+        class=""
+      >
+        add to cart
+      </span>
+    </button>
+    <button
+      class="c8"
+    >
+      <svg
+        aria-hidden="true"
+        class="c7"
+        fill="none"
+        focusable="false"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"
+        />
+      </svg>
+      <span
+        class=""
+      >
+        wishlist
+      </span>
+    </button>
+  </div>
+</div>
+`;

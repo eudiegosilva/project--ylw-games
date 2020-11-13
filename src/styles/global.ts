@@ -67,11 +67,11 @@ const GlobalStyles: GlobalStyleComponent<
       `}
 
       ::-webkit-scrollbar {
-        background-color: ${theme.colors.secondary};
+        background-color: transparent;
         width: 0.8rem;
       }
       ::-webkit-scrollbar-track {
-        background-color: ${theme.colors.secondary};
+        background-color: transparent;
         border-radius: ${theme.border.radius};
       }
       ::-webkit-scrollbar-thumb {

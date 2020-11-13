@@ -8,58 +8,61 @@ import { item as highlightMocks } from 'components/Highlight/mock';
 
 import Home from '.';
 
-const props = {
+const homeProps = {
   banners: bannersMocks,
-  newGames: [gamesMocks[0]],
+  newGames: gamesMocks,
   mostPopularHighlight: highlightMocks,
-  mostPopularGames: [gamesMocks[0]],
+  mostPopularGames: gamesMocks,
   upcommingHighlight: highlightMocks,
-  upcommingGames: [gamesMocks[0]],
-  upcommingMoreGames: [gamesMocks[0]],
+  upcommingGames: gamesMocks,
+  upcommingMoreGames: gamesMocks,
   freeHighlight: highlightMocks,
-  freeGames: [gamesMocks[0]]
+  freeGames: gamesMocks
 };
+
+jest.mock('components/Menu', () => {
+  return {
+    __esModule: true,
+    default: function mock() {
+      return <div data-testid="mock menu"></div>;
+    }
+  };
+});
+
+jest.mock('components/Footer', () => {
+  return {
+    __esModule: true,
+    default: function mock() {
+      return <div data-testid="mock footer"></div>;
+    }
+  };
+});
+
+jest.mock('components/Showcase', () => {
+  return {
+    __esModule: true,
+    default: function mock() {
+      return <div data-testid="mock showcase"></div>;
+    }
+  };
+});
+
+jest.mock('components/BannerSlider', () => {
+  return {
+    __esModule: true,
+    default: function mock() {
+      return <div data-testid="mock banner slider"></div>;
+    }
+  };
+});
 
 describe('<Home />', () => {
   it('should render menu and footer', () => {
-    renderWithTheme(<Home {...props} />);
+    renderWithTheme(<Home {...homeProps} />);
 
-    expect(screen.getByLabelText(/open menu/i)).toBeInTheDocument();
-    expect(
-      screen.getByRole('heading', { name: /contact us/i })
-    ).toBeInTheDocument();
-  });
-
-  it('should render menu and footer', () => {
-    renderWithTheme(<Home {...props} />);
-
-    // menu
-    expect(screen.getByLabelText(/open menu/i)).toBeInTheDocument();
-
-    // footer
-    expect(
-      screen.getByRole('heading', { name: /contact us/i })
-    ).toBeInTheDocument();
-
-    // section news
-    expect(screen.getByRole('heading', { name: /news/i })).toBeInTheDocument();
-
-    // section most popular
-    expect(
-      screen.getByRole('heading', { name: /most popular/i })
-    ).toBeInTheDocument();
-
-    // section most upcomming
-    expect(
-      screen.getByRole('heading', { name: /upcomming/i })
-    ).toBeInTheDocument();
-
-    // section most free games
-    expect(
-      screen.getByRole('heading', { name: /free games/i })
-    ).toBeInTheDocument();
-
-    // card game (five sections with one card eatch)
-    expect(screen.getAllByText(/cyber game/i)).toHaveLength(5);
+    expect(screen.getByTestId('mock menu')).toBeInTheDocument();
+    expect(screen.getByTestId('mock banner slider')).toBeInTheDocument();
+    expect(screen.getAllByTestId('mock showcase')).toHaveLength(5);
+    expect(screen.getByTestId('mock footer')).toBeInTheDocument();
   });
 });

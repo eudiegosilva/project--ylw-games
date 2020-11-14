@@ -28,8 +28,10 @@
   },
   "dependencies": {
     "@styled-icons/evil": "^10.18.0",
+    "@styled-icons/fa-brands": "^10.22.0",
     "@styled-icons/fa-solid": "^10.18.0",
     "@styled-icons/feather": "^10.18.0",
+    "@styled-icons/material-outlined": "^10.18.0",
     "@styled-icons/remix-line": "^10.18.0",
     "next": "9.5.5",
     "next-pwa": "^3.1.5",
@@ -45,7 +47,6 @@
     "@babel/preset-typescript": "^7.12.1",
     "@storybook/addon-essentials": "6.0.26",
     "@storybook/react": "6.0.26",
-    "@styled-icons/material-outlined": "^10.18.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",

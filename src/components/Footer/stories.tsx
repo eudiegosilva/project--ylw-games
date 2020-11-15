@@ -3,12 +3,7 @@ import Footer from '.';
 
 export default {
   title: 'Design System/Footer',
-  component: Footer,
-  parameters: {
-    backgrounds: {
-      default: 'white'
-    }
-  }
+  component: Footer
 } as Meta;
 
 export const FooterOnMobile: Story = () => (

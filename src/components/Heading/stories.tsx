@@ -1,4 +1,5 @@
 import { Story, Meta } from '@storybook/react/types-6-0';
+
 import Heading, { HeadingProps } from '.';
 
 export default {
@@ -15,11 +16,6 @@ export default {
   argTypes: {
     children: {
       type: 'string'
-    }
-  },
-  parameters: {
-    backgrounds: {
-      default: 'white'
     }
   }
 } as Meta;

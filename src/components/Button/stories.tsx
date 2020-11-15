@@ -1,5 +1,7 @@
 import { Story, Meta } from '@storybook/react/types-6-0';
+
 import { ShoppingCart as ShoppingCartIcon } from '@styled-icons/feather/ShoppingCart';
+
 import Button from '.';
 
 export default {
@@ -7,18 +9,21 @@ export default {
   component: Button,
   args: {
     children: 'buy now',
-    fullWidth: false,
-    size: 'medium'
+    fullWidth: false
   },
   argTypes: {
     children: {
       type: 'string'
     },
-    icon: {
-      type: ''
+    size: {
+      control: {
+        type: 'select',
+        options: ['small', 'medium', 'large']
+      },
+      defaultValue: 'medium'
     },
-    as: {
-      type: ''
+    minimal: {
+      control: 'boolean'
     }
   }
 } as Meta;
@@ -31,9 +36,24 @@ ButtonWithIcon.args = {
   icon: <ShoppingCartIcon />
 };
 
+ButtonWithIcon.argTypes = {
+  icon: {
+    type: ''
+  }
+};
+
 export const ButtonAsLink: Story = args => <Button {...args} />;
 
 ButtonAsLink.args = {
   as: 'a',
   href: '/link'
+};
+
+ButtonAsLink.argTypes = {
+  as: {
+    control: {
+      type: 'inline-radio',
+      options: ['a', 'button']
+    }
+  }
 };

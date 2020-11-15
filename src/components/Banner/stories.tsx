@@ -11,38 +11,37 @@ export default {
     buttonLabel: 'buy now',
     buttonLink: '/Banner/link'
   },
-  parameters: {
-    layout: 'fullscreen'
-  }
+  decorators: [
+    Story => (
+      <div style={{ margin: '0 auto', maxWidth: '130rem', padding: '2rem' }}>
+        <Story />
+      </div>
+    )
+  ]
 } as Meta;
 
-export const BannerDefault: Story<BannerProps> = args => (
-  <div
-    style={{
-      maxWidth: '104rem',
-      margin: '0 auto'
-    }}
-  >
-    <Banner {...args} />
-  </div>
-);
+export const BannerDefault: Story<BannerProps> = args => <Banner {...args} />;
 
 BannerDefault.argTypes = {
   ribbon: {
-    type: ''
+    control: {
+      type: ''
+    }
   },
   ribbonSize: {
-    type: ''
+    control: {
+      type: ''
+    }
   },
   ribbonColor: {
-    type: ''
+    control: {
+      type: ''
+    }
   }
 };
 
 export const BannerWithRibbon: Story<BannerProps> = args => (
-  <div style={{ maxWidth: '104rem', margin: '0 auto' }}>
-    <Banner {...args} />
-  </div>
+  <Banner {...args} />
 );
 
 BannerWithRibbon.args = {

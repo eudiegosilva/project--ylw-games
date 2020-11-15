@@ -5,12 +5,7 @@ import MediaMatch from '.';
 
 export default {
   title: 'Design System/MediaMatch',
-  component: MediaMatch,
-  parameters: {
-    backgrounds: {
-      default: 'white'
-    }
-  }
+  component: MediaMatch
 } as Meta;
 
 export const MediaMatchOnMobile: Story = () => (

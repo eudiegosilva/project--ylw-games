@@ -7,11 +7,6 @@ export default {
   component: Logo,
   args: {
     color: 'secondary'
-  },
-  parameters: {
-    backgrounds: {
-      default: 'white'
-    }
   }
 } as Meta;
 

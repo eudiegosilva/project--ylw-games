@@ -4,7 +4,7 @@ import Highlight, { HighlightProps } from '.';
 import { item } from './mock';
 
 export default {
-  title: 'Design System/Highlight',
+  title: 'Game/Highlight',
   component: Highlight,
   args: { ...item },
   argTypes: {
@@ -17,18 +17,8 @@ export default {
   }
 } as Meta;
 
-export const HighlightDefault: Story<HighlightProps> = args => (
+export const GameHighlightDefault: Story<HighlightProps> = args => (
   <div style={{ maxWidth: '104rem', margin: '0 auto' }}>
     <Highlight {...args} />
   </div>
 );
-
-export const HighlightWithFloatImage: Story<HighlightProps> = args => (
-  <div style={{ maxWidth: '104rem', margin: '0 auto' }}>
-    <Highlight {...args} />
-  </div>
-);
-
-HighlightWithFloatImage.args = {
-  floatImage: '/img/cyberpunk-2077-float.png'
-};

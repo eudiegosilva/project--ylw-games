@@ -4,7 +4,7 @@ import GameInfo, { GameInfoProps } from '.';
 import { gameInfoMock as gameInfoArgs } from './mock';
 
 export default {
-  title: 'Design System/GameInfo',
+  title: 'Game/GameInfo',
   component: GameInfo,
   args: {
     ...gameInfoArgs

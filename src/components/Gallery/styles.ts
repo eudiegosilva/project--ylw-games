@@ -33,7 +33,7 @@ export const Wrapper = styled.div`
     }
 
     .slick-slide > div {
-      margin: 0 ${theme.spacings.xsmall};
+      margin: 0 ${theme.spacings.xxsmall};
       cursor: pointer;
     }
 
@@ -46,6 +46,8 @@ export const Wrapper = styled.div`
     `}
   `}
 `;
+
+export const Image = styled.img``;
 
 const modalModifiers = {
   open: () => css`

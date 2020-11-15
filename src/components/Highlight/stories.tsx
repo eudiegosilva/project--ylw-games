@@ -4,7 +4,7 @@ import Highlight, { HighlightProps } from '.';
 import { item } from './mock';
 
 export default {
-  title: 'Game/Highlight',
+  title: 'Design System/Highlight',
   component: Highlight,
   args: { ...item },
   argTypes: {

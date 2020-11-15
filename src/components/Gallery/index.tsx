@@ -59,7 +59,7 @@ const gallerySettings: SliderSettings = {
       breakpoint: 375,
       settings: {
         arrows: false,
-        slidesToShow: 1.1,
+        slidesToShow: 1.2,
         draggable: true
       }
     }
@@ -87,7 +87,7 @@ const GallerySlider = ({ items }: GalleryProps) => {
     <s.Wrapper>
       <Slider ref={sliderRef} settings={gallerySettings}>
         {items.map((gameImage, index) => (
-          <img
+          <s.Image
             key={gameImage.src}
             role="button"
             src={gameImage.src}
@@ -112,7 +112,7 @@ const GallerySlider = ({ items }: GalleryProps) => {
         <s.Content>
           <Slider ref={sliderRef} settings={modalSettings}>
             {items.map(gameImage => (
-              <img
+              <s.Image
                 key={`gallery - ${gameImage.src}`}
                 src={gameImage.src}
                 alt={`${gameImage.label}`}

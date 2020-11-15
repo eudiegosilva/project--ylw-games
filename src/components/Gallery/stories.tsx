@@ -29,4 +29,6 @@ export default {
   ]
 } as Meta;
 
-export const Default: Story<GalleryProps> = args => <Gallery {...args} />;
+export const GalleryDefault: Story<GalleryProps> = args => (
+  <Gallery {...args} />
+);

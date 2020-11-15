@@ -1,6 +1,8 @@
 import Heading from 'components/Heading';
 import MediaMatch from 'components/MediaMatch';
 
+import { formatGenres, formatRating } from 'utils/formatters';
+
 import {
   Apple as AppleIcon,
   Windows as WindowsIcon,
@@ -32,9 +34,6 @@ const GameDetails = ({
     linux: <LinuxIcon title="linux" size={18} />,
     mac: <AppleIcon title="mac" size={18} />
   };
-
-  const formatRating = (rating: RatingType) => `${rating.replace('BR', '')}+`;
-  const formatGenres = (genres: string[]) => genres.join(' / ');
 
   return (
     <s.Wrapper>

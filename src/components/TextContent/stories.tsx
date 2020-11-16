@@ -1,12 +1,12 @@
 import { Story, Meta } from '@storybook/react/types-6-0';
 
 import TextContent, { TextContentProps } from '.';
-import textArgs from './mock';
+import { mock as textContentMock } from './mock';
 
 export default {
   title: 'Design System/TextContent',
   component: TextContent,
-  args: textArgs,
+  args: textContentMock,
   parameters: {
     backgrounds: {
       default: 'dark'

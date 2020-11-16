@@ -2,12 +2,14 @@ import { Story, Meta } from '@storybook/react/types-6-0';
 
 import BannerSlider, { BannerSliderProps } from '.';
 
-import { items } from './mock';
+import { mock as bannerItemsMock } from './mock';
 
 export default {
   title: 'Design System/BannerSlider',
   component: BannerSlider,
-  args: { items },
+  args: {
+    items: bannerItemsMock
+  },
   parameters: {
     backgrounds: {
       default: 'dark'

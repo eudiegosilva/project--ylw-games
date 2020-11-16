@@ -1,4 +1,4 @@
-export const items = [
+export const mock = [
   {
     image:
       'https://images.unsplash.com/photo-1496979149951-4fd28cf221e7?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1024&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2048',

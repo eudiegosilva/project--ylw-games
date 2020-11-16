@@ -1,4 +1,4 @@
-export const item = {
+export const mock = {
   title: 'Cyberpunk 2077',
   subtitle: 'For those obsessed with power, glamor and body modification',
   buttonLabel: 'buy now',

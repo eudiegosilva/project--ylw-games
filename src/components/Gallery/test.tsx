@@ -4,22 +4,22 @@ import { renderWithTheme } from 'utils/tests/helpers';
 
 import Gallery from '.';
 
-import galleryItems from './mock';
+import { mock as galleryItemsMock } from './mock';
 
 describe('<Gallery />', () => {
   it('should render thumbnails as buttons', () => {
-    renderWithTheme(<Gallery items={galleryItems.slice(0, 2)} />);
+    renderWithTheme(<Gallery items={galleryItemsMock.slice(0, 2)} />);
 
     expect(
       screen.getByRole('button', { name: /thumb - Gallery Image 1/i })
-    ).toHaveAttribute('src', galleryItems[0].src);
+    ).toHaveAttribute('src', galleryItemsMock[0].src);
     expect(
       screen.getByRole('button', { name: /thumb - Gallery Image 2/i })
-    ).toHaveAttribute('src', galleryItems[1].src);
+    ).toHaveAttribute('src', galleryItemsMock[1].src);
   });
 
   it('should render open modal', () => {
-    renderWithTheme(<Gallery items={galleryItems.slice(0, 2)} />);
+    renderWithTheme(<Gallery items={galleryItemsMock.slice(0, 2)} />);
 
     const modal = screen.getByLabelText('modal');
     const thumb = screen.getByRole('button', {
@@ -35,7 +35,7 @@ describe('<Gallery />', () => {
   });
 
   it('should handle close modal when overlay or close button clicked', () => {
-    renderWithTheme(<Gallery items={galleryItems.slice(0, 2)} />);
+    renderWithTheme(<Gallery items={galleryItemsMock.slice(0, 2)} />);
 
     const modal = screen.getByLabelText('modal');
     const thumb = screen.getByRole('button', {
@@ -55,7 +55,7 @@ describe('<Gallery />', () => {
 
   it('should handle close modal when on ESC key is pressed', () => {
     const { container } = renderWithTheme(
-      <Gallery items={galleryItems.slice(0, 2)} />
+      <Gallery items={galleryItemsMock.slice(0, 2)} />
     );
 
     const modal = screen.getByLabelText('modal');
@@ -70,7 +70,7 @@ describe('<Gallery />', () => {
   });
 
   it('should open modal with selected image', async () => {
-    renderWithTheme(<Gallery items={galleryItems.slice(0, 2)} />);
+    renderWithTheme(<Gallery items={galleryItemsMock.slice(0, 2)} />);
 
     const thumb = screen.getByRole('button', {
       name: /thumb - Gallery Image 2/i

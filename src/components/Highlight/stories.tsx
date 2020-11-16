@@ -1,12 +1,12 @@
 import { Story, Meta } from '@storybook/react/types-6-0';
 
 import Highlight, { HighlightProps } from '.';
-import { item } from './mock';
+import { mock as highlightMock } from './mock';
 
 export default {
   title: 'Design System/Highlight',
   component: Highlight,
-  args: { ...item },
+  args: { ...highlightMock },
   argTypes: {
     floatImage: {
       type: ''

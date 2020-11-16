@@ -1,4 +1,4 @@
-export default {
+export const mock = {
   title: 'description',
   content: `<h1>Heading</h1>
             <h2>Heading</h2>

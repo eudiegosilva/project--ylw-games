@@ -1,4 +1,4 @@
-export default [
+export const mock = [
   {
     src: '/img/games/cyberpunk-1.jpg',
     label: 'Gallery Image 1'

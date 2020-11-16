@@ -1,13 +1,13 @@
 import { Story, Meta } from '@storybook/react/types-6-0';
 
 import Gallery, { GalleryProps } from '.';
-import galleryItems from './mock';
+import { mock as galleryItemsMock } from './mock';
 
 export default {
   title: 'Design System/Gallery',
   component: Gallery,
   args: {
-    items: galleryItems
+    items: galleryItemsMock
   },
   parameters: {
     layout: 'fullscreen',

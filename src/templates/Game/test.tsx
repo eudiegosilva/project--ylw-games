@@ -1,10 +1,10 @@
 import { screen } from '@testing-library/react';
 
-import galleryMock from 'components/Gallery/mock';
-import { gameInfoMock } from 'components/GameInfo/mock';
-import gameDetailsMock from 'components/GameDetails/mock';
-import { items as gamesMock } from 'components/GameCardSlider/mock';
-import { item as highlightMock } from 'components/Highlight/mock';
+import { mock as galleryItemsMock } from 'components/Gallery/mock';
+import { mock as gameInfoMock } from 'components/GameInfo/mock';
+import { mock as gameDetailsMock } from 'components/GameDetails/mock';
+import { mock as gamesMock } from 'components/GameCardSlider/mock';
+import { mock as highlightMock } from 'components/Highlight/mock';
 
 import Game, { GameTemplateProps } from '.';
 import { GameDetailsProps } from 'components/GameDetails';
@@ -13,7 +13,7 @@ import { renderWithTheme } from 'utils/tests/helpers';
 const gameTemplateProps: GameTemplateProps = {
   cover: 'bg-image.jpg',
   gameInfo: gameInfoMock,
-  gallery: galleryMock,
+  gallery: galleryItemsMock,
   description: `<h1>Custom HTML</h1>`,
   details: gameDetailsMock as GameDetailsProps,
   upcomingGames: gamesMock,

@@ -1,8 +1,8 @@
 import { Story, Meta } from '@storybook/react/types-6-0';
 
 import Showcase, { ShowcaseProps } from '.';
-import { item as highlightMock } from 'components/Highlight/mock';
-import { items as gameCardSliderMock } from 'components/GameCardSlider/mock';
+import { mock as highlightMock } from 'components/Highlight/mock';
+import { mock as gameCardSliderMock } from 'components/GameCardSlider/mock';
 
 export default {
   title: 'Design System/Showcase',

@@ -1,13 +1,13 @@
 import { Story, Meta } from '@storybook/react/types-6-0';
 
 import GameInfo, { GameInfoProps } from '.';
-import { gameInfoMock as gameInfoArgs } from './mock';
+import { mock as gameInfoMock } from './mock';
 
 export default {
   title: 'Game/GameInfo',
   component: GameInfo,
   args: {
-    ...gameInfoArgs
+    ...gameInfoMock
   },
   parameters: {
     backgrounds: {

@@ -2,9 +2,9 @@ import 'match-media-mock';
 import { screen } from '@testing-library/react';
 import { renderWithTheme } from 'utils/tests/helpers';
 
-import { items as bannersMocks } from 'components/BannerSlider/mock';
-import { items as gamesMocks } from 'components/GameCardSlider/mock';
-import { item as highlightMocks } from 'components/Highlight/mock';
+import { mock as bannersMocks } from 'components/BannerSlider/mock';
+import { mock as gamesMocks } from 'components/GameCardSlider/mock';
+import { mock as highlightMocks } from 'components/Highlight/mock';
 
 import Home from '.';
 

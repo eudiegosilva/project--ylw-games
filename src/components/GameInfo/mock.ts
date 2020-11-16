@@ -1,4 +1,4 @@
-export const gameInfoMock = {
+export const mock = {
   title: 'game title',
   price: '99,99',
   description:

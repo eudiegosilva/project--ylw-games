@@ -3,11 +3,11 @@ import { renderWithTheme } from 'utils/tests/helpers';
 
 import GameInfo from '.';
 
-import { gameInfoMock as gameInfoProps } from './mock';
+import { mock as gameInfoMock } from './mock';
 
 describe('<GameInfo />', () => {
   it('should render game info', () => {
-    const { container } = renderWithTheme(<GameInfo {...gameInfoProps} />);
+    const { container } = renderWithTheme(<GameInfo {...gameInfoMock} />);
 
     expect(
       screen.getByRole('heading', { name: /game title/i })
@@ -23,7 +23,7 @@ describe('<GameInfo />', () => {
   });
 
   it('should render buttons', () => {
-    renderWithTheme(<GameInfo {...gameInfoProps} />);
+    renderWithTheme(<GameInfo {...gameInfoMock} />);
 
     expect(
       screen.getByRole('button', { name: /add to cart/i })

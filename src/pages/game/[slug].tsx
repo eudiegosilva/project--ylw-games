@@ -1,9 +1,9 @@
 import Game, { GameTemplateProps } from 'templates/Game';
 
-import galleryMock from 'components/Gallery/mock';
-import gameDetailsMock from 'components/GameDetails/mock';
-import { items as upcomingGamesMock } from 'components/GameCardSlider/mock';
-import { item as highlightMock } from 'components/Highlight/mock';
+import { mock as galleryItemsMock } from 'components/Gallery/mock';
+import { mock as gameDetailsMock } from 'components/GameDetails/mock';
+import { mock as upcomingGamesMock } from 'components/GameCardSlider/mock';
+import { mock as highlightMock } from 'components/Highlight/mock';
 
 export default function Index(props: GameTemplateProps) {
   return (
@@ -62,7 +62,7 @@ export async function getStaticProps() {
         description:
           'Cyberpunk 2077 is an open-world, action-adventure story set in Night City, a megalopolis obsessed with power, glamour and body modification. You play as V, a mercenary outlaw going after a one-of-a-kind implant that is the key to immortality. You can customize your character’s cyberware, skillset and playstyle, and explore a vast city where the choices you make shape the story and the world around you.'
       },
-      gallery: galleryMock,
+      gallery: galleryItemsMock,
       description: descriptionHTML,
       details: {
         ...gameDetailsMock

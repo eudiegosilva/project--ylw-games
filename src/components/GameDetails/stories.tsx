@@ -1,7 +1,8 @@
 import { Story, Meta } from '@storybook/react/types-6-0';
 
 import GameDetails, { GameDetailsProps } from '.';
-import gameDetailsArgs from './mock';
+
+import { mock as gameDetailsMock } from './mock';
 
 export default {
   title: 'Game/GameDetails',
@@ -18,7 +19,7 @@ export default {
       </div>
     )
   ],
-  args: gameDetailsArgs,
+  args: gameDetailsMock,
   argTypes: {
     platforms: {
       control: {

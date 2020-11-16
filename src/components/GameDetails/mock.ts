@@ -1,4 +1,4 @@
-export default {
+export const mock = {
   developer: 'CD PROJEKT RED',
   releaseDate: '2020-12-10T23:00:00',
   platforms: ['windows'],

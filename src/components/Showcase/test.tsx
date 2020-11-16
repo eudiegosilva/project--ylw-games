@@ -2,8 +2,8 @@ import 'match-media-mock';
 import { screen } from '@testing-library/react';
 import { renderWithTheme } from 'utils/tests/helpers';
 
-import { item as highlightMock } from 'components/Highlight/mock';
-import { items as gameCardSliderMock } from 'components/GameCardSlider/mock';
+import { mock as highlightMock } from 'components/Highlight/mock';
+import { mock as gameCardSliderMock } from 'components/GameCardSlider/mock';
 
 import Showcase from '.';
 

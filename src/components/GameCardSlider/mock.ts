@@ -1,4 +1,4 @@
-export const items = [
+export const mock = [
   {
     title: 'Cyber Game',
     developer: 'Rockstar Games',

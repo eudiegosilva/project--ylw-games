@@ -6,6 +6,7 @@ import GameDetails, { GameDetailsProps } from '.';
 const gameDetailProps: GameDetailsProps = {
   developer: 'game developer',
   platforms: ['windows', 'mac', 'linux'],
+  publisher: 'game publisher',
   releaseDate: '2020-10-08T23:00:00',
   rating: 'BR0',
   genres: ['role-playing', 'terror']
@@ -47,6 +48,18 @@ describe('<GameDetails />', () => {
     renderWithTheme(<GameDetails {...gameDetailProps} />);
 
     expect(screen.getByText('Oct 8, 2020')).toBeInTheDocument();
+  });
+
+  it('should render the developer', () => {
+    renderWithTheme(<GameDetails {...gameDetailProps} />);
+
+    expect(screen.getByText(/game developer/i)).toBeInTheDocument();
+  });
+
+  it('should render the publisher', () => {
+    renderWithTheme(<GameDetails {...gameDetailProps} />);
+
+    expect(screen.getByText(/game publisher/i)).toBeInTheDocument();
   });
 
   it('should render free rating when BR0', () => {

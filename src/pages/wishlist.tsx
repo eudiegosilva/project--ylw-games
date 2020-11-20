@@ -1,4 +1,5 @@
 import Wishlist, { WishlistTemplateProps } from 'templates/Wishlist';
+
 import { mock as recommendedGamesMock } from 'components/GameCardSlider/mock';
 import { mock as recommendedHighlightMock } from 'components/Highlight/mock';
 

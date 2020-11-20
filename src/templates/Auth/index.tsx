@@ -5,12 +5,12 @@ import Logo from 'components/Logo';
 
 import * as s from './styles';
 
-type AuthProps = {
+export type AuthTemplateProps = {
   title: string;
   children: React.ReactNode;
 };
 
-const Auth = ({ children, title }: AuthProps) => (
+const Auth = ({ children, title }: AuthTemplateProps) => (
   <s.AuthWrapper>
     <s.BannerBlock>
       <s.BannerContent>

@@ -11,8 +11,9 @@ export const Wrapper = styled.section`
 `;
 
 export const Content = styled.section`
-  ${() => css`
+  ${({ theme }) => css`
     flex: 1 0 auto;
+    margin-top: ${theme.spacings.xlarge};
   `};
 `;
 

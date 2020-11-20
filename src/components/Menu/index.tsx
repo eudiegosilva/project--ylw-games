@@ -27,7 +27,7 @@ const Menu = ({ username }: MenuProps) => {
       </MediaMatch>
 
       <s.LogoWrapper>
-        <Link href="/">
+        <Link href="/" passHref>
           <a>
             <Logo hideTextOnMobile />
           </a>
@@ -36,8 +36,12 @@ const Menu = ({ username }: MenuProps) => {
 
       <MediaMatch greaterThan="medium">
         <s.MenuFullScreenNav>
-          <s.MenuFullScreenLink href="#">Home</s.MenuFullScreenLink>
-          <s.MenuFullScreenLink href="#">Explore</s.MenuFullScreenLink>
+          <Link href="/" passHref>
+            <s.MenuFullScreenLink>Home</s.MenuFullScreenLink>
+          </Link>
+          <Link href="/explore" passHref>
+            <s.MenuFullScreenLink>Explore</s.MenuFullScreenLink>
+          </Link>
         </s.MenuFullScreenNav>
       </MediaMatch>
 
@@ -62,8 +66,12 @@ const Menu = ({ username }: MenuProps) => {
       <s.MenuFullScreen aria-hidden={!isOpen} isOpen={isOpen}>
         <CloseIcon aria-label="close menu" onClick={() => setIsOpen(false)} />
         <s.MenuFullScreenNav>
-          <s.MenuFullScreenLink href="#">home</s.MenuFullScreenLink>
-          <s.MenuFullScreenLink href="#">explore</s.MenuFullScreenLink>
+          <Link href="/" passHref>
+            <s.MenuFullScreenLink>home</s.MenuFullScreenLink>
+          </Link>
+          <Link href="/explore" passHref>
+            <s.MenuFullScreenLink>explore</s.MenuFullScreenLink>
+          </Link>
 
           {!!username && (
             <s.LoggedContentWrapper>

@@ -10,8 +10,6 @@ export default {
   }
 } as Meta;
 
-export const LogoOnDesktop: Story<LogoProps> = args => <Logo {...args} />;
-
 export const LogoOnMobile: Story<LogoProps> = args => <Logo {...args} />;
 
 LogoOnMobile.args = {
@@ -26,6 +24,8 @@ LogoOnMobile.argTypes = {
 
 LogoOnMobile.parameters = {
   viewport: {
-    defaultViewport: 'mobile1'
+    defaultViewport: 'mobile2'
   }
 };
+
+export const LogoOnDesktop: Story<LogoProps> = args => <Logo {...args} />;

@@ -21,7 +21,7 @@ export const MediaMatchOnMobile: Story = () => (
 
 MediaMatchOnMobile.parameters = {
   viewport: {
-    defaultViewport: 'mobile1'
+    defaultViewport: 'mobile2'
   }
 };
 

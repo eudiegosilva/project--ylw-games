@@ -14,7 +14,7 @@ export const FooterOnMobile: Story = () => (
 
 FooterOnMobile.parameters = {
   viewport: {
-    defaultViewport: 'mobile1'
+    defaultViewport: 'mobile2'
   }
 };
 

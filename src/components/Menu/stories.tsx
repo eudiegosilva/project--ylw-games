@@ -17,7 +17,7 @@ export const MenuOnMobile: Story<MenuProps> = args => <Menu {...args} />;
 
 MenuOnMobile.parameters = {
   viewport: {
-    defaultViewport: 'mobile1'
+    defaultViewport: 'mobile2'
   }
 };
 

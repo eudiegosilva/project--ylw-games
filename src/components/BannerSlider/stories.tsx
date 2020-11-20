@@ -11,6 +11,7 @@ export default {
     items: bannerItemsMock
   },
   parameters: {
+    layout: 'fullscreen',
     backgrounds: {
       default: 'dark'
     }
@@ -23,16 +24,6 @@ export default {
     )
   ]
 } as Meta;
-
-export const BannerSliderOnDesktop: Story<BannerSliderProps> = args => (
-  <BannerSlider {...args} />
-);
-
-BannerSliderOnDesktop.argTypes = {
-  items: {
-    type: ''
-  }
-};
 
 export const BannerSliderOnMobile: Story<BannerSliderProps> = args => (
   <BannerSlider {...args} />
@@ -48,6 +39,16 @@ BannerSliderOnMobile.argTypes = {
 
 BannerSliderOnMobile.parameters = {
   viewport: {
-    defaultViewport: 'mobile1'
+    defaultViewport: 'mobile2'
+  }
+};
+
+export const BannerSliderOnDesktop: Story<BannerSliderProps> = args => (
+  <BannerSlider {...args} />
+);
+
+BannerSliderOnDesktop.argTypes = {
+  items: {
+    type: ''
   }
 };

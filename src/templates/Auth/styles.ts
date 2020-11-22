@@ -33,7 +33,7 @@ export const BannerBlock = styled.section`
       bottom: 0;
       left: 0;
       background-color: ${theme.colors.black};
-      opacity: 0.85;
+      opacity: 0.9;
     }
 
     ${media.lessThan('medium')`

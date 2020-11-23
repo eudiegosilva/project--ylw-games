@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Empty /> should render empty component correctly 1`] = `
+.c4 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFCB00;
+  border-radius: 0.4rem;
+  border: none;
+  color: #171717;
+  cursor: pointer;
+  padding: 0.8rem;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 1.4rem;
+  height: 4rem;
+  padding: 0.8rem 3.2rem;
+}
+
+.c4:hover {
+  background: #FFBA00;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  max-width: 100%;
+}
+
+.c2 {
+  color: #FFFFFF;
+  font-size: 2.8rem;
+}
+
+.c3 {
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-bottom: 3.2rem;
+}
+
+<main
+  class="c0"
+>
+  <img
+    alt="hanging joysticks"
+    class="c1"
+    role="image"
+    src="/img/empty.png"
+  />
+  <h2
+    class="c2"
+  >
+    a example title
+  </h2>
+  <p
+    class="c3"
+  >
+    a example description
+  </p>
+  <a
+    class="c4"
+    href="/"
+  >
+    <span
+      class=""
+    >
+      go back to store
+    </span>
+  </a>
+</main>
+`;

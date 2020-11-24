@@ -2,7 +2,7 @@ import { Story, Meta } from '@storybook/react/types-6-0';
 import GameCard, { GameCardProps } from '.';
 
 export default {
-  title: 'Game/GameCard',
+  title: 'Design System/GameCard',
   component: GameCard,
   args: {
     title: 'Cyberpunk 2077',
@@ -21,7 +21,8 @@ export default {
   parameters: {
     backgrounds: {
       default: 'dark'
-    }
+    },
+    jest: ['GameCard.test.tsx']
   },
   decorators: [
     Story => (

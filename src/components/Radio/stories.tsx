@@ -6,7 +6,8 @@ export default {
   title: 'Form/Radio',
   component: Radio,
   parameters: {
-    layout: 'fullscreen'
+    layout: 'fullscreen',
+    jest: ['Radio.test.tsx']
   },
   argTypes: {
     onCheck: {

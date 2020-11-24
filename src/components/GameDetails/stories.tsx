@@ -5,12 +5,13 @@ import GameDetails, { GameDetailsProps } from '.';
 import { mock as gameDetailsMock } from './mock';
 
 export default {
-  title: 'Game/GameDetails',
+  title: 'Design System/GameDetails',
   component: GameDetails,
   parameters: {
     backgrounds: {
       default: 'dark'
-    }
+    },
+    jest: ['GameDetails.test.tsx']
   },
   decorators: [
     Story => (

@@ -14,7 +14,8 @@ export default {
     layout: 'fullscreen',
     backgrounds: {
       default: 'dark'
-    }
+    },
+    jest: ['BannerSlider.test.tsx']
   },
   decorators: [
     Story => (

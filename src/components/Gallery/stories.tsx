@@ -13,7 +13,8 @@ export default {
     layout: 'fullscreen',
     backgrounds: {
       default: 'dark'
-    }
+    },
+    jest: ['Gallery.test.tsx']
   },
   decorators: [
     Story => (

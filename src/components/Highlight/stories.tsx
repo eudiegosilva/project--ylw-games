@@ -14,6 +14,9 @@ export default {
     backgroundImage: {
       type: ''
     }
+  },
+  parameters: {
+    jest: ['Highlight.test.tsx']
   }
 } as Meta;
 

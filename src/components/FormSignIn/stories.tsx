@@ -3,7 +3,10 @@ import FormSignIn from '.';
 
 export default {
   title: 'Form/FormSignIn',
-  component: FormSignIn
+  component: FormSignIn,
+  parameters: {
+    jest: ['FormSignIn.test.tsx']
+  }
 } as Meta;
 
 export const FormDefault: Story = () => (

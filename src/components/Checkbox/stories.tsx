@@ -5,7 +5,8 @@ export default {
   title: 'Form/Checkbox',
   component: Checkbox,
   parameters: {
-    layout: 'fullscreen'
+    layout: 'fullscreen',
+    jest: ['Checkbox.test.tsx']
   },
   argTypes: {
     onCheck: {

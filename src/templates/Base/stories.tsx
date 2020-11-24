@@ -9,7 +9,8 @@ export default {
     layout: 'fullscreen',
     backgrounds: {
       default: 'dark'
-    }
+    },
+    jest: ['Base.test.tsx']
   }
 } as Meta;
 

@@ -11,6 +11,9 @@ export default {
     buttonLabel: 'buy now',
     buttonLink: '/Banner/link'
   },
+  parameters: {
+    jest: ['Banner.test.tsx']
+  },
   decorators: [
     Story => (
       <div style={{ margin: '0 auto', maxWidth: '130rem', padding: '2rem' }}>

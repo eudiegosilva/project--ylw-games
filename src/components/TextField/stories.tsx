@@ -18,6 +18,9 @@ export default {
   argTypes: {
     onInput: { action: 'changed' },
     icon: { type: '' }
+  },
+  parameters: {
+    jest: ['TextField.test.tsx']
   }
 } as Meta;
 

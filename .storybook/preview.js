@@ -1,4 +1,9 @@
+import { addDecorator } from '@storybook/react';
+import { withTests } from '@storybook/addon-jest';
+
 import { ThemeProvider } from 'styled-components';
+
+import results from '../.jest-test-results.json';
 
 import GlobalStyles from 'styles/global';
 import theme from 'styles/theme';
@@ -36,3 +41,5 @@ export const parameters = {
     ]
   }
 };
+
+addDecorator(withTests({ results }));

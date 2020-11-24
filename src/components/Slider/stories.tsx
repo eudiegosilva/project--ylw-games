@@ -14,7 +14,10 @@ export default {
         <Story />
       </div>
     )
-  ]
+  ],
+  parameters: {
+    jest: ['Slider.test.tsx']
+  }
 } as Meta;
 
 const horizontalSettings: Settings = {

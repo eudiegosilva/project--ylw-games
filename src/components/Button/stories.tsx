@@ -25,6 +25,9 @@ export default {
     minimal: {
       control: 'boolean'
     }
+  },
+  parameters: {
+    jest: ['Button.test.tsx']
   }
 } as Meta;
 

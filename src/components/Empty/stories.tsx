@@ -13,7 +13,8 @@ export default {
   parameters: {
     backgrounds: {
       default: 'dark'
-    }
+    },
+    jest: ['Empty.test.tsx']
   }
 } as Meta;
 

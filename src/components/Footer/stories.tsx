@@ -15,7 +15,8 @@ export const FooterOnMobile: Story = () => (
 FooterOnMobile.parameters = {
   viewport: {
     defaultViewport: 'mobile2'
-  }
+  },
+  jest: ['Footer.test.tsx']
 };
 
 export const FooterOnDesktop: Story = () => (

@@ -17,6 +17,9 @@ export default {
     children: {
       type: 'string'
     }
+  },
+  parameters: {
+    jest: ['Heading.test.tsx']
   }
 } as Meta;
 

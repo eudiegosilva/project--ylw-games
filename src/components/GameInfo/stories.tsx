@@ -4,7 +4,7 @@ import GameInfo, { GameInfoProps } from '.';
 import { mock as gameInfoMock } from './mock';
 
 export default {
-  title: 'Game/GameInfo',
+  title: 'Design System/GameInfo',
   component: GameInfo,
   args: {
     ...gameInfoMock
@@ -12,7 +12,8 @@ export default {
   parameters: {
     backgrounds: {
       default: 'yellow'
-    }
+    },
+    jest: ['GameInfo.test.tsx']
   },
   decorators: [
     Story => (

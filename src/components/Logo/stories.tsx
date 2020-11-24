@@ -7,6 +7,9 @@ export default {
   component: Logo,
   args: {
     color: 'secondary'
+  },
+  parameters: {
+    jest: ['Logo.test.tsx']
   }
 } as Meta;
 

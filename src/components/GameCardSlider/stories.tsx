@@ -6,7 +6,7 @@ import GameCardSlider from '.';
 import { mock as gameCardItemsMock } from './mock';
 
 export default {
-  title: 'Game/GameCardSlider',
+  title: 'Design System/GameCardSlider',
   component: GameCardSlider,
   args: {
     items: gameCardItemsMock
@@ -20,7 +20,8 @@ export default {
     layout: 'fullscreen',
     backgrounds: {
       default: 'dark'
-    }
+    },
+    jest: ['GameCardSlider.test.tsx']
   }
 } as Meta;
 

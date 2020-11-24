@@ -5,7 +5,10 @@ import MediaMatch from '.';
 
 export default {
   title: 'Design System/MediaMatch',
-  component: MediaMatch
+  component: MediaMatch,
+  parameters: {
+    jest: ['MediaMatch.test.tsx']
+  }
 } as Meta;
 
 export const MediaMatchOnMobile: Story = () => (

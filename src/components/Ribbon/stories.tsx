@@ -12,6 +12,9 @@ export default {
     children: {
       type: 'string'
     }
+  },
+  parameters: {
+    jest: ['Ribbon.test.tsx']
   }
 } as Meta;
 

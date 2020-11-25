@@ -38,7 +38,7 @@ export const Wrapper = styled.main`
     }
 
     img {
-      max-width: min(70rem, 100%);
+      width: 100%;
       margin-bottom: ${theme.spacings.xsmall};
     }
 

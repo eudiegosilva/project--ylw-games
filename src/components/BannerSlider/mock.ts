@@ -1,26 +1,27 @@
 export const mock = [
   {
     image:
-      'https://images.unsplash.com/photo-1496979149951-4fd28cf221e7?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1024&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2048',
-    title: 'Title example I',
-    subtitle: '<p>Lorem ipsum <strong>dolor</strong> sit amet',
+      'https://images.gog-statics.com/5643a7c831df452d29005caeca24c28cdbfaa6fbea5a9556b147ee26d325fa70_bg_crop_1680x655.jpg',
+    title: 'Cyberpunk 2077',
+    subtitle: '<p>For those obsessed with <strong>body modification</strong>',
     buttonLabel: 'buy now',
-    buttonLink: '/games/te1',
-    ribbon: 'soon'
+    buttonLink: '/game/cyberpunk-2077',
+    ribbon: 'preorder'
   },
   {
     image:
-      'https://images.unsplash.com/photo-1496283529737-a39ef33f214d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1024&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2048',
-    title: 'Title example II',
-    subtitle: '<p>Lorem ipsum <strong>dolor</strong> sit amet',
+      'https://www.rockstargames.com/reddeadredemption2/rockstar_games/r_d_r2_core/img/home_features/16.jpg',
+    title: 'Red Dead Redemption II',
+    subtitle:
+      '<p>The end of the <strong>Wild West</strong> era has begun sit amet',
     buttonLabel: 'buy now',
-    buttonLink: '/games/te2'
+    buttonLink: '/games/red-dead-redemption-2'
   },
   {
     image:
-      'https://images.unsplash.com/photo-1496979424495-8ca276b5bf34?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1024&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=2048',
-    title: 'Title example III',
-    subtitle: '<p>Lorem ipsum <strong>dolor</strong> sit amet',
+      'https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Fdetroit-become-human%2Fhome%2FDETROIT_BECOME_HUMAN_PC_SCREENSHOT_7-1920x1080-fad5546bf18b8ea5b408a3415605dfa29d4ec7d3.jpg',
+    title: 'Detroit Become Human',
+    subtitle: '<p>you will affect the <strong>humanity’s destiny</strong>',
     buttonLabel: 'buy now',
     buttonLink: '/games/te3'
   }

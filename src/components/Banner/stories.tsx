@@ -5,11 +5,12 @@ export default {
   title: 'Design System/Banner',
   component: Banner,
   args: {
-    image: 'https://source.unsplash.com/user/ryz0n/2048x1024',
-    title: 'Banner title',
-    subtitle: '<p>Just a example <strong>description</strong> banner</p>',
+    image:
+      'https://images.gog-statics.com/5643a7c831df452d29005caeca24c28cdbfaa6fbea5a9556b147ee26d325fa70_bg_crop_1680x655.jpg',
+    title: 'Cyberpunk 2077',
+    subtitle: '<p>For those obsessed with <strong>body modification</strong>',
     buttonLabel: 'buy now',
-    buttonLink: '/Banner/link'
+    buttonLink: '/game/cyberpunk-2077'
   },
   parameters: {
     jest: ['Banner.test.tsx']
@@ -48,7 +49,7 @@ export const BannerWithRibbon: Story<BannerProps> = args => (
 );
 
 BannerWithRibbon.args = {
-  ribbon: 'soon',
+  ribbon: 'preorder',
   ribbonSize: 'medium',
   ribbonColor: 'primary'
 };

@@ -19,7 +19,7 @@ export default {
   },
   decorators: [
     Story => (
-      <div style={{ margin: '0 auto', maxWidth: '130rem', padding: '2rem' }}>
+      <div style={{ margin: '0 auto', maxWidth: '130rem' }}>
         <Story />
       </div>
     )

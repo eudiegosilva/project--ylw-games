@@ -2,8 +2,33 @@ import 'match-media-mock';
 import { screen } from '@testing-library/react';
 import { renderWithTheme } from 'utils/tests/helpers';
 
-import { mock as highlightMock } from 'components/Highlight/mock';
-import { mock as gameCardSliderMock } from 'components/GameCardSlider/mock';
+const highlightMock = {
+  title: 'Cyberpunk 2077',
+  subtitle: 'For those obsessed with power, glamor and body modification',
+  buttonLabel: 'buy now',
+  buttonLink: '/game/cyberpunk-2077',
+  backgroundImage: '/img/cyberpunk-2077-img.png',
+  floatImage: '/img/cyberpunk-2077-float.png'
+};
+
+const gameCardSliderMock = [
+  {
+    title: 'Red Dead Redemption II',
+    developer: 'Rockstar Games',
+    image:
+      'https://www.rockstargames.com/reddeadredemption2/rockstar_games/r_d_r2_core/img/home_features/16.jpg',
+    price: 'R$ 159,00',
+    promotionalPrice: 'R$ 129,00'
+  },
+  {
+    title: 'Detroit Become Human',
+    developer: 'Quantic Dream',
+    image:
+      'https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Fdetroit-become-human%2Fhome%2FDETROIT_BECOME_HUMAN_PC_SCREENSHOT_7-1920x1080-fad5546bf18b8ea5b408a3415605dfa29d4ec7d3.jpg',
+    price: 'R$ 189,00',
+    promotionalPrice: 'R$ 149,00'
+  }
+];
 
 import Showcase from '.';
 

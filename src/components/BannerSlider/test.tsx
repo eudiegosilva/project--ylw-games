@@ -4,7 +4,7 @@ import { renderWithTheme } from 'utils/tests/helpers';
 
 import BannerSlider from '.';
 
-const items = [
+const itemsMock = [
   {
     image: 'https://source.unsplash.com/user/ryz0n/2048x1024',
     title: 'Title example I',
@@ -25,13 +25,13 @@ const items = [
 
 describe('<BannerSlider />', () => {
   it('should render vertical slider', () => {
-    const { container } = renderWithTheme(<BannerSlider items={items} />);
+    const { container } = renderWithTheme(<BannerSlider items={itemsMock} />);
 
     expect(container.querySelector('.slick-vertical')).toBeInTheDocument();
   });
 
   it('should render with 1 active item', () => {
-    const { container } = renderWithTheme(<BannerSlider items={items} />);
+    const { container } = renderWithTheme(<BannerSlider items={itemsMock} />);
 
     expect(container.querySelectorAll('.slick-slide')).toHaveLength(2);
     expect(container.querySelectorAll('li.slick-active')).toHaveLength(1);
@@ -46,7 +46,7 @@ describe('<BannerSlider />', () => {
   });
 
   it('should render with dots', () => {
-    const { container } = renderWithTheme(<BannerSlider items={items} />);
+    const { container } = renderWithTheme(<BannerSlider items={itemsMock} />);
 
     expect(container.querySelector('.slick-dots')).toBeInTheDocument();
   });

@@ -1,9 +1,9 @@
 import { addDecorator } from '@storybook/react';
 import { withTests } from '@storybook/addon-jest';
 
-import { ThemeProvider } from 'styled-components';
-
 import results from '../.jest-test-results.json';
+
+import { ThemeProvider } from 'styled-components';
 
 import GlobalStyles from 'styles/global';
 import theme from 'styles/theme';
@@ -39,6 +39,12 @@ export const parameters = {
         value: theme.colors.white
       }
     ]
+  },
+  options: {
+    storySort: (a, b) =>
+      a[1].kind === b[1].kind
+        ? 0
+        : a[1].id.localeCompare(b[1].id, undefined, { numeric: true })
   }
 };
 

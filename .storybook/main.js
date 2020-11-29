@@ -4,6 +4,10 @@ module.exports = {
     '../src/templates/**/stories.tsx'
   ],
   addons: ['@storybook/addon-essentials', '@storybook/addon-jest'],
+  babel: async options => ({
+    ...options,
+    plugins: [...options.plugins, '@babel/plugin-transform-react-jsx']
+  }),
   webpackFinal: config => {
     config.resolve.modules.push(`${process.cwd()}/src`);
     return config;

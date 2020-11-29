@@ -33,7 +33,7 @@ export const Wrapper = styled.div`
 export const Description = styled.p`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.small};
-    color: ${theme.colors.grayWeb};
+    color: ${theme.colors.gray};
     margin-bottom: ${theme.spacings.small};
     text-align: justify;
 

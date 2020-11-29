@@ -23,15 +23,14 @@ export default {
     }
   },
   colors: {
-    black: '#000000',
-    secondary: '#171717',
-    grayWeb: '#808080',
-    grayLight: '#EAEAEA',
-    grayDark: '#2E2F42',
-    white: '#FFFFFF',
     primary: '#FFCB00',
-    primaryHover: '#FFBA00',
-    error: '#E72176'
+    secondary: '#171717',
+    black: '#000000',
+    white: '#FFFFFF',
+    gray: '#808080',
+    gallery: '#EAEAEA',
+    selectiveYellow: '#FFBA00',
+    ceriseRed: '#E72176'
   },
   spacings: {
     xxsmall: '0.8rem',

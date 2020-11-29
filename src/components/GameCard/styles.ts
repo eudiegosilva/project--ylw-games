@@ -14,7 +14,7 @@ const gamePriceModifiers = {
   `,
 
   promotional: (theme: DefaultTheme) => css`
-    color: ${theme.colors.grayWeb};
+    color: ${theme.colors.gray};
     text-decoration: line-through;
     margin-right: ${theme.spacings.xsmall};
   `
@@ -91,7 +91,7 @@ export const GameDeveloper = styled.h4`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.small};
     font-weight: ${theme.font.normal};
-    color: ${theme.colors.grayWeb};
+    color: ${theme.colors.gray};
   `}
 `;
 

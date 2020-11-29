@@ -58,7 +58,7 @@ export const Wrapper = styled.button<WrapperProps>`
     text-decoration: none;
 
     &:hover {
-      background: ${minimal ? 'none' : theme.colors.primaryHover};
+      background: ${minimal ? 'none' : theme.colors.selectiveYellow};
     }
 
     ${!!size && buttonModifiers[size](theme)};

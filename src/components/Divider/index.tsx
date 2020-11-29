@@ -5,7 +5,7 @@ export const Divider = styled.hr`
   ${({ theme }) => css`
     margin: ${theme.spacings.xxlarge} auto ${theme.spacings.medium};
     height: 0.1rem;
-    background: ${theme.colors.grayWeb};
+    background: ${theme.colors.gray};
     opacity: 0.4;
     border: none;
 

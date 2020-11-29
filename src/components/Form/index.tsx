@@ -28,8 +28,8 @@ export const FormLink = styled.div`
       transition: color, border, ${theme.transition.fast};
 
       &:hover {
-        color: ${theme.colors.primaryHover};
-        border-bottom: 0.1rem solid ${theme.colors.primaryHover};
+        color: ${theme.colors.selectiveYellow};
+        border-bottom: 0.1rem solid ${theme.colors.selectiveYellow};
       }
     }
   `}

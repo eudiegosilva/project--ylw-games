@@ -13,7 +13,7 @@ const textFieldModifiers = {
     ${Input},
     ${IconWrapper} {
       cursor: not-allowed;
-      color: ${theme.colors.grayWeb};
+      color: ${theme.colors.gray};
 
       &::placeholder {
         color: currentColor;
@@ -22,11 +22,11 @@ const textFieldModifiers = {
   `,
   error: (theme: DefaultTheme) => css`
     ${InputWrapper} {
-      border-color: ${theme.colors.error};
+      border-color: ${theme.colors.ceriseRed};
     }
     ${IconWrapper},
     ${Label} {
-      color: ${theme.colors.error};
+      color: ${theme.colors.ceriseRed};
     }
   `
 };
@@ -41,11 +41,11 @@ export const Wrapper = styled.div<WrapperProps>`
 export const InputWrapper = styled.div`
   ${({ theme }) => css`
     display: flex;
-    background: ${theme.colors.grayLight};
+    background: ${theme.colors.gallery};
     border-radius: 0.2rem;
     padding: 0 ${theme.spacings.xxsmall};
     border: 0.2rem solid;
-    border-color: ${theme.colors.grayLight};
+    border-color: ${theme.colors.gallery};
 
     &:focus-within {
       box-shadow: 0 0 0.5rem ${theme.colors.primary};
@@ -79,7 +79,7 @@ export const IconWrapper = styled.div<IconPositionProps>`
   ${({ theme, iconPosition }) => css`
     display: flex;
     width: 2.2rem;
-    color: ${theme.colors.grayWeb};
+    color: ${theme.colors.gray};
     order: ${iconPosition === 'right' ? 1 : 0};
 
     & > svg {
@@ -90,7 +90,7 @@ export const IconWrapper = styled.div<IconPositionProps>`
 
 export const Error = styled.p`
   ${({ theme }) => css`
-    color: ${theme.colors.error};
+    color: ${theme.colors.ceriseRed};
     font-size: ${theme.font.sizes.xsmall};
   `}
 `;

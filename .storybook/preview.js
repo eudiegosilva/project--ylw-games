@@ -1,12 +1,13 @@
 import { addDecorator } from '@storybook/react';
+
 import { withTests } from '@storybook/addon-jest';
-
-import results from '../.jest-test-results.json';
-
+import { withNextRouter } from 'storybook-addon-next-router';
 import { ThemeProvider } from 'styled-components';
 
 import GlobalStyles from 'styles/global';
 import theme from 'styles/theme';
+
+import results from '../.jest-test-results.json';
 
 export const decorators = [
   Story => (
@@ -49,3 +50,4 @@ export const parameters = {
 };
 
 addDecorator(withTests({ results }));
+addDecorator(withNextRouter());

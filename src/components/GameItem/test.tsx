@@ -22,4 +22,16 @@ describe('<GameItem />', () => {
     ).toHaveAttribute('src', gameItemProps.image);
     expect(screen.getByText('R$ 159,00')).toBeInTheDocument();
   });
+
+  it('should render the item with download link', () => {
+    const downloadLink = 'http://test.com';
+
+    renderWithTheme(
+      <GameItem {...gameItemProps} downloadLink={downloadLink} />
+    );
+
+    expect(
+      screen.getByRole('link', { name: `get ${gameItemProps.title} here` })
+    ).toHaveAttribute('href', downloadLink);
+  });
 });

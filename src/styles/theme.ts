@@ -27,10 +27,10 @@ export default {
     secondary: '#171717',
     black: '#000000',
     white: '#FFFFFF',
-    gray: '#808080',
+    ceriseRed: '#E72176',
     gallery: '#EAEAEA',
-    selectiveYellow: '#FFBA00',
-    ceriseRed: '#E72176'
+    gray: '#808080',
+    selectiveYellow: '#FFBA00'
   },
   spacings: {
     xxsmall: '0.8rem',

@@ -1,26 +1,83 @@
 import styled, { css } from 'styled-components';
+import media from 'styled-media-query';
 
 export const Wrapper = styled.div`
   ${({ theme }) => css`
     padding: ${theme.spacings.small};
+    border-bottom: 0.1rem solid ${theme.colors.gallery};
+
+    ${media.greaterThan('medium')`
+      display: flex;
+    `}
   `}
 `;
 
 export const ContentWrapper = styled.div`
-  ${() => css``}
+  display: flex;
 `;
 
 export const ImageWrapper = styled.div`
-  ${() => css``}
+  ${({ theme }) => css`
+    flex-shrink: 0;
+    margin-right: ${theme.spacings.xxsmall};
+    width: 9.6rem;
+    height: 5.6rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    ${media.greaterThan('medium')`
+      margin-right: ${theme.spacings.xsmall};
+      width: 15rem;
+      height: 7rem;
+    `}
+  `}
 `;
 
 export const InfoWrapper = styled.div`
-  ${() => css``}
+  ${() => css`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  `}
 `;
 
 export const GameTitle = styled.h3`
-  ${() => css``}
+  ${({ theme }) => css`
+    font-size: ${theme.font.sizes.small};
+    line-height: ${theme.font.sizes.small};
+    font-weight: ${theme.font.bold};
+    color: ${theme.colors.black};
+    margin-bottom: ${theme.spacings.xxsmall};
+
+    ${media.greaterThan('medium')`
+      font-size: 2rem;
+      line-height: 2rem;
+    `}
+  `}
 `;
+
+export const DownloadLink = styled.a`
+  ${({ theme }) => css`
+    color: ${theme.colors.primary};
+    margin-left: ${theme.spacings.xxsmall};
+
+    svg {
+      width: 2.2rem;
+    }
+  `}
+`;
+
 export const GamePrice = styled.p`
-  ${() => css``}
+  ${({ theme }) => css`
+    color: ${theme.colors.white};
+    background-color: ${theme.colors.secondary};
+    padding: 0.2rem ${theme.spacings.xxsmall};
+    border-radius: ${theme.border.radius};
+    font-size: ${theme.font.sizes.small};
+    font-weight: ${theme.font.bold};
+  `}
 `;

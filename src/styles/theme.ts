@@ -30,7 +30,8 @@ export default {
     ceriseRed: '#E72176',
     gallery: '#EAEAEA',
     gray: '#808080',
-    selectiveYellow: '#FFBA00'
+    selectiveYellow: '#FFBA00',
+    brightTurquoise: '#05D9E8'
   },
   spacings: {
     xxsmall: '0.8rem',

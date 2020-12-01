@@ -38,7 +38,7 @@ describe('<GameItem />', () => {
   it('should render the item with payment info', () => {
     const paymentInfo = {
       flag: 'mastercard',
-      image: '/img/flags/master-card.png',
+      image: '/img/flags/master-card.svg',
       number: '**** **** **** 4444',
       purchaseDate: 'purchase made on 07/20/2020 at 20:32'
     };

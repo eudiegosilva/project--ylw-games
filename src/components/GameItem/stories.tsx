@@ -24,8 +24,8 @@ export const GameItemWithPayment: Story<GameItemProps> = args => (
 GameItemWithPayment.args = {
   downloadLink: 'https://ylw-games.com/game/download/',
   paymentInfo: {
-    flag: 'mastercard',
-    image: '/img/flags/master-card.png',
+    flag: 'visa',
+    image: '/img/flags/visa.svg',
     number: '**** **** **** 4444',
     purchaseDate: 'purchase made on 07/20/2020 at 20:32'
   }

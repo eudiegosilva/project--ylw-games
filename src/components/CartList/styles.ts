@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
 import media from 'styled-media-query';
 import { tint } from 'polished';
+
 export const Wrapper = styled.main`
   ${({ theme }) => css`
     background: ${theme.colors.white};

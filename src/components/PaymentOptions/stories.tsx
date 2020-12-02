@@ -12,6 +12,9 @@ export default {
     handlePayment: () => ({})
   },
   argTypes: {
+    paymentCards: {
+      type: ''
+    },
     handlePayment: {
       action: 'clicked'
     }

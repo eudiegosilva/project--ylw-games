@@ -42,7 +42,7 @@ const PaymentOptions = ({
                   {card.number}
                 </s.CardInfo>
                 <Radio
-                  name="credit-card"
+                  name="payment-card"
                   id={card.number}
                   value={card.number}
                   onCheck={() => setChecked(true)}

@@ -1,20 +1,18 @@
 import { Story, Meta } from '@storybook/react/types-6-0';
 
 import PaymentOptions, { PaymentOptionsProps } from '.';
-
 import { mock as paymentCardsMock } from './mock';
 
 export default {
   title: 'Design System/PaymentOptions',
   component: PaymentOptions,
   args: {
-    paymentCards: paymentCardsMock,
-    handlePayment: () => ({})
+    paymentCards: paymentCardsMock
+  },
+  paymentCards: {
+    type: ''
   },
   argTypes: {
-    paymentCards: {
-      type: ''
-    },
     handlePayment: {
       action: 'clicked'
     }

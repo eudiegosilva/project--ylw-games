@@ -1,20 +1,20 @@
 import * as s from './styles';
 
-export type RibbonColors = 'primary' | 'secondary';
+export type ColorStyleProps = 'primary' | 'secondary' | 'alternative';
 export type RibbonSizes = 'small' | 'medium';
 
 export type RibbonProps = {
   children: React.ReactNode;
-  color?: RibbonColors;
+  colorStyle?: ColorStyleProps;
   size?: RibbonSizes;
 };
 
 const Ribbon = ({
   children,
-  color = 'primary',
+  colorStyle = 'primary',
   size = 'medium'
 }: RibbonProps) => (
-  <s.Wrapper color={color} size={size}>
+  <s.Wrapper colorStyle={colorStyle} size={size}>
     {children}
   </s.Wrapper>
 );

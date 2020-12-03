@@ -1,5 +1,5 @@
 import Button from 'components/Button';
-import Ribbon, { RibbonColors, RibbonSizes } from 'components/Ribbon';
+import Ribbon, { ColorStyleProps, RibbonSizes } from 'components/Ribbon';
 
 import { Heart as HeartIcon } from '@styled-icons/feather';
 import { Heart as HeartFilledIcon } from '@styled-icons/fa-solid/Heart';
@@ -17,7 +17,7 @@ export type GameCardProps = {
   onFavorite?: () => void;
   ribbon?: React.ReactNode;
   ribbonSize?: RibbonSizes;
-  ribbonColor?: RibbonColors;
+  ribbonColor?: ColorStyleProps;
 };
 
 const GameCard = ({
@@ -34,7 +34,7 @@ const GameCard = ({
 }: GameCardProps) => (
   <s.Wrapper>
     {!!ribbon && (
-      <Ribbon color={ribbonColor} size={ribbonSize}>
+      <Ribbon colorStyle={ribbonColor} size={ribbonSize}>
         {ribbon}
       </Ribbon>
     )}

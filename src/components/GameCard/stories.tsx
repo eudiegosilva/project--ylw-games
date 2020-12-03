@@ -1,4 +1,5 @@
 import { Story, Meta } from '@storybook/react/types-6-0';
+
 import GameCard, { GameCardProps } from '.';
 
 export default {
@@ -78,7 +79,6 @@ export const GameCardWithRibbon: Story<GameCardProps> = args => (
 );
 
 GameCardWithRibbon.args = {
-  ribbon: 'soon',
-  ribbonSize: 'small',
+  ribbon: 'preorder',
   ribbonColor: 'primary'
 };

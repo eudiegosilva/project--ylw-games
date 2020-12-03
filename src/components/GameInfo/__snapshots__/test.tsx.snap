@@ -116,8 +116,8 @@ exports[`<GameInfo /> should render game info 1`] = `
   height: 3.6rem;
   padding: 0 2.4rem;
   right: -2rem;
-  background-color: #171717;
-  color: #FFCB00;
+  background-color: #FFCB00;
+  color: #171717;
 }
 
 .c3::before {
@@ -138,8 +138,8 @@ exports[`<GameInfo /> should render game info 1`] = `
 }
 
 .c3::before {
-  border-left-color: #000;
-  border-top-color: #000;
+  border-left-color: #997a00;
+  border-top-color: #997a00;
 }
 
 .c7 {
@@ -239,7 +239,6 @@ exports[`<GameInfo /> should render game info 1`] = `
   </h2>
   <div
     class="c2 c3"
-    color="secondary"
   >
     $
     99,99

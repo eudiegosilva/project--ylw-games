@@ -1,18 +1,18 @@
 import styled, { css, DefaultTheme } from 'styled-components';
 import { darken } from 'polished';
 
-import { RibbonColors, RibbonProps } from '.';
+import { ColorStyleProps, RibbonProps } from '.';
 
 const ribbonModifiers = {
-  color: (theme: DefaultTheme, color: RibbonColors) => css`
-    background-color: ${theme.colors[color]};
-    color: ${color === 'primary'
-      ? theme.colors.secondary
-      : theme.colors.primary};
+  color: (theme: DefaultTheme, colorStyle: ColorStyleProps) => css`
+    background-color: ${theme.colors[colorStyle]};
+    color: ${colorStyle === 'secondary'
+      ? theme.colors.white
+      : theme.colors.secondary};
 
     &::before {
-      border-left-color: ${darken(0.2, theme.colors[color])};
-      border-top-color: ${darken(0.2, theme.colors[color])};
+      border-left-color: ${darken(0.2, theme.colors[colorStyle])};
+      border-top-color: ${darken(0.2, theme.colors[colorStyle])};
     }
   `,
   small: (theme: DefaultTheme) => css`
@@ -42,7 +42,7 @@ const ribbonModifiers = {
 };
 
 export const Wrapper = styled.div<Omit<RibbonProps, 'children'>>`
-  ${({ theme, color, size }) => css`
+  ${({ theme, colorStyle, size }) => css`
     position: absolute;
     top: ${theme.spacings.xsmall};
     display: flex;
@@ -62,6 +62,6 @@ export const Wrapper = styled.div<Omit<RibbonProps, 'children'>>`
     }
 
     ${!!size && ribbonModifiers[size](theme)}
-    ${!!color && ribbonModifiers.color(theme, color)};
+    ${!!colorStyle && ribbonModifiers.color(theme, colorStyle)};
   `}
 `;

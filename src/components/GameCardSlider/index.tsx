@@ -6,9 +6,11 @@ import { ArrowForwardIos as ArrowRightIcon } from '@styled-icons/material-outlin
 
 import * as s from './styles';
 
+export type ColorStyleProps = 'primary' | 'secondary' | 'alternative' | 'white';
+
 export type GameCardSliderProps = {
   items: GameCardProps[];
-  color?: 'white' | 'black';
+  colorStyle?: ColorStyleProps;
 };
 
 const settings: SliderSettings = {
@@ -48,8 +50,11 @@ const settings: SliderSettings = {
     }
   ]
 };
-const GameCardSlider = ({ items, color = 'white' }: GameCardSliderProps) => (
-  <s.Wrapper color={color}>
+const GameCardSlider = ({
+  items,
+  colorStyle = 'white'
+}: GameCardSliderProps) => (
+  <s.Wrapper colorStyle={colorStyle}>
     <Slider settings={settings}>
       {items.map(game => (
         <GameCard key={game.title} {...game} />

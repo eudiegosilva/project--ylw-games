@@ -20,7 +20,7 @@ describe('<Ribbon />', () => {
   });
 
   it('should render the secondary color', () => {
-    renderWithTheme(<Ribbon color="secondary">Ribbon</Ribbon>);
+    renderWithTheme(<Ribbon colorStyle="secondary">Ribbon</Ribbon>);
 
     expect(screen.getByText(/ribbon/i)).toHaveStyleRule(
       'background-color',

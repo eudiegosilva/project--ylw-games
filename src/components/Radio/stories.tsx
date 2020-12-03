@@ -5,6 +5,16 @@ import Radio, { RadioProps } from '.';
 export default {
   title: 'Form/Radio',
   component: Radio,
+  args: {
+    colorStyle: 'primary',
+    defaultChecked: false,
+    id: 'first',
+    label: 'first',
+    labelColor: 'secondary',
+    labelFor: 'first',
+    name: 'value',
+    value: 'first value'
+  },
   parameters: {
     layout: 'fullscreen',
     jest: ['Radio.test.tsx']
@@ -19,37 +29,28 @@ export default {
 export const RadioDefault: Story<RadioProps> = args => (
   <>
     <div style={{ padding: 10 }}>
-      <Radio
-        label="first"
-        labelFor="first"
-        id="first"
-        name="value"
-        value="first value"
-        labelColor="secondary"
-        defaultChecked
-        {...args}
-      />
+      <Radio {...args} defaultChecked />
     </div>
     <div style={{ padding: 10 }}>
       <Radio
-        label="second"
-        labelFor="second"
+        {...args}
         id="second"
+        label="second"
+        labelColor="secondary"
+        labelFor="second"
         name="value"
         value="second value"
-        labelColor="secondary"
-        {...args}
       />
     </div>
     <div style={{ padding: 10 }}>
       <Radio
-        label="third"
-        labelFor="third"
+        {...args}
         id="third"
+        label="third"
+        labelColor="secondary"
+        labelFor="third"
         name="value"
         value="third value"
-        labelColor="secondary"
-        {...args}
       />
     </div>
   </>

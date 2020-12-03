@@ -2,10 +2,13 @@ import { InputHTMLAttributes, useState } from 'react';
 
 import * as s from './styles';
 
+export type ColorStyleProps = 'primary' | 'secondary' | 'alternative' | 'white';
+
 export type CheckboxProps = {
   label?: string;
   labelFor?: string;
-  labelColor?: 'white' | 'primary' | 'secondary';
+  labelColor?: ColorStyleProps;
+  colorStyle?: ColorStyleProps;
   checkedByDefault?: boolean;
   value?: string | ReadonlyArray<string> | number;
   onCheck?: (status: boolean) => void;
@@ -15,6 +18,7 @@ const Checkbox = ({
   label,
   labelFor = '',
   labelColor = 'white',
+  colorStyle = 'primary',
   checkedByDefault = false,
   value,
   onCheck,
@@ -35,11 +39,12 @@ const Checkbox = ({
         type="checkbox"
         onChange={onChange}
         checked={checked}
+        colorStyle={colorStyle}
         value={value}
         {...props}
       />
       {label && (
-        <s.Label htmlFor={labelFor} labelColor={labelColor}>
+        <s.Label htmlFor={labelFor} colorStyle={labelColor}>
           {label}
         </s.Label>
       )}

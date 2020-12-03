@@ -2,26 +2,25 @@ import { InputHTMLAttributes } from 'react';
 
 import * as s from './styles';
 
-export type ColorStyleProps = 'primary' | 'secondary' | 'alternative';
-
+export type ColorStyleProps = 'primary' | 'secondary' | 'alternative' | 'white';
 type RadioValue = string | ReadonlyArray<string> | number;
 
 export type RadioProps = {
-  label?: string;
-  labelColor?: 'white' | 'primary' | 'secondary' | 'alternative';
   colorStyle?: ColorStyleProps;
+  label?: string;
+  labelColor?: ColorStyleProps;
   labelFor?: string;
   value?: RadioValue;
   onCheck?: (value?: RadioValue) => void;
 } & InputHTMLAttributes<HTMLInputElement>;
 
 const Radio = ({
-  label,
-  labelFor = '',
-  labelColor,
   colorStyle = 'primary',
-  value,
+  label,
+  labelColor,
+  labelFor = '',
   onCheck,
+  value,
   ...props
 }: RadioProps) => {
   const onChange = () => {
@@ -30,11 +29,11 @@ const Radio = ({
   return (
     <s.Wrapper>
       <s.Input
-        type="radio"
-        id={labelFor}
-        value={value}
         colorStyle={colorStyle}
+        id={labelFor}
         onChange={onChange}
+        type="radio"
+        value={value}
         {...props}
       />
       {!!label && (

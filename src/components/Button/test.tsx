@@ -37,7 +37,7 @@ describe('<Button />', () => {
     });
   });
 
-  it('should render the primary model style', () => {
+  it('should render the primary color style', () => {
     renderWithTheme(<Button>Button</Button>);
 
     expect(screen.getByRole('button', { name: /Button/i })).toHaveStyle({
@@ -46,8 +46,8 @@ describe('<Button />', () => {
     });
   });
 
-  it('should render the secondary model style', () => {
-    renderWithTheme(<Button model="secondary">Button</Button>);
+  it('should render the secondary color style', () => {
+    renderWithTheme(<Button colorStyle="secondary">Button</Button>);
 
     expect(screen.getByRole('button', { name: /Button/i })).toHaveStyle({
       background: '#171717',
@@ -55,8 +55,8 @@ describe('<Button />', () => {
     });
   });
 
-  it('should render the alternative model style', () => {
-    renderWithTheme(<Button model="alternative">Button</Button>);
+  it('should render the alternative color style', () => {
+    renderWithTheme(<Button colorStyle="alternative">Button</Button>);
 
     expect(screen.getByRole('button', { name: /Button/i })).toHaveStyle({
       background: '#05D9E8',
@@ -102,12 +102,12 @@ describe('<Button />', () => {
     );
   });
 
-  it('should render a minimal version with a secondary model based in prop', () => {
+  it('should render a minimal version with a secondary color style based in prop', () => {
     renderWithTheme(
       <Button
         icon={<ShoppingCartIcon data-testid="icon" />}
         minimal
-        model="secondary"
+        colorStyle="secondary"
       >
         Button
       </Button>
@@ -127,12 +127,12 @@ describe('<Button />', () => {
     );
   });
 
-  it('should render a minimal version with a alternative model based in prop', () => {
+  it('should render a minimal version with a alternative color style based in prop', () => {
     renderWithTheme(
       <Button
         icon={<ShoppingCartIcon data-testid="icon" />}
         minimal
-        model="alternative"
+        colorStyle="alternative"
       >
         Button
       </Button>

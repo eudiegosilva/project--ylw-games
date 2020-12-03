@@ -22,7 +22,7 @@ export default {
       },
       defaultValue: 'medium'
     },
-    model: {
+    colorStyle: {
       control: {
         type: 'select',
         options: ['primary', 'secondary', 'alternative']

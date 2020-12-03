@@ -7,7 +7,7 @@ type MinimalProps = boolean | undefined;
 
 export type WrapperProps = {
   hasIcon: boolean;
-} & Pick<ButtonProps, 'size' | 'fullWidth' | 'minimal' | 'model'>;
+} & Pick<ButtonProps, 'size' | 'fullWidth' | 'minimal' | 'colorStyle'>;
 
 const buttonModifiers = {
   primary: (theme: DefaultTheme, minimal: MinimalProps) => css`
@@ -74,7 +74,7 @@ const buttonModifiers = {
 };
 
 export const Wrapper = styled.button<WrapperProps>`
-  ${({ theme, size, fullWidth, hasIcon, minimal, model, disabled }) => css`
+  ${({ theme, size, fullWidth, hasIcon, minimal, colorStyle, disabled }) => css`
     align-items: center;
     display: inline-flex;
     justify-content: center;
@@ -88,7 +88,7 @@ export const Wrapper = styled.button<WrapperProps>`
     ${!!size && buttonModifiers[size](theme)};
     ${!!fullWidth && buttonModifiers.fullWidth};
     ${!!hasIcon && buttonModifiers.withIcon(theme)};
-    ${!!model && buttonModifiers[model](theme, minimal)};
+    ${!!colorStyle && buttonModifiers[colorStyle](theme, minimal)};
     ${disabled && buttonModifiers.disabled()};
   `}
 `;

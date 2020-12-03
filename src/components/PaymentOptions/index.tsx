@@ -50,6 +50,7 @@ const PaymentOptions = ({
                   name="payment-card"
                   id={card.number}
                   value={card.number}
+                  colorStyle="alternative"
                   onCheck={() => setChecked(true)}
                 />
               </s.CardItem>
@@ -61,7 +62,7 @@ const PaymentOptions = ({
       </s.UpperSection>
 
       <s.LowerSection>
-        <Button as="a" fullWidth minimal>
+        <Button as="a" fullWidth minimal colorStyle="alternative">
           continue shopping
         </Button>
         <Button
@@ -69,6 +70,7 @@ const PaymentOptions = ({
           icon={<ShoppingCartIcon />}
           onClick={handlePayment}
           disabled={!checked}
+          colorStyle="alternative"
         >
           buy now
         </Button>

@@ -2,7 +2,7 @@ import { forwardRef, AnchorHTMLAttributes, ButtonHTMLAttributes } from 'react';
 
 import * as s from './styles';
 
-export type ModelProps = 'primary' | 'secondary' | 'alternative';
+export type ColorStyleProps = 'primary' | 'secondary' | 'alternative';
 
 type ButtonTypes =
   | AnchorHTMLAttributes<HTMLAnchorElement>
@@ -12,7 +12,7 @@ export type ButtonProps = {
   size?: 'small' | 'medium' | 'large';
   fullWidth?: boolean;
   minimal?: boolean;
-  model?: ModelProps;
+  colorStyle?: ColorStyleProps;
   icon?: React.ReactNode;
   as?: React.ElementType;
 } & ButtonTypes;
@@ -22,7 +22,7 @@ const Button: React.ForwardRefRenderFunction<s.WrapperProps, ButtonProps> = (
     children,
     fullWidth = false,
     minimal = false,
-    model = 'primary',
+    colorStyle = 'primary',
     icon,
     size = 'medium',
     ...props
@@ -34,7 +34,7 @@ const Button: React.ForwardRefRenderFunction<s.WrapperProps, ButtonProps> = (
     fullWidth={fullWidth}
     hasIcon={!!icon}
     minimal={minimal}
-    model={model}
+    colorStyle={colorStyle}
     ref={ref}
     {...props}
   >

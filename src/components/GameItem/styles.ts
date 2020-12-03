@@ -62,7 +62,7 @@ export const GameTitle = styled.h3`
 
 export const DownloadLink = styled.a`
   ${({ theme }) => css`
-    color: ${theme.colors.brightTurquoise};
+    color: ${theme.colors.alternative};
     margin-left: ${theme.spacings.xxsmall};
 
     svg {

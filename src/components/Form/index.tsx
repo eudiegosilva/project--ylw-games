@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { tint } from 'polished';
 
 import * as TextFieldStyles from 'components/TextField/styles';
 import * as ButtonStyles from 'components/Button/styles';
@@ -28,8 +29,8 @@ export const FormLink = styled.div`
       transition: color, border, ${theme.transition.fast};
 
       &:hover {
-        color: ${theme.colors.selectiveYellow};
-        border-bottom: 0.1rem solid ${theme.colors.selectiveYellow};
+        color: ${tint(0.2, theme.colors.primary)};
+        border-bottom: 0.1rem solid ${tint(0.2, theme.colors.primary)};
       }
     }
   `}

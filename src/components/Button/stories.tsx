@@ -22,6 +22,13 @@ export default {
       },
       defaultValue: 'medium'
     },
+    model: {
+      control: {
+        type: 'select',
+        options: ['primary', 'secondary', 'alternative']
+      },
+      defaultValue: 'primary'
+    },
     minimal: {
       control: 'boolean'
     }

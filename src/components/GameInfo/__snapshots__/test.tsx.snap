@@ -14,10 +14,8 @@ exports[`<GameInfo /> should render game info 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background: #FFCB00;
   border-radius: 0.4rem;
   border: none;
-  color: #171717;
   cursor: pointer;
   padding: 0.8rem;
   -webkit-transition: background 0.3s;
@@ -27,10 +25,8 @@ exports[`<GameInfo /> should render game info 1`] = `
   font-size: 1.4rem;
   height: 4rem;
   padding: 0.8rem 3.2rem;
-}
-
-.c6:hover {
-  background: #FFBA00;
+  background: #FFCB00;
+  color: #171717;
 }
 
 .c6 svg {
@@ -39,6 +35,11 @@ exports[`<GameInfo /> should render game info 1`] = `
 
 .c6 svg + span {
   margin-left: 0.8rem;
+}
+
+.c6:hover {
+  background: #ffd533;
+  color: #171717;
 }
 
 .c8 {
@@ -54,10 +55,8 @@ exports[`<GameInfo /> should render game info 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background: #FFCB00;
   border-radius: 0.4rem;
   border: none;
-  color: #171717;
   cursor: pointer;
   padding: 0.8rem;
   -webkit-transition: background 0.3s;
@@ -71,10 +70,6 @@ exports[`<GameInfo /> should render game info 1`] = `
   color: #FFCB00;
 }
 
-.c8:hover {
-  background: none;
-}
-
 .c8 svg {
   width: 1.5rem;
 }
@@ -84,7 +79,8 @@ exports[`<GameInfo /> should render game info 1`] = `
 }
 
 .c8:hover {
-  color: #cca200;
+  background: none;
+  color: #ffd533;
 }
 
 .c1 {

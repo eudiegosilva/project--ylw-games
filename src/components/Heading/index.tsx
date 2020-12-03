@@ -1,15 +1,15 @@
 import * as s from './styles';
 
+export type LineColorProps = 'primary' | 'secondary' | 'alternative';
+
 export type HeadingProps = {
   children: React.ReactNode;
-  color?: 'white' | 'secondary';
+  color?: 'white' | 'secondary' | 'alternative';
   lineLeft?: true | false;
   lineBottom?: true | false;
   size?: 'small' | 'medium' | 'huge';
   lineColor?: LineColorProps;
 };
-
-export type LineColorProps = 'primary' | 'secondary';
 
 const Heading = ({
   children,

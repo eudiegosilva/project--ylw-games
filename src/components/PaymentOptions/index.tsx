@@ -29,7 +29,12 @@ const PaymentOptions = ({
   return (
     <s.Wrapper>
       <s.UpperSection>
-        <Heading color="secondary" lineBottom lineColor="primary" size="small">
+        <Heading
+          color="secondary"
+          lineBottom
+          lineColor="alternative"
+          size="small"
+        >
           payment
         </Heading>
 

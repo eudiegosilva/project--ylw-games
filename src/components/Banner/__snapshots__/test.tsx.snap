@@ -14,10 +14,8 @@ exports[`<Banner /> should succefully render 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background: #FFCB00;
   border-radius: 0.4rem;
   border: none;
-  color: #171717;
   cursor: pointer;
   padding: 0.8rem;
   -webkit-transition: background 0.3s;
@@ -27,10 +25,13 @@ exports[`<Banner /> should succefully render 1`] = `
   font-size: 1.4rem;
   height: 4rem;
   padding: 0.8rem 3.2rem;
+  background: #FFCB00;
+  color: #171717;
 }
 
 .c5:hover {
-  background: #FFBA00;
+  background: #ffd533;
+  color: #171717;
 }
 
 .c0 {

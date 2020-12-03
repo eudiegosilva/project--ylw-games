@@ -37,8 +37,8 @@ describe('<Form />', () => {
       }
 
       .c1 a:hover {
-        color: #FFBA00;
-        border-bottom: 0.1rem solid #FFBA00;
+        color: #ffd533;
+        border-bottom: 0.1rem solid #ffd533;
       }
 
       <body>

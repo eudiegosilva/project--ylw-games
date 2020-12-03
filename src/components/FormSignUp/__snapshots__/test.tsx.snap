@@ -14,10 +14,8 @@ exports[`<FormSignUp /> should render the form 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background: #FFCB00;
   border-radius: 0.4rem;
   border: none;
-  color: #171717;
   cursor: pointer;
   padding: 0.8rem;
   -webkit-transition: background 0.3s;
@@ -28,10 +26,13 @@ exports[`<FormSignUp /> should render the form 1`] = `
   height: 5rem;
   padding: 0.8rem 4.8rem;
   width: 100%;
+  background: #FFCB00;
+  color: #171717;
 }
 
 .c7:hover {
-  background: #FFBA00;
+  background: #ffd533;
+  color: #171717;
 }
 
 .c2 {
@@ -102,8 +103,8 @@ exports[`<FormSignUp /> should render the form 1`] = `
 }
 
 .c8 a:hover {
-  color: #FFBA00;
-  border-bottom: 0.1rem solid #FFBA00;
+  color: #ffd533;
+  border-bottom: 0.1rem solid #ffd533;
 }
 
 .c4 {

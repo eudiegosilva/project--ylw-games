@@ -37,6 +37,33 @@ describe('<Button />', () => {
     });
   });
 
+  it('should render the primary model style', () => {
+    renderWithTheme(<Button>Button</Button>);
+
+    expect(screen.getByRole('button', { name: /Button/i })).toHaveStyle({
+      background: '#FFCB00',
+      color: '#171717'
+    });
+  });
+
+  it('should render the secondary model style', () => {
+    renderWithTheme(<Button model="secondary">Button</Button>);
+
+    expect(screen.getByRole('button', { name: /Button/i })).toHaveStyle({
+      background: '#171717',
+      color: '#FFFFFF'
+    });
+  });
+
+  it('should render the alternative model style', () => {
+    renderWithTheme(<Button model="alternative">Button</Button>);
+
+    expect(screen.getByRole('button', { name: /Button/i })).toHaveStyle({
+      background: '#05D9E8',
+      color: '#171717'
+    });
+  });
+
   it('should render full width button', () => {
     renderWithTheme(<Button fullWidth>Button</Button>);
 
@@ -69,6 +96,56 @@ describe('<Button />', () => {
     expect(screen.getByRole('button', { name: /Button/i })).toHaveStyleRule(
       'background',
       'none',
+      {
+        modifier: ':hover'
+      }
+    );
+  });
+
+  it('should render a minimal version with a secondary model based in prop', () => {
+    renderWithTheme(
+      <Button
+        icon={<ShoppingCartIcon data-testid="icon" />}
+        minimal
+        model="secondary"
+      >
+        Button
+      </Button>
+    );
+
+    expect(screen.getByRole('button', { name: /Button/i })).toHaveStyle({
+      background: 'none',
+      color: '#171717'
+    });
+
+    expect(screen.getByRole('button', { name: /Button/i })).toHaveStyleRule(
+      'color',
+      '#454545',
+      {
+        modifier: ':hover'
+      }
+    );
+  });
+
+  it('should render a minimal version with a alternative model based in prop', () => {
+    renderWithTheme(
+      <Button
+        icon={<ShoppingCartIcon data-testid="icon" />}
+        minimal
+        model="alternative"
+      >
+        Button
+      </Button>
+    );
+
+    expect(screen.getByRole('button', { name: /Button/i })).toHaveStyle({
+      background: 'none',
+      color: '#05D9E8'
+    });
+
+    expect(screen.getByRole('button', { name: /Button/i })).toHaveStyleRule(
+      'color',
+      '#37e0ec',
       {
         modifier: ':hover'
       }

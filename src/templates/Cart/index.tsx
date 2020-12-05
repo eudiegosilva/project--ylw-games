@@ -29,9 +29,7 @@ const Cart = ({
   return (
     <Base>
       <Container>
-        <Heading lineLeft lineColor="alternative">
-          my cart
-        </Heading>
+        <Heading lineLeft>my cart</Heading>
 
         {items.length ? (
           <s.Content>

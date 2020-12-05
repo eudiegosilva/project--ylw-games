@@ -22,6 +22,11 @@ export const IconWrapper = styled.div`
     height: 2.4rem;
     margin: 1rem;
     width: 2.4rem;
+
+    a {
+      text-decoration: none;
+      color: ${theme.colors.white};
+    }
   `}
 `;
 

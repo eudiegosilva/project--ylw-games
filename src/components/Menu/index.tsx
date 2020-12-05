@@ -51,7 +51,11 @@ const Menu = ({ username }: MenuProps) => {
         </s.IconWrapper>
 
         <s.IconWrapper>
-          <ShoppingCartIcon aria-label="open shopping cart" />
+          <Link href="/cart" passHref>
+            <a>
+              <ShoppingCartIcon aria-label="open shopping cart" />
+            </a>
+          </Link>
         </s.IconWrapper>
 
         {!username && (

@@ -56,7 +56,7 @@ describe('<GameCardSlider />', () => {
   });
 
   it('should render white arrows based on prop color', () => {
-    renderWithTheme(<GameCardSlider items={items} color="white" />);
+    renderWithTheme(<GameCardSlider items={items} colorStyle="white" />);
     expect(screen.getByLabelText(/previous games/i)).toHaveStyle({
       color: '#FFFFFF'
     });

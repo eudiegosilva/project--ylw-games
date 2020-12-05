@@ -116,8 +116,8 @@ exports[`<GameInfo /> should render game info 1`] = `
   height: 3.6rem;
   padding: 0 2.4rem;
   right: -2rem;
-  background-color: #FFCB00;
-  color: #171717;
+  background-color: #171717;
+  color: #FFFFFF;
 }
 
 .c3::before {
@@ -138,8 +138,8 @@ exports[`<GameInfo /> should render game info 1`] = `
 }
 
 .c3::before {
-  border-left-color: #997a00;
-  border-top-color: #997a00;
+  border-left-color: #000;
+  border-top-color: #000;
 }
 
 .c7 {

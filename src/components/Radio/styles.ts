@@ -3,14 +3,14 @@ import styled, { css } from 'styled-components';
 import { RadioProps } from '.';
 
 type LabelProps = Pick<RadioProps, 'labelColor'>;
-type ColorProps = Pick<RadioProps, 'colorStyle'>;
+type ColorStyleProps = Pick<RadioProps, 'colorStyle'>;
 
 export const Wrapper = styled.main`
   display: flex;
   align-items: center;
 `;
 
-export const Input = styled.input<ColorProps>`
+export const Input = styled.input<ColorStyleProps>`
   ${({ theme, colorStyle }) => css`
     display: flex;
     align-items: center;

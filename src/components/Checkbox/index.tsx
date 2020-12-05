@@ -1,8 +1,8 @@
 import { InputHTMLAttributes, useState } from 'react';
 
-import * as s from './styles';
+import { ColorStyleProps } from 'types/global';
 
-export type ColorStyleProps = 'primary' | 'secondary' | 'alternative' | 'white';
+import * as s from './styles';
 
 export type CheckboxProps = {
   label?: string;

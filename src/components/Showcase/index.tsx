@@ -1,31 +1,35 @@
 import GameCardSlider from 'components/GameCardSlider';
 import Heading from 'components/Heading';
-import { GameCardProps } from 'components/GameCard';
 import Highlight, { HighlightProps } from 'components/Highlight';
+import { GameCardProps } from 'components/GameCard';
+
+import { ColorStyleProps } from 'types/global';
 
 import * as s from './styles';
 
 export type ShowcaseProps = {
-  title?: string;
-  highlight?: HighlightProps;
+  contentStyle?: ColorStyleProps;
   games?: GameCardProps[];
+  highlight?: HighlightProps;
+  title?: string;
   titleColor?: 'white' | 'secondary';
 };
 
 const Showcase = ({
-  title,
-  titleColor = 'white',
+  contentStyle = 'primary',
   games,
-  highlight
+  highlight,
+  title,
+  titleColor = 'white'
 }: ShowcaseProps) => (
   <s.Wrapper>
     {!!title && (
-      <Heading lineLeft color={titleColor}>
+      <Heading lineLeft color={titleColor} lineColor={contentStyle}>
         {title}
       </Heading>
     )}
-    {!!highlight && <Highlight {...highlight} />}
-    {!!games && <GameCardSlider items={games} />}
+    {!!highlight && <Highlight {...highlight} contentStyle={contentStyle} />}
+    {!!games && <GameCardSlider items={games} contentStyle={contentStyle} />}
   </s.Wrapper>
 );
 

@@ -1,32 +1,36 @@
 import Button from 'components/Button';
 
+import { ColorStyleProps } from 'types/global';
+
 import * as s from './styles';
 
 export type HighlightProps = {
-  title: string;
-  subtitle: string;
+  alignment?: 'left' | 'right';
+  backgroundImage: string;
   buttonLabel: string;
   buttonLink: string;
-  backgroundImage: string;
+  contentStyle?: ColorStyleProps;
   floatImage?: string;
-  alignment?: 'left' | 'right';
+  subtitle: string;
+  title: string;
 };
 
 const Highlight = ({
-  title,
-  subtitle,
+  alignment = 'right',
+  backgroundImage,
   buttonLabel,
   buttonLink,
-  backgroundImage,
+  contentStyle = 'primary',
   floatImage,
-  alignment = 'right'
+  subtitle,
+  title
 }: HighlightProps) => (
   <s.Wrapper backgroundImage={backgroundImage} alignment={alignment}>
     {!!floatImage && <s.FloatImage src={floatImage} alt={title} />}
     <s.ContentWrapper>
       <s.Title>{title}</s.Title>
       <s.Subtitle>{subtitle}</s.Subtitle>
-      <Button as="a" href={buttonLink}>
+      <Button as="a" href={buttonLink} colorStyle={contentStyle}>
         {buttonLabel}
       </Button>
     </s.ContentWrapper>

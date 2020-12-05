@@ -36,7 +36,6 @@ export const RadioDefault: Story<RadioProps> = args => (
         {...args}
         id="second"
         label="second"
-        labelColor="secondary"
         labelFor="second"
         name="value"
         value="second value"
@@ -47,7 +46,6 @@ export const RadioDefault: Story<RadioProps> = args => (
         {...args}
         id="third"
         label="third"
-        labelColor="secondary"
         labelFor="third"
         name="value"
         value="third value"

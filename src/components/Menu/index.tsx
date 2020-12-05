@@ -1,14 +1,14 @@
 import { useState } from 'react';
 import Link from 'next/link';
 
-import Logo from 'components/Logo';
 import Button from 'components/Button';
+import Logo from 'components/Logo';
 import MediaMatch from 'components/MediaMatch';
 
+import { Close as CloseIcon } from '@styled-icons/evil/Close';
+import { Menu2 as MenuIcon } from '@styled-icons/remix-line/Menu2';
 import { Search as SearchIcon } from '@styled-icons/feather/Search';
 import { ShoppingCart as ShoppingCartIcon } from '@styled-icons/feather/ShoppingCart';
-import { Menu2 as MenuIcon } from '@styled-icons/remix-line/Menu2';
-import { Close as CloseIcon } from '@styled-icons/evil/Close';
 
 import * as s from './styles';
 

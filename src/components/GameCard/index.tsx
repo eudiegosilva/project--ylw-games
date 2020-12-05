@@ -1,5 +1,7 @@
 import Button from 'components/Button';
-import Ribbon, { ColorStyleProps, RibbonSizes } from 'components/Ribbon';
+import Ribbon, { RibbonSizes } from 'components/Ribbon';
+
+import { ColorStyleProps } from 'types/global';
 
 import { Heart as HeartIcon } from '@styled-icons/feather';
 import { Heart as HeartFilledIcon } from '@styled-icons/fa-solid/Heart';
@@ -18,19 +20,21 @@ export type GameCardProps = {
   ribbon?: React.ReactNode;
   ribbonSize?: RibbonSizes;
   ribbonColor?: ColorStyleProps;
+  contentStyle?: ColorStyleProps;
 };
 
 const GameCard = ({
-  title,
+  contentStyle = 'primary',
   developer,
+  favorite = false,
   image,
+  onFavorite,
   price,
   promotionalPrice,
-  favorite = false,
-  onFavorite,
   ribbon,
   ribbonColor = 'primary',
-  ribbonSize = 'small'
+  ribbonSize = 'small',
+  title
 }: GameCardProps) => (
   <s.Wrapper>
     {!!ribbon && (
@@ -62,7 +66,11 @@ const GameCard = ({
         <s.GamePrice aria-label="game price">
           {promotionalPrice || price}
         </s.GamePrice>
-        <Button icon={<ShoppingCartIcon />} size="small" />
+        <Button
+          icon={<ShoppingCartIcon />}
+          size="small"
+          colorStyle={contentStyle}
+        />
       </s.PriceWrapper>
     </s.ContentWrapper>
   </s.Wrapper>

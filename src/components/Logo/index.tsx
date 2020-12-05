@@ -1,17 +1,19 @@
 import * as s from './styles';
 
+import { ColorStyleProps } from 'types/global';
+
 export type LogoProps = {
-  color?: 'white' | 'secondary';
-  size?: 'normal' | 'large';
+  color?: ColorStyleProps;
   hideTextOnMobile?: true | false;
   id?: string;
+  size?: 'normal' | 'large';
 };
 
 const Logo = ({
   color = 'white',
-  size = 'normal',
   hideTextOnMobile = false,
-  id = 'logo'
+  id = 'logo',
+  size = 'normal'
 }: LogoProps) => (
   <s.Wrapper color={color} size={size} hideTextOnMobile={hideTextOnMobile}>
     <svg

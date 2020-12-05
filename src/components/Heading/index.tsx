@@ -1,6 +1,6 @@
 import * as s from './styles';
 
-export type ColorStyleProps = 'primary' | 'secondary' | 'alternative' | 'white';
+import { ColorStyleProps } from 'types/global';
 
 export type HeadingProps = {
   children: React.ReactNode;

@@ -1,7 +1,8 @@
 import styled, { css, DefaultTheme } from 'styled-components';
 import media from 'styled-media-query';
 
-import { HeadingProps, ColorStyleProps } from '.';
+import { ColorStyleProps } from 'types/global';
+import { HeadingProps } from '.';
 
 export const headingModifiers = {
   lineLeft: (theme: DefaultTheme, lineColor: ColorStyleProps) => css`

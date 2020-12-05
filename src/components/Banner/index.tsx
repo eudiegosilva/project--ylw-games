@@ -1,28 +1,32 @@
 import Button from 'components/Button';
-import Ribbon, { ColorStyleProps, RibbonSizes } from 'components/Ribbon';
+import Ribbon, { RibbonSizes } from 'components/Ribbon';
+
+import { ColorStyleProps } from 'types/global';
 
 import * as s from './styles';
 
 export type BannerProps = {
-  image: string;
-  title: string;
-  subtitle: string;
   buttonLabel: string;
   buttonLink: string;
+  contentStyle?: ColorStyleProps;
+  image: string;
   ribbon?: React.ReactNode;
-  ribbonSize?: RibbonSizes;
   ribbonColor?: ColorStyleProps;
+  ribbonSize?: RibbonSizes;
+  subtitle: string;
+  title: string;
 };
 
 const Banner = ({
-  image,
-  title,
-  subtitle,
   buttonLabel,
   buttonLink,
+  contentStyle = 'primary',
+  image,
   ribbon,
   ribbonColor = 'primary',
-  ribbonSize = 'medium'
+  ribbonSize = 'medium',
+  subtitle,
+  title
 }: BannerProps) => (
   <s.Wrapper>
     <s.Image src={image} role="img" aria-label={title} />
@@ -33,8 +37,11 @@ const Banner = ({
     )}
     <s.Caption>
       <s.Title>{title}</s.Title>
-      <s.Subtitle dangerouslySetInnerHTML={{ __html: subtitle }} />
-      <Button as="a" href={buttonLink} size="medium">
+      <s.Subtitle
+        dangerouslySetInnerHTML={{ __html: subtitle }}
+        highlightColor={contentStyle}
+      />
+      <Button as="a" href={buttonLink} size="medium" colorStyle={contentStyle}>
         {buttonLabel}
       </Button>
     </s.Caption>

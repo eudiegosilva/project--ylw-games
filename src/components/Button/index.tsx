@@ -1,8 +1,8 @@
 import { forwardRef, AnchorHTMLAttributes, ButtonHTMLAttributes } from 'react';
 
-import * as s from './styles';
+import { ColorStyleProps } from 'types/global';
 
-export type ColorStyleProps = 'primary' | 'secondary' | 'alternative' | 'white';
+import * as s from './styles';
 
 type ButtonTypes =
   | AnchorHTMLAttributes<HTMLAnchorElement>

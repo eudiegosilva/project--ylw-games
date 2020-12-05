@@ -3,8 +3,14 @@ import media from 'styled-media-query';
 
 import * as RibbonStyles from 'components/Ribbon/styles';
 
+import { ColorStyleProps } from 'types/global';
+
 type ImageProps = {
   src: string;
+};
+
+type SubtitleProps = {
+  highlightColor: ColorStyleProps;
 };
 
 export const Wrapper = styled.main`
@@ -68,15 +74,15 @@ export const Title = styled.h2`
   `}
 `;
 
-export const Subtitle = styled.h3`
-  ${({ theme }) => css`
+export const Subtitle = styled.h3<SubtitleProps>`
+  ${({ theme, highlightColor }) => css`
     color: ${theme.colors.white};
     font-size: ${theme.font.sizes.small};
     font-weight: ${theme.font.normal};
     margin-bottom: ${theme.spacings.xsmall};
 
     strong {
-      color: ${theme.colors.primary};
+      color: ${theme.colors[highlightColor]};
       font-weight: ${theme.font.bold};
     }
 

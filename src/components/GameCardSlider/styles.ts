@@ -3,10 +3,10 @@ import media from 'styled-media-query';
 
 import { GameCardSliderProps } from '.';
 
-type WrapperProps = Pick<GameCardSliderProps, 'colorStyle'>;
+type WrapperProps = Pick<GameCardSliderProps, 'arrowColorStyle'>;
 
 export const Wrapper = styled.section<WrapperProps>`
-  ${({ theme, colorStyle }) => css`
+  ${({ theme, arrowColorStyle }) => css`
     ${media.lessThan('huge')`
       overflow-x: hidden;
     `}
@@ -33,7 +33,7 @@ export const Wrapper = styled.section<WrapperProps>`
     .slick-prev,
     .slick-next {
       display: block;
-      color: ${theme.colors[colorStyle!]};
+      color: ${theme.colors[arrowColorStyle!]};
       cursor: pointer;
       position: absolute;
       top: 50%;

@@ -4,9 +4,10 @@ import { Add as AddIcon } from '@styled-icons/material-outlined';
 import { ShoppingCart as ShoppingCartIcon } from '@styled-icons/feather/ShoppingCart';
 
 import Button from 'components/Button';
-
 import Heading from 'components/Heading';
 import Radio from 'components/Radio';
+
+import { ColorStyleProps } from 'types/global';
 
 import * as s from './styles';
 
@@ -19,11 +20,13 @@ export type PaymentCard = {
 export type PaymentOptionsProps = {
   paymentCards: PaymentCard[];
   handlePayment: () => void;
+  contentStyle?: ColorStyleProps;
 };
 
 const PaymentOptions = ({
-  paymentCards,
-  handlePayment
+  contentStyle = 'primary',
+  handlePayment,
+  paymentCards
 }: PaymentOptionsProps) => {
   const [checked, setChecked] = useState(false);
   return (
@@ -32,7 +35,7 @@ const PaymentOptions = ({
         <Heading
           color="secondary"
           lineBottom
-          lineColor="alternative"
+          lineColor={contentStyle}
           size="small"
         >
           payment
@@ -50,7 +53,7 @@ const PaymentOptions = ({
                   name="payment-card"
                   id={card.number}
                   value={card.number}
-                  colorStyle="alternative"
+                  colorStyle={contentStyle}
                   onCheck={() => setChecked(true)}
                 />
               </s.CardItem>
@@ -62,7 +65,7 @@ const PaymentOptions = ({
       </s.UpperSection>
 
       <s.LowerSection>
-        <Button as="a" fullWidth minimal colorStyle="alternative">
+        <Button as="a" fullWidth minimal colorStyle={contentStyle}>
           continue shopping
         </Button>
         <Button
@@ -70,7 +73,7 @@ const PaymentOptions = ({
           icon={<ShoppingCartIcon />}
           onClick={handlePayment}
           disabled={!checked}
-          colorStyle="alternative"
+          colorStyle={contentStyle}
         >
           buy now
         </Button>

@@ -14,7 +14,8 @@ export default {
   parameters: {
     backgrounds: {
       default: 'dark'
-    }
+    },
+    jest: ['CartList.test.tsx']
   }
 } as Meta;
 

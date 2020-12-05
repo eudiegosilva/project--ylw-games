@@ -2,6 +2,7 @@ import Heading from 'components/Heading';
 import MediaMatch from 'components/MediaMatch';
 
 import { formatGenres, formatRating } from 'utils/formatters';
+import { ColorStyleProps } from 'types/global';
 
 import {
   Apple as AppleIcon,
@@ -15,21 +16,23 @@ type PlatformType = 'windows' | 'linux' | 'mac';
 type RatingType = 'BR0' | 'BR10' | 'BR12' | 'BR14' | 'BR16' | 'BR18';
 
 export type GameDetailsProps = {
+  contentStyle?: ColorStyleProps;
   developer: string;
+  genres: string[];
   platforms: PlatformType[];
   publisher: string;
-  releaseDate: string;
   rating: RatingType;
-  genres: string[];
+  releaseDate: string;
 };
 
 const GameDetails = ({
+  contentStyle = 'primary',
   developer,
+  genres,
   platforms,
   publisher,
-  releaseDate,
   rating,
-  genres
+  releaseDate
 }: GameDetailsProps) => {
   const platformIcons = {
     windows: <WindowsIcon title="windows" size={18} />,
@@ -40,7 +43,7 @@ const GameDetails = ({
   return (
     <s.Wrapper>
       <MediaMatch greaterThan="small">
-        <Heading lineLeft lineColor="primary">
+        <Heading lineLeft lineColor={contentStyle}>
           game details
         </Heading>
       </MediaMatch>

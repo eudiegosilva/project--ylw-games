@@ -20,7 +20,8 @@ export default {
   parameters: {
     backgrounds: {
       default: 'dark'
-    }
+    },
+    jest: ['PaymentOptions.test.tsx']
   },
   decorators: [
     Story => (

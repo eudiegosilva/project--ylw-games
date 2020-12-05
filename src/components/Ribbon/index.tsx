@@ -1,6 +1,7 @@
 import * as s from './styles';
 
-export type ColorStyleProps = 'primary' | 'secondary' | 'alternative';
+import { ColorStyleProps } from 'types/global';
+
 export type RibbonSizes = 'small' | 'medium';
 
 export type RibbonProps = {

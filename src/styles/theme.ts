@@ -26,8 +26,8 @@ export default {
     primary: '#FFCB00',
     secondary: '#171717',
     alternative: '#05D9E8',
-    black: '#000000',
     white: '#FFFFFF',
+    black: '#000000',
     ceriseRed: '#E72176',
     gallery: '#EAEAEA',
     gray: '#808080'

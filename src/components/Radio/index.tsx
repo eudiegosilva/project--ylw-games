@@ -1,8 +1,9 @@
 import { InputHTMLAttributes } from 'react';
 
+import { ColorStyleProps } from 'types/global';
+
 import * as s from './styles';
 
-export type ColorStyleProps = 'primary' | 'secondary' | 'alternative' | 'white';
 type RadioValue = string | ReadonlyArray<string> | number;
 
 export type RadioProps = {

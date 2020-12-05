@@ -1,5 +1,5 @@
 import styled, { css, DefaultTheme } from 'styled-components';
-import { tint } from 'polished';
+import { darken, tint } from 'polished';
 
 import { ButtonProps } from '.';
 
@@ -38,6 +38,14 @@ const buttonModifiers = {
       color: ${minimal
         ? tint(0.2, theme.colors.alternative)
         : theme.colors.secondary};
+    }
+  `,
+  white: (theme: DefaultTheme, minimal: MinimalProps) => css`
+    background: ${minimal ? 'none' : theme.colors.white};
+    color: ${theme.colors.secondary};
+    &:hover {
+      background: ${darken(0.2, theme.colors.white)};
+      color: ${darken(0.2, theme.colors.secondary)};
     }
   `,
   small: (theme: DefaultTheme) => css`

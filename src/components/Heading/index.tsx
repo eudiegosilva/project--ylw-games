@@ -1,30 +1,30 @@
 import * as s from './styles';
 
-export type LineColorProps = 'primary' | 'secondary' | 'alternative';
+export type ColorStyleProps = 'primary' | 'secondary' | 'alternative' | 'white';
 
 export type HeadingProps = {
   children: React.ReactNode;
-  color?: 'white' | 'secondary' | 'alternative';
-  lineLeft?: true | false;
+  color?: ColorStyleProps;
   lineBottom?: true | false;
+  lineColor?: ColorStyleProps;
+  lineLeft?: true | false;
   size?: 'small' | 'medium' | 'huge';
-  lineColor?: LineColorProps;
 };
 
 const Heading = ({
   children,
   color = 'white',
-  lineLeft = false,
   lineBottom = false,
-  size = 'medium',
-  lineColor = 'primary'
+  lineColor = 'primary',
+  lineLeft = false,
+  size = 'medium'
 }: HeadingProps) => (
   <s.Wrapper
     color={color}
-    lineLeft={lineLeft}
     lineBottom={lineBottom}
-    size={size}
     lineColor={lineColor}
+    lineLeft={lineLeft}
+    size={size}
   >
     {children}
   </s.Wrapper>

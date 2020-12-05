@@ -25,7 +25,7 @@ export default {
     colorStyle: {
       control: {
         type: 'select',
-        options: ['primary', 'secondary', 'alternative']
+        options: ['primary', 'secondary', 'alternative', 'white']
       },
       defaultValue: 'primary'
     },

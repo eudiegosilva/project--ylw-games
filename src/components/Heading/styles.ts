@@ -1,14 +1,14 @@
 import styled, { css, DefaultTheme } from 'styled-components';
 import media from 'styled-media-query';
 
-import { HeadingProps, LineColorProps } from '.';
+import { HeadingProps, ColorStyleProps } from '.';
 
 export const headingModifiers = {
-  lineLeft: (theme: DefaultTheme, lineColor: LineColorProps) => css`
+  lineLeft: (theme: DefaultTheme, lineColor: ColorStyleProps) => css`
     border-left: 0.7rem solid ${theme.colors[lineColor]};
     padding-left: ${theme.spacings.xxsmall};
   `,
-  lineBottom: (theme: DefaultTheme, lineColor: LineColorProps) => css`
+  lineBottom: (theme: DefaultTheme, lineColor: ColorStyleProps) => css`
     margin-bottom: ${theme.spacings.medium};
     position: relative;
     &::after {

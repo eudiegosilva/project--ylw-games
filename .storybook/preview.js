@@ -19,6 +19,7 @@ export const decorators = [
 ];
 
 export const parameters = {
+  a11y: { disable: true },
   controls: { expanded: true },
   backgrounds: {
     default: 'white',

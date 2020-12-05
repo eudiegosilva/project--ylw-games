@@ -3,7 +3,11 @@ module.exports = {
     '../src/components/**/stories.tsx',
     '../src/templates/**/stories.tsx'
   ],
-  addons: ['@storybook/addon-essentials', '@storybook/addon-jest'],
+  addons: [
+    '@storybook/addon-essentials',
+    '@storybook/addon-jest',
+    '@storybook/addon-a11y'
+  ],
   babel: async options => ({
     ...options,
     plugins: [...options.plugins, '@babel/plugin-transform-react-jsx']

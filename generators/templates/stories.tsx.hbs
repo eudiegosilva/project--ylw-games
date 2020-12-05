@@ -4,7 +4,10 @@ import {{pascalCase name}}, { {{pascalCase name}}Props } from '.';
 
 export default {
   title: 'Design System/{{pascalCase name}}',
-  component: {{pascalCase name}}
+  component: {{pascalCase name}},
+  parameters: {
+    jest: ['{{pascalCase name}}.test.tsx']
+  }
 } as Meta;
 
 export const {{pascalCase name}}Default: Story<{{pascalCase name}}Props> = args => <{{pascalCase name}} {...args} />;

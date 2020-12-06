@@ -1,11 +1,10 @@
+import { ShoppingCartIcon, HeartIcon } from 'assets/icons';
+
 import Button from 'components/Button';
 import Heading from 'components/Heading';
 import Ribbon from 'components/Ribbon';
 
 import { ColorStyleProps } from 'types/global';
-
-import { ShoppingCart as ShoppingCartIcon } from '@styled-icons/feather';
-import { Heart as HeartIcon } from '@styled-icons/feather';
 
 import * as s from './styles';
 

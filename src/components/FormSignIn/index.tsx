@@ -1,10 +1,10 @@
 import Link from 'next/link';
 
+import { LockIcon, MailIcon } from 'assets/icons';
+
 import Button from 'components/Button';
 import TextField from 'components/TextField';
 import { FormWrapper, FormLink } from 'components/Form';
-
-import { Lock, Mail } from '@styled-icons/feather';
 
 import * as s from './styles';
 
@@ -15,14 +15,14 @@ const FormSignIn = () => (
         name="email"
         placeholder="email"
         type="email"
-        icon={<Mail />}
+        icon={<MailIcon />}
       />
 
       <TextField
         name="password"
         placeholder="password"
         type="password"
-        icon={<Lock />}
+        icon={<LockIcon />}
       />
       <s.ForgotPassword href="#">forgot your password?</s.ForgotPassword>
       <Button size="large" fullWidth>

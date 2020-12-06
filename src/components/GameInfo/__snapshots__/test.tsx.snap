@@ -1,6 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<GameInfo /> should render game info 1`] = `
+.c7 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
 .c6 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -140,12 +146,6 @@ exports[`<GameInfo /> should render game info 1`] = `
 .c3::before {
   border-left-color: #000;
   border-top-color: #000;
-}
-
-.c7 {
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
 }
 
 .c0 {

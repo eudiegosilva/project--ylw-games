@@ -1,4 +1,4 @@
-import { Download as DownloadIcon } from '@styled-icons/feather/Download';
+import { DownloadIcon } from 'assets/icons';
 
 import * as s from './styles';
 

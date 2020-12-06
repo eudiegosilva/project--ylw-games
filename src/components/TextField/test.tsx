@@ -2,7 +2,7 @@ import { screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { renderWithTheme } from 'utils/tests/helpers';
 
-import { Email } from '@styled-icons/material-outlined';
+import { MailIcon } from 'assets/icons';
 
 import TextField from '.';
 
@@ -60,14 +60,14 @@ describe('<TextField />', () => {
   });
 
   it('should renders with Icon', () => {
-    renderWithTheme(<TextField icon={<Email data-testid="icon" />} />);
+    renderWithTheme(<TextField icon={<MailIcon data-testid="icon" />} />);
 
     expect(screen.getByTestId('icon')).toBeInTheDocument();
   });
 
   it('shoud renders with Icon on the right side', () => {
     renderWithTheme(
-      <TextField icon={<Email data-testid="icon" />} iconPosition="right" />
+      <TextField icon={<MailIcon data-testid="icon" />} iconPosition="right" />
     );
 
     expect(screen.getByTestId('icon').parentElement).toHaveStyle({ order: 1 });
@@ -100,7 +100,7 @@ describe('<TextField />', () => {
   it('should render with error', () => {
     const { container } = renderWithTheme(
       <TextField
-        icon={<Email data-testid="icon" />}
+        icon={<MailIcon data-testid="icon" />}
         label="textField"
         labelFor="textField"
         error="error message"

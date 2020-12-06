@@ -1,14 +1,10 @@
+import { AppleIcon, WindowsIcon, LinuxIcon } from 'assets/icons';
+
 import Heading from 'components/Heading';
 import MediaMatch from 'components/MediaMatch';
 
 import { formatGenres, formatRating } from 'utils/formatters';
 import { ColorStyleProps } from 'types/global';
-
-import {
-  Apple as AppleIcon,
-  Windows as WindowsIcon,
-  Linux as LinuxIcon
-} from '@styled-icons/fa-brands';
 
 import * as s from './styles';
 

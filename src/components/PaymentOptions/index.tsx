@@ -1,7 +1,6 @@
 import { useState } from 'react';
 
-import { Add as AddIcon } from '@styled-icons/material-outlined';
-import { ShoppingCart as ShoppingCartIcon } from '@styled-icons/feather/ShoppingCart';
+import { AddIcon, ShoppingCartIcon } from 'assets/icons';
 
 import Button from 'components/Button';
 import Heading from 'components/Heading';

@@ -1,6 +1,6 @@
 import { Story, Meta } from '@storybook/react/types-6-0';
 
-import { ShoppingCart as ShoppingCartIcon } from '@styled-icons/feather/ShoppingCart';
+import { ShoppingCartIcon } from 'assets/icons';
 
 import Button from '.';
 

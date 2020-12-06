@@ -1,11 +1,9 @@
+import { HeartIcon, HeartFilledIcon, ShoppingCartIcon } from 'assets/icons';
+
 import Button from 'components/Button';
 import Ribbon, { RibbonSizes } from 'components/Ribbon';
 
 import { ColorStyleProps } from 'types/global';
-
-import { Heart as HeartIcon } from '@styled-icons/feather';
-import { Heart as HeartFilledIcon } from '@styled-icons/fa-solid/Heart';
-import { ShoppingCart as ShoppingCartIcon } from '@styled-icons/feather/ShoppingCart';
 
 import * as s from './styles';
 

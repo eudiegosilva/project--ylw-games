@@ -1,10 +1,9 @@
+import { ArrowLeftIcon, ArrowRightIcon } from 'assets/icons';
+
 import GameCard, { GameCardProps } from 'components/GameCard';
 import Slider, { SliderSettings } from 'components/Slider';
 
 import { ColorStyleProps } from 'types/global';
-
-import { ArrowBackIos as ArrowLeftIcon } from '@styled-icons/material-outlined/ArrowBackIos';
-import { ArrowForwardIos as ArrowRightIcon } from '@styled-icons/material-outlined/ArrowForwardIos';
 
 import * as s from './styles';
 

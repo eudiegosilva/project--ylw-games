@@ -4,32 +4,37 @@ import Button from 'components/Button';
 import TextField from 'components/TextField';
 import { FormWrapper, FormLink } from 'components/Form';
 
-import { User, Lock, Mail } from '@styled-icons/feather';
+import { UserIcon, LockIcon, MailIcon } from 'assets/icons';
 
 const FormSignUp = () => (
   <FormWrapper>
     <form>
-      <TextField name="name" placeholder="name" type="name" icon={<User />} />
+      <TextField
+        name="name"
+        placeholder="name"
+        type="name"
+        icon={<UserIcon />}
+      />
 
       <TextField
         name="email"
         placeholder="email"
         type="email"
-        icon={<Mail />}
+        icon={<MailIcon />}
       />
 
       <TextField
         name="password"
         placeholder="password"
         type="password"
-        icon={<Lock />}
+        icon={<LockIcon />}
       />
 
       <TextField
         name="confirm-password"
         placeholder="confirm password"
         type="password"
-        icon={<Lock />}
+        icon={<LockIcon />}
       />
 
       <Button size="large" fullWidth>

@@ -1,12 +1,9 @@
 import { useState, useEffect, useRef } from 'react';
-
 import SlickSlider from 'react-slick';
 
-import Slider, { SliderSettings } from 'components/Slider';
+import { ArrowLeftIcon, ArrowRightIcon, CloseIcon } from 'assets/icons';
 
-import { ArrowBackIos as ArrowLeftIcon } from '@styled-icons/material-outlined/ArrowBackIos';
-import { ArrowForwardIos as ArrowRightIcon } from '@styled-icons/material-outlined/ArrowForwardIos';
-import { X as CloseIcon } from '@styled-icons/feather/X';
+import Slider, { SliderSettings } from 'components/Slider';
 
 import * as s from './styles';
 

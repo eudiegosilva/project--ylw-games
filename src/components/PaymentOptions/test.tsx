@@ -9,7 +9,7 @@ import { mock as paymentCardsMock } from './mock';
 describe('<PaymentOptions />', () => {
   it('should render the heading', () => {
     renderWithTheme(
-      <PaymentOptions paymentCards={paymentCardsMock} handlePayment={jest.fn} />
+      <PaymentOptions cards={paymentCardsMock} handlePayment={jest.fn} />
     );
 
     expect(screen.getByText(/4325/)).toBeInTheDocument();
@@ -19,7 +19,7 @@ describe('<PaymentOptions />', () => {
 
   it('should handle select card when clicking on de label', async () => {
     renderWithTheme(
-      <PaymentOptions paymentCards={paymentCardsMock} handlePayment={jest.fn} />
+      <PaymentOptions cards={paymentCardsMock} handlePayment={jest.fn} />
     );
 
     userEvent.click(screen.getByText(/4325/));
@@ -31,7 +31,7 @@ describe('<PaymentOptions />', () => {
   it('should not call handlePayment when button is disabled', () => {
     const handlePayment = jest.fn();
     renderWithTheme(
-      <PaymentOptions paymentCards={paymentCardsMock} handlePayment={jest.fn} />
+      <PaymentOptions cards={paymentCardsMock} handlePayment={jest.fn} />
     );
 
     userEvent.click(screen.getByRole('button', { name: /buy now/i }));
@@ -41,10 +41,7 @@ describe('<PaymentOptions />', () => {
   it('should call handlePayment when payment card is selected', async () => {
     const handlePayment = jest.fn();
     renderWithTheme(
-      <PaymentOptions
-        paymentCards={paymentCardsMock}
-        handlePayment={handlePayment}
-      />
+      <PaymentOptions cards={paymentCardsMock} handlePayment={handlePayment} />
     );
 
     userEvent.click(screen.getByLabelText(/4325/));

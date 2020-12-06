@@ -1,0 +1,237 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[
+  `<ProfileMenu /> should render the profile menu with links correctly 1`
+] = `
+.c2 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c1 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1.6rem 2.4rem;
+  -webkit-transition: background,color,0.3s ease-in-out;
+  transition: background,color,0.3s ease-in-out;
+  background: #FFFFFF;
+  color: #171717;
+}
+
+.c1:hover {
+  background: #FFCB00;
+  color: #000000;
+}
+
+.c1 > span {
+  margin-left: 1.6rem;
+}
+
+.c1 svg {
+  width: 2.4rem;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border: none;
+  }
+
+  .c0 a:not(:last-child) {
+    border-bottom: 0.1rem solid #EAEAEA;
+  }
+}
+
+@media (max-width:768px) {
+  .c1 {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+
+  .c1 > span {
+    display: none;
+  }
+}
+
+<nav
+  class="c0"
+>
+  <a
+    class="c1"
+    href="/profile/me"
+    title="my profile"
+  >
+    <svg
+      aria-hidden="true"
+      class="c2"
+      fill="none"
+      focusable="false"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"
+      />
+      <circle
+        cx="12"
+        cy="7"
+        r="4"
+      />
+    </svg>
+    <span>
+      my profile
+    </span>
+  </a>
+  <a
+    class="c1"
+    href="/profile/cards"
+    title="my cards"
+  >
+    <svg
+      aria-hidden="true"
+      class="c2"
+      fill="none"
+      focusable="false"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        height="16"
+        rx="2"
+        ry="2"
+        width="22"
+        x="1"
+        y="4"
+      />
+      <line
+        x1="1"
+        x2="23"
+        y1="10"
+        y2="10"
+      />
+    </svg>
+    <span>
+      my cards
+    </span>
+  </a>
+  <a
+    class="c1"
+    href="/profile/orders"
+    title="my orders"
+  >
+    <svg
+      aria-hidden="true"
+      class="c2"
+      fill="none"
+      focusable="false"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <line
+        x1="8"
+        x2="21"
+        y1="6"
+        y2="6"
+      />
+      <line
+        x1="8"
+        x2="21"
+        y1="12"
+        y2="12"
+      />
+      <line
+        x1="8"
+        x2="21"
+        y1="18"
+        y2="18"
+      />
+      <line
+        x1="3"
+        x2="3.01"
+        y1="6"
+        y2="6"
+      />
+      <line
+        x1="3"
+        x2="3.01"
+        y1="12"
+        y2="12"
+      />
+      <line
+        x1="3"
+        x2="3.01"
+        y1="18"
+        y2="18"
+      />
+    </svg>
+    <span>
+      my orders
+    </span>
+  </a>
+  <a
+    class="c1"
+    href="/logout"
+    title="sign out"
+  >
+    <svg
+      aria-hidden="true"
+      class="c2"
+      fill="none"
+      focusable="false"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"
+      />
+      <polyline
+        points="16 17 21 12 16 7"
+      />
+      <line
+        x1="21"
+        x2="9"
+        y1="12"
+        y2="12"
+      />
+    </svg>
+    <span>
+      sign out
+    </span>
+  </a>
+</nav>
+`;

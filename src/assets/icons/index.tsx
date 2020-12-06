@@ -7,9 +7,12 @@ import {
   Windows as WindowsIcon
 } from '@styled-icons/fa-brands';
 import {
+  CreditCard as CreditCardIcon,
   Download as DownloadIcon,
   Heart as HeartIcon,
+  List as ListIcon,
   Lock as LockIcon,
+  LogOut as LogOutIcon,
   Mail as MailIcon,
   Search as SearchIcon,
   ShoppingCart as ShoppingCartIcon,
@@ -28,12 +31,15 @@ export {
   ArrowLeftIcon,
   ArrowRightIcon,
   CloseIcon,
+  CreditCardIcon,
   DownloadIcon,
   EmailIcon,
   HeartFilledIcon,
   HeartIcon,
   LinuxIcon,
+  ListIcon,
   LockIcon,
+  LogOutIcon,
   MailIcon,
   MenuIcon,
   SearchIcon,

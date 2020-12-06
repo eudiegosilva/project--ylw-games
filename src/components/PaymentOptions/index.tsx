@@ -10,14 +10,14 @@ import { ColorStyleProps } from 'types/global';
 
 import * as s from './styles';
 
-export type PaymentCard = {
+export type PaymentCardProps = {
   number: string;
   flag: string;
   image: string;
 };
 
 export type PaymentOptionsProps = {
-  paymentCards: PaymentCard[];
+  cards: PaymentCardProps[];
   handlePayment: () => void;
   contentStyle?: ColorStyleProps;
 };
@@ -25,7 +25,7 @@ export type PaymentOptionsProps = {
 const PaymentOptions = ({
   contentStyle = 'primary',
   handlePayment,
-  paymentCards
+  cards
 }: PaymentOptionsProps) => {
   const [checked, setChecked] = useState(false);
   return (
@@ -41,8 +41,8 @@ const PaymentOptions = ({
         </Heading>
 
         <s.PaymentCardList>
-          {paymentCards &&
-            paymentCards.map(card => (
+          {cards &&
+            cards.map(card => (
               <s.CardItem key={card.number}>
                 <s.CardInfo>
                   <img src={card.image} alt={card.flag} />

@@ -15,14 +15,14 @@ export type CartTemplateProps = {
   recommendedGames: GameCardProps[];
   recommendedHighlight: HighlightProps;
 } & CartListProps &
-  Pick<PaymentOptionsProps, 'paymentCards'>;
+  Pick<PaymentOptionsProps, 'cards'>;
 
 const Cart = ({
   recommendedGames,
   recommendedHighlight,
   items,
   total,
-  paymentCards
+  cards
 }: CartTemplateProps) => {
   const handlePayment = () => ({});
 
@@ -35,10 +35,7 @@ const Cart = ({
           <s.Content>
             <CartList items={items} total={total} />
 
-            <PaymentOptions
-              paymentCards={paymentCards}
-              handlePayment={handlePayment}
-            />
+            <PaymentOptions cards={cards} handlePayment={handlePayment} />
           </s.Content>
         ) : (
           <Empty

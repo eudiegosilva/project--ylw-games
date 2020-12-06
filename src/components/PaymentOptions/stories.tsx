@@ -7,7 +7,7 @@ export default {
   title: 'Design System/PaymentOptions',
   component: PaymentOptions,
   args: {
-    paymentCards: paymentCardsMock
+    cards: paymentCardsMock
   },
   paymentCards: {
     type: ''

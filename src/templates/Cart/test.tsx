@@ -13,7 +13,7 @@ import Cart from '.';
 const cartProps = {
   items: itemsMock,
   total: '$ 493,00',
-  paymentCards: paymentCardsMock,
+  cards: paymentCardsMock,
   recommendedHighlight: highlightMock,
   recommendedGames: recommendedGamesMock
 };

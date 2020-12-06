@@ -12,7 +12,7 @@
     "test:watch": "yarn test --watch",
     "test:generate-output": "jest --json --outputFile=.jest-test-results.json",
     "generate": "yarn plop --plopfile generators/plopfile.js",
-    "storybook": "start-storybook -s ./public -p 6006 && yarn test:generate-output",
+    "storybook": "start-storybook -s ./public -p 6006",
     "build-storybook": "build-storybook -s ./public",
     "deploy": "yarn build && next export"
   },

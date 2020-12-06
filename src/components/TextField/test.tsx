@@ -8,7 +8,7 @@ import TextField from '.';
 
 describe('<TextField />', () => {
   it('should render with label', () => {
-    renderWithTheme(<TextField label="label" labelFor="field" id="field" />);
+    renderWithTheme(<TextField label="label" name="field" />);
 
     expect(screen.getByLabelText('label')).toBeInTheDocument();
   });
@@ -28,12 +28,7 @@ describe('<TextField />', () => {
   it('should change value when typing', async () => {
     const onInput = jest.fn();
     renderWithTheme(
-      <TextField
-        onInput={onInput}
-        label="textField"
-        labelFor="textField"
-        id="textField"
-      />
+      <TextField onInput={onInput} label="textField" name="textField" />
     );
 
     const input = screen.getByRole('textbox');
@@ -48,9 +43,7 @@ describe('<TextField />', () => {
   });
 
   it('should accessible by tab key', () => {
-    renderWithTheme(
-      <TextField label="textField" labelFor="textField" id="textField" />
-    );
+    renderWithTheme(<TextField label="textField" name="textField" />);
 
     const input = screen.getByLabelText('textField');
     expect(document.body).toHaveFocus();
@@ -79,8 +72,7 @@ describe('<TextField />', () => {
       <TextField
         onInput={onInput}
         label="textField"
-        labelFor="textField"
-        id="textField"
+        name="textField"
         disabled
       />
     );
@@ -102,7 +94,7 @@ describe('<TextField />', () => {
       <TextField
         icon={<MailIcon data-testid="icon" />}
         label="textField"
-        labelFor="textField"
+        name="textField"
         error="error message"
       />
     );

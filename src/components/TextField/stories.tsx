@@ -9,8 +9,7 @@ export default {
   component: TextField,
   args: {
     label: 'e-mail',
-    labelFor: 'email',
-    id: 'email',
+    name: 'email',
     initialValue: '',
     placeholder: 'diego@yellow.com',
     icon: <MailIcon />

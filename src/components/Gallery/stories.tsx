@@ -4,7 +4,7 @@ import Gallery, { GalleryProps } from '.';
 import { mock as galleryItemsMock } from './mock';
 
 export default {
-  title: 'Design System/Gallery',
+  title: 'Design System/Slider/Gallery',
   component: Gallery,
   args: {
     items: galleryItemsMock

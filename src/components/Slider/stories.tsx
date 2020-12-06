@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import Slider from '.';
 
 export default {
-  title: 'Design System/SliderStructure',
+  title: 'Design System/Slider/Slider',
   component: Slider,
   decorators: [
     Story => (

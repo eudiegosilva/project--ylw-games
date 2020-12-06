@@ -3,7 +3,7 @@ import { Story, Meta } from '@storybook/react/types-6-0';
 import Logo, { LogoProps } from '.';
 
 export default {
-  title: 'Design System/Logo',
+  title: 'Base/Logo',
   component: Logo,
   args: {
     color: 'secondary'

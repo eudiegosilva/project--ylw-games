@@ -3,7 +3,7 @@ import { Story, Meta } from '@storybook/react/types-6-0';
 import Radio, { RadioProps } from '.';
 
 export default {
-  title: 'Form/Radio',
+  title: 'Base/Form/Radio',
   component: Radio,
   args: {
     colorStyle: 'primary',

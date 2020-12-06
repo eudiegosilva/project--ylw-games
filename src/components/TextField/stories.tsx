@@ -5,7 +5,7 @@ import { MailIcon } from 'assets/icons';
 import TextField, { TextFieldProps } from '.';
 
 export default {
-  title: 'Form/TextField',
+  title: 'Base/Form/TextField',
   component: TextField,
   args: {
     label: 'e-mail',

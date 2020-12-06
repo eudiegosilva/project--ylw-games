@@ -2,7 +2,7 @@ import { Story, Meta } from '@storybook/react/types-6-0';
 import FormSignIn from '.';
 
 export default {
-  title: 'Form/FormSignIn',
+  title: 'Design System/Form/FormSignIn',
   component: FormSignIn,
   parameters: {
     jest: ['FormSignIn.test.tsx']

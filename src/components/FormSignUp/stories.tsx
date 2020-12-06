@@ -2,7 +2,7 @@ import { Story, Meta } from '@storybook/react/types-6-0';
 import FormSignUp from '.';
 
 export default {
-  title: 'Form/FormSignUp',
+  title: 'Design System/Form/FormSignUp',
   component: FormSignUp,
   parameters: {
     jest: ['FormSignUp.test.tsx']

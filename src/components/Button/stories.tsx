@@ -5,7 +5,7 @@ import { ShoppingCartIcon } from 'assets/icons';
 import Button from '.';
 
 export default {
-  title: 'Design System/Button',
+  title: 'Base/Button',
   component: Button,
   args: {
     children: 'buy now',

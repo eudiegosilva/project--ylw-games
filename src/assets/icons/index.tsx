@@ -21,8 +21,7 @@ import {
 import {
   Add as AddIcon,
   ArrowBackIos as ArrowLeftIcon,
-  ArrowForwardIos as ArrowRightIcon,
-  Email as EmailIcon
+  ArrowForwardIos as ArrowRightIcon
 } from '@styled-icons/material-outlined';
 
 export {
@@ -33,7 +32,6 @@ export {
   CloseIcon,
   CreditCardIcon,
   DownloadIcon,
-  EmailIcon,
   HeartFilledIcon,
   HeartIcon,
   LinuxIcon,

@@ -1,6 +1,6 @@
 import { Story, Meta } from '@storybook/react/types-6-0';
 
-import { mock as orderItemsMock } from './mock';
+import { mock as ordersItemsMock } from './mock';
 
 import OrdersList, { OrdersListProps } from '.';
 
@@ -8,7 +8,7 @@ export default {
   title: 'Design System/Profile/OrdersList',
   component: OrdersList,
   args: {
-    items: orderItemsMock
+    items: ordersItemsMock
   },
   parameters: {
     jest: ['OrdersList.test.tsx']

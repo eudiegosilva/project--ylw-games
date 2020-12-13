@@ -5,7 +5,7 @@ import { UserIcon, CreditCardIcon, ListIcon, LogOutIcon } from 'assets/icons';
 import * as s from './styles';
 
 export type ProfileMenuProps = {
-  activeLink?: '/profile/me' | '/profile/cards' | '/profile/orders';
+  activeLink?: '/profile/me' | '/profile/cards' | '/profile/orders' | string;
 };
 
 const ProfileMenu = ({ activeLink }: ProfileMenuProps) => (

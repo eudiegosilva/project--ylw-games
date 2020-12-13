@@ -13,7 +13,7 @@ export async function getServerSideProps() {
   return {
     props: {
       items: itemsMock,
-      paymentCards: paymentCardsMock,
+      cards: paymentCardsMock,
       recommendedGames: recommendedGamesMock,
       recommendedHighlight: highlightMock,
       total: 'R$ 493,00'

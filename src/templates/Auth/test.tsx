@@ -1,14 +1,14 @@
 import { screen } from '@testing-library/react';
 import { renderWithTheme } from 'utils/tests/helpers';
 
-import Auth from '.';
+import AuthTemplate from '.';
 
 describe('<Auth />', () => {
   it('should render all content in children', () => {
     renderWithTheme(
-      <Auth title="title">
+      <AuthTemplate title="title">
         <input type="text" />
-      </Auth>
+      </AuthTemplate>
     );
 
     expect(screen.getAllByRole('img', { name: /ylw games/i })).toHaveLength(2);

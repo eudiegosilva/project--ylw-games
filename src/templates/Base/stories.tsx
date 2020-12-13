@@ -1,10 +1,10 @@
 import { Story, Meta } from '@storybook/react/types-6-0';
 
-import Base, { BaseTemplateProps } from 'templates/Base';
+import BaseTemplate, { BaseTemplateProps } from 'templates/Base';
 
 export default {
   title: 'Template/Base',
-  component: Base,
+  component: BaseTemplate,
   parameters: {
     layout: 'fullscreen',
     backgrounds: {
@@ -15,7 +15,7 @@ export default {
 } as Meta;
 
 export const BaseOnMobile: Story<BaseTemplateProps> = args => (
-  <Base {...args} />
+  <BaseTemplate {...args} />
 );
 
 BaseOnMobile.parameters = {
@@ -25,5 +25,5 @@ BaseOnMobile.parameters = {
 };
 
 export const BaseOnDesktop: Story<BaseTemplateProps> = args => (
-  <Base {...args} />
+  <BaseTemplate {...args} />
 );

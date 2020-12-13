@@ -1,7 +1,7 @@
 import { screen } from '@testing-library/react';
 import { renderWithTheme } from 'utils/tests/helpers';
 
-import Base from '.';
+import BaseTemplate from '.';
 
 jest.mock('components/Menu', () => {
   return {
@@ -24,9 +24,9 @@ jest.mock('components/Footer', () => {
 describe('<Base />', () => {
   it('should render the menu, footer and children', () => {
     renderWithTheme(
-      <Base>
+      <BaseTemplate>
         <h1>base template</h1>
-      </Base>
+      </BaseTemplate>
     );
 
     expect(screen.getByTestId('mock menu')).toBeInTheDocument();

@@ -1,4 +1,4 @@
-import Base from 'templates/Base';
+import BaseTemplate from 'templates/Base';
 import Empty from 'components/Empty';
 import GameCard, { GameCardProps } from 'components/GameCard';
 import Heading from 'components/Heading';
@@ -19,7 +19,7 @@ const Wishlist = ({
   recommendedGames,
   recommendedHighlight
 }: WishlistTemplateProps) => (
-  <Base>
+  <BaseTemplate>
     <Container>
       <Heading lineLeft>wishlist</Heading>
       {games && games.length > 0 ? (
@@ -44,7 +44,7 @@ const Wishlist = ({
       games={recommendedGames}
       highlight={recommendedHighlight}
     />
-  </Base>
+  </BaseTemplate>
 );
 
 export default Wishlist;

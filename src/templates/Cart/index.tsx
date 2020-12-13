@@ -1,4 +1,4 @@
-import Base from 'templates/Base';
+import BaseTemplate from 'templates/Base';
 import CartList, { CartListProps } from 'components/CartList';
 import Heading from 'components/Heading';
 import PaymentOptions, { PaymentOptionsProps } from 'components/PaymentOptions';
@@ -27,7 +27,7 @@ const Cart = ({
   const handlePayment = () => ({});
 
   return (
-    <Base>
+    <BaseTemplate>
       <Container>
         <Heading lineLeft>my cart</Heading>
 
@@ -52,7 +52,7 @@ const Cart = ({
         games={recommendedGames}
         highlight={recommendedHighlight}
       />
-    </Base>
+    </BaseTemplate>
   );
 };
 

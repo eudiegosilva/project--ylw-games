@@ -2,11 +2,11 @@ import { Story, Meta } from '@storybook/react/types-6-0';
 
 import FormSignIn from 'components/FormSignIn';
 
-import Auth, { AuthTemplateProps } from 'templates/Auth';
+import AuthTemplate, { AuthTemplateProps } from 'templates/Auth';
 
 export default {
   title: 'Template/Auth',
-  component: Auth,
+  component: AuthTemplate,
   args: {
     title: 'sign in'
   },
@@ -20,9 +20,9 @@ export default {
 } as Meta;
 
 export const AuthOnMobile: Story<AuthTemplateProps> = args => (
-  <Auth {...args}>
+  <AuthTemplate {...args}>
     <FormSignIn />
-  </Auth>
+  </AuthTemplate>
 );
 
 AuthOnMobile.parameters = {
@@ -32,7 +32,7 @@ AuthOnMobile.parameters = {
 };
 
 export const AuthOnDesktop: Story<AuthTemplateProps> = args => (
-  <Auth {...args}>
+  <AuthTemplate {...args}>
     <FormSignIn />
-  </Auth>
+  </AuthTemplate>
 );

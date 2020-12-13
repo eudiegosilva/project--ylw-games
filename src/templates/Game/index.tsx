@@ -6,7 +6,7 @@ import { Divider } from 'components/Divider';
 import { GameCardProps } from 'components/GameCard';
 import { HighlightProps } from 'components/Highlight';
 
-import Base from 'templates/Base';
+import BaseTemplate from 'templates/Base';
 import Showcase from 'components/Showcase';
 
 import * as s from './styles';
@@ -32,7 +32,7 @@ const Game = ({
   upcomingHighlight,
   recommendedGames
 }: GameTemplateProps) => (
-  <Base>
+  <BaseTemplate>
     <s.Cover role="image" src={cover} aria-label="cover" />
     <s.Wrapper>
       <s.SectionGameInfo>
@@ -60,7 +60,7 @@ const Game = ({
 
       <Showcase title="recommended" games={recommendedGames} />
     </s.Wrapper>
-  </Base>
+  </BaseTemplate>
 );
 
 export default Game;

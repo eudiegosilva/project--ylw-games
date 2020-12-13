@@ -76,11 +76,13 @@ exports[`<Empty /> should render empty component correctly 1`] = `
   />
   <h2
     class="c2"
+    color="primary"
   >
     a example title
   </h2>
   <p
     class="c3"
+    color="primary"
   >
     a example description
   </p>

@@ -20,8 +20,8 @@ const Empty = ({
 }: EmptyProps) => (
   <s.Wrapper>
     <s.Image src="/img/empty.png" alt="hanging joysticks" role="image" />
-    <s.Title>{title}</s.Title>
-    <s.Description>{description}</s.Description>
+    <s.Title color={contentStyle}>{title}</s.Title>
+    <s.Description color={contentStyle}>{description}</s.Description>
     {hasLink && (
       <Link href="/" passHref>
         <Button as="a" colorStyle={contentStyle}>
